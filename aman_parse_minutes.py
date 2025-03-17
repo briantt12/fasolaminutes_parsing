@@ -4,29 +4,59 @@ import pandas as pd
 import re
 import util
 import spacy
+from fuzzywuzzy import fuzz
 nlp = spacy.load("en_core_web_sm")
 
 cached_non_name_words = set()  # Cache of confirmed non-names
 cached_name_words = set()  # Cache of confirmed names
 
+
+
+# def is_name(word):
+#     """Check if a word is a name using caching and spaCy."""
+#     if word in cached_name_words:
+#         return True
+#     if word in cached_non_name_words:
+#         return False
+
+#     doc = nlp(word)
+#     for token in doc:
+#         if token.ent_type_ == "PERSON":
+#             cached_name_words.add(word)
+#             return True
+#         elif token.pos_ == "PROPN":
+#             cached_name_words.add(word)
+#             return True
+#         else:
+#             cached_non_name_words.add(word)  # Cache non-names
+#     return False
+
+from fuzzywuzzy import process
+
 def is_name(word):
-    """Check if a word is a name using caching and spaCy."""
+    """Check if a word is a name using caching, fuzzy matching, and spaCy."""
     if word in cached_name_words:
         return True
     if word in cached_non_name_words:
         return False
 
+
+    # components = word.split('')
+    # Use fuzzy matching to check if the word is similar to any cached name
+    match, score = process.extractOne(word, cached_name_words) if cached_name_words else (None, 0)
+    if score >= 90:  # Adjust threshold as needed
+        cached_name_words.add(word)
+        return True
+
     doc = nlp(word)
     for token in doc:
-        if token.ent_type_ == "PERSON":
+        if token.ent_type_ == "PERSON" or token.pos_ == "PROPN":
             cached_name_words.add(word)
             return True
-        elif token.pos_ == "PROPN":
-            cached_name_words.add(word)
-            return True
-        else:
-            cached_non_name_words.add(word)  # Cache non-names
+
+    cached_non_name_words.add(word)  # Cache non-names
     return False
+
 
 
 
