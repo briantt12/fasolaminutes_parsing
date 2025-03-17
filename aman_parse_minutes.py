@@ -4,11 +4,12 @@ import pandas as pd
 import re
 import util
 import spacy
-from fuzzywuzzy import fuzz
+from fuzzywuzzy import process
 nlp = spacy.load("en_core_web_sm")
 
 cached_non_name_words = set()  # Cache of confirmed non-names
 cached_name_words = set()  # Cache of confirmed names
+multi_name_words = set()
 
 
 
@@ -31,7 +32,7 @@ cached_name_words = set()  # Cache of confirmed names
 #             cached_non_name_words.add(word)  # Cache non-names
 #     return False
 
-from fuzzywuzzy import process
+
 
 def is_name(word):
     """Check if a word is a name using caching, fuzzy matching, and spaCy."""
@@ -40,21 +41,25 @@ def is_name(word):
     if word in cached_non_name_words:
         return False
 
+    # names = word.split()
+    if "." in word: # Only apply fuzzy matching if word has more than 2 components
+        if word not in multi_name_words:
+            multi_name_words.add(word) # Cache multi-word names for future lookups
 
-    # components = word.split('')
-    # Use fuzzy matching to check if the word is similar to any cached name
-    match, score = process.extractOne(word, cached_name_words) if cached_name_words else (None, 0)
-    if score >= 90:  # Adjust threshold as needed
-        cached_name_words.add(word)
-        return True
+        # Use fuzzy matching only if we have other multi-word names stored
+        if multi_name_words:
+            match, score = process.extractOne(word, multi_name_words)
+            if score >= 85: # Adjust threshold as needed
+                return True
 
+    # Perform NLP-based name detection
     doc = nlp(word)
     for token in doc:
         if token.ent_type_ == "PERSON" or token.pos_ == "PROPN":
             cached_name_words.add(word)
             return True
 
-    cached_non_name_words.add(word)  # Cache non-names
+    cached_non_name_words.add(word) # Cache non-names
     return False
 
 
@@ -407,6 +412,8 @@ if __name__ == '__main__':
     print("non name count:",len(cached_non_name_words))
     shared_values = cached_name_words & cached_non_name_words  # Intersection of sets
     pd.DataFrame({"Unclear Words": list(shared_values)}).to_csv("spacy_shared_unclear_names.csv", index=False)
+    pd.DataFrame({"Multi-Name Words": list(multi_name_words)}).to_csv("spacy_multi_names.csv", index=False)
+    print("multi name count:",len(multi_name_words))
 
 
     # parse_minutes_by_id(db, 5165)
