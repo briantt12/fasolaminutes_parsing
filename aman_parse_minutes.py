@@ -7,71 +7,66 @@ import spacy
 from fuzzywuzzy import process
 nlp = spacy.load("en_core_web_sm")
 
-cached_non_name_words = set()  # Cache of confirmed non-names
-cached_name_words = set()  # Cache of confirmed names
+
+# Caching sets
+cached_non_name_words = set()
 multi_name_words = set()
-
-
-
-# def is_name(word):
-#     """Check if a word is a name using caching and spaCy."""
-#     if word in cached_name_words:
-#         return True
-#     if word in cached_non_name_words:
-#         return False
-
-#     doc = nlp(word)
-#     for token in doc:
-#         if token.ent_type_ == "PERSON":
-#             cached_name_words.add(word)
-#             return True
-#         elif token.pos_ == "PROPN":
-#             cached_name_words.add(word)
-#             return True
-#         else:
-#             cached_non_name_words.add(word)  # Cache non-names
-#     return False
-
-
+last_names = set()  # Store last names separately
+full_names = set()  # Store full names for fuzzy matching
+double_names = set()
+matched = set()
+final_words = set()
 
 def is_name(word):
     """Check if a word is a name using caching, fuzzy matching, and spaCy."""
-    if word in cached_name_words:
-        return True
+    if word in final_words:
+        return True, word
+    if word in full_names:
+        return True, word  # Directly return if the name is known
     if word in cached_non_name_words:
-        return False
+        return False, word
+    if word in double_names:
+        return True, word
+    
 
-    # names = word.split()
-    if "." in word: # Only apply fuzzy matching if word has more than 2 components
-        if word not in multi_name_words:
-            multi_name_words.add(word) # Cache multi-word names for future lookups
+    words = word.split()
 
-        # Use fuzzy matching only if we have other multi-word names stored
-        if multi_name_words:
-            match, score = process.extractOne(word, multi_name_words)
-            if score >= 85: # Adjust threshold as needed
-                return True
+    # If more than 3 words, extract and save last name
+    if len(words) >= 3:
+        last_name = words[-1]  # Extract last name
+        
+
+        # If last name exists, apply fuzzy matching on full names
+        if last_name in last_names:
+            match, score = process.extractOne(word, full_names)
+            if score >= 85:  # High-confidence match
+                matched.add(match)
+                final_words.add(match)
+                return True, match  # Return the original matched name
+        
 
     # Perform NLP-based name detection
     doc = nlp(word)
     for token in doc:
-        if token.ent_type_ == "PERSON" or token.pos_ == "PROPN":
-            cached_name_words.add(word)
-            return True
+        if (len(words)>=2) and (token.ent_type_ == "PERSON" or token.pos_ == "PROPN"):
+            if len(words) >= 3:
+                full_names.add(word)  # Store full name for future matches
+                last_names.add(last_name)
+            else:
+                double_names.add(word)
+            final_words.add(word)
+            return True, word
 
-    cached_non_name_words.add(word) # Cache non-names
-    return False
-
-
-
-
+    cached_non_name_words.add(word)  # Cache non-names
+    return False, word
 
 def clean_ner(name):
     """Process names and avoid redundant spaCy checks."""
     name = name.strip()
-    if is_name(name):
-        return name, True  # Return name and confirmation that it's a name
-    return name, False
+    is_name_flag, returned_name = is_name(name)
+    return returned_name, is_name_flag  # Return the matched name and flag
+
+
 
 bad_words = [
     'Chairman',
@@ -406,14 +401,16 @@ if __name__ == '__main__':
     db = util.open_db()
     clear_minutes(db)
     parse_all_minutes(db)
-    pd.DataFrame({"Name Words": list(cached_name_words)}).to_csv("spacy_names.csv", index=False)
-    print("name count:",len(cached_name_words))
-    pd.DataFrame({"Non-Name Words": list(cached_non_name_words)}).to_csv("spacy_non_names.csv", index=False)
-    print("non name count:",len(cached_non_name_words))
-    shared_values = cached_name_words & cached_non_name_words  # Intersection of sets
-    pd.DataFrame({"Unclear Words": list(shared_values)}).to_csv("spacy_shared_unclear_names.csv", index=False)
-    pd.DataFrame({"Multi-Name Words": list(multi_name_words)}).to_csv("spacy_multi_names.csv", index=False)
+    pd.DataFrame({"Full Name Words": sorted(list(full_names))}).to_csv("spacy_names.csv", index=False)
+    print("name count:",len(full_names))
+    pd.DataFrame({"Non-Name Words": sorted(list(last_names))}).to_csv("spacy_last_names.csv", index=False)
+    print("non name count:",len(last_names))
+    pd.DataFrame({"Multi-Name Words": sorted(list(multi_name_words))}).to_csv("spacy_multi_names.csv", index=False)
     print("multi name count:",len(multi_name_words))
+    pd.DataFrame({"Matched Words": sorted(list(matched))}).to_csv("matched_names.csv", index=False)
+    print("matched name count:",len(matched))
+    pd.DataFrame({"Passed Words": sorted(list(final_words))}).to_csv("passed_names.csv", index=False)
+    print("passed name count:",len(final_words))
 
 
     # parse_minutes_by_id(db, 5165)
