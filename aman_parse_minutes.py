@@ -8,7 +8,6 @@ from rapidfuzz import process, fuzz
 import matplotlib.pyplot as plt
 import time
 nlp = spacy.load("en_core_web_sm")
-
 batch = 1000
 confidence = 80
 
