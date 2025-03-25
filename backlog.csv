@@ -1,0 +1,34 @@
+Task,Status,Sprint
+Project Setup,Completed,Sprint 1
+Research NLP Methods,Completed,Sprint 1
+Analyze Existing Parser,Completed,Sprint 2
+Identify Parsing Issues,Completed,Sprint 2
+Initial LLM Implementation,In Progress,Sprint 2
+Integrate spaCy for NER,In Progress,Sprint 3
+Add Fuzzy Matching,In Progress,Sprint 3
+LLM Prompting,Not Started,Sprint 3
+Furthered Testing on spaCy FuzzyWuzzy ChatGPT,In Progress,Sprint 3
+Researched FlashText and Flair,Completed,Sprint 3
+Identified Issues with Improved Parser,Completed,Sprint 3
+Build Ground Truth Dataset for Testing,Not Started,Sprint 4
+Determine Performance Metrics Precision Recall F1-Score,Not Started,Sprint 4
+Continue Researching Models Flair ChatGPT LLM,In Progress,Sprint 4
+Improve LLM prompting and context,In Progress,Sprint 5
+Define approach approaches to finetune moving forward combined approach,In Progress,Sprint 5
+Explore FuzzyWuzzy duplicate name detection,Completed,Sprint 5
+Enhance LLM Implementation,In Progress,Sprint 5
+Develop benchmark program to evaluate approaches,In Progress,Sprint 5
+Analyze SpaCy's limitations and improve efficiency,Completed,Sprint 5
+Develop FuzzyWuzzy checker to detect duplicates before caching,Completed,Sprint 5
+Add additional background context to LLM prompts,In Progress,Sprint 5
+Benchmark accuracy using Ollama,In Progress,Sprint 5
+Develop Benchmark tool using ground truth dataset,In Progress,Sprint 5
+Switch Fuzzy Matching from FuzzyWuzzy to RapidFuzz,Completed,Sprint 6
+Optimize Batch Processing for Fuzzy Matching,Completed,Sprint 6
+Implement Ground Truth Benchmarking Program,Completed,Sprint 6
+Improve Duplicate Name Detection with RapidFuzz,Completed,Sprint 6
+Modify LLM Prompting for Better Parsing Accuracy,In Progress,Sprint 6
+Run Benchmarking to Identify Parsing Mistakes,In Progress,Sprint 6
+Implement Benchmarking Metrics Precision Recall F1,In Progress,Sprint 6
+Adjust Confidence Levels & Standardize Name Formats,Not Started,Sprint 6
+Combine LLM and Fuzzy Matching for Better Accuracy,Not Started,Sprint 6
