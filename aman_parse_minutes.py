@@ -1,42 +1,45 @@
-#!/usr/bin/env python
-# encoding: utf-8
-#original
 import pandas as pd
 import re
 import util
 import spacy
 from rapidfuzz import process, fuzz
 import matplotlib.pyplot as plt
-import time
 nlp = spacy.load("en_core_web_sm")
 batch = 1000
 confidence = 87
-names_count = []
 # Caching sets
 cached_non_name_words = set()
-# passed_names = set()  # Store full names for fuzzy matching
 matched = set()
+matched_alias = {}
 final_words = set()
 failed = set()
 fuzzyCount = 0
-start_time = time.time()
 history = set()
 original_names = set()
 
-def convert_to_initials(name):
+def standardize_name(name,case):
     """Convert the second name to an initial if there are more than two words."""
     original_names.add(name)
     words = name.split()
-    if '-' in name:
+    if case ==1:
+    # if '-' in name:
         firstname = words[0]
         lastname = name.split('-')[-1]
         return firstname+' '+lastname
-    
-    if len(words) >= 3:  # If there's a middle name or extra names
-        return f"{words[0]} {words[1][0]}. {words[-1]}"  # Convert only the second word to an initial
-    if len(words) == 2:
+    elif case == 2:
+    # if len(words) >= 3:  # If there's a middle name or extra names
+        return f"{words[0]} {words[-1]}"  # Convert only the second word to an initial
+    elif case==3:
+    # if len(words) == 2:
         return name  # Keep first and last name as is
-    return name  # Return as is if single word
+    
+    elif case == 4 and len(words) > 1:
+        # Extract first name and first part of hyphenated last name
+        firstname = words[0]
+        lastname_first_half = words[1].split('-')[0]
+        return firstname + ' ' + lastname_first_half
+    else:
+        return name  # Return as is if single word
 
 def ner_check_person_is_name(text):
     """Check if a word is a person's name using spaCy NER and POS tagging."""
@@ -54,60 +57,107 @@ def ner_check_person_is_name(text):
 
 
 def is_name(word,confidence):
-    global start_time, fuzzyCount
+    global fuzzyCount
 
     if(len(final_words)% batch == 0):
         
-        pd.DataFrame({"Passed Words Sorted": sorted(final_words)}).to_csv("passed_names_" + str(batch) + ".csv", index=False)
+        pd.DataFrame({"Passed Words Sorted": sorted(final_words)}).to_csv("passed_names.csv", index=False)
         
         pd.DataFrame({"Matched Words": sorted(list(matched))}).to_csv("matched_names.csv", index=False)
-        names_count.append(len(final_words))
         
-        
-    converted_name = convert_to_initials(word)
     
     
     
-    if converted_name in final_words:
-        return True, converted_name
+    if word in final_words:
+        return True, word
 
-    elif converted_name in cached_non_name_words:
+    elif word in cached_non_name_words:
         return False, "fail:" + word  # Cached as non-name
 
-    
-    if len(converted_name.split()) >= 3:
-        firstname = converted_name.split()[0]
-        lastname = converted_name.split()[-1]
-        shortened_name = f"{firstname} {lastname}"
-        
-        # Try exact match first
-        if shortened_name in final_words:
-            return True, shortened_name
-        
-        # Fuzzy match on shortened name
-        ratio_match = process.extractOne(shortened_name, final_words, scorer=fuzz.ratio)
-        if ratio_match:
-            suggested_word, score, _ = ratio_match
-            matched_check = score >= confidence
-            history.add((word, suggested_word, score, matched_check)) 
-            
-            if (suggested_word[0] == shortened_name[0]) and (score >= confidence):
-                fuzzyCount += 1
-                matched.add(f"{shortened_name}:{suggested_word}: ratio:{score}")
-                return True, suggested_word
-    # Only fall back for less than 3 names
-    elif len(converted_name.split()) < 3:
+    if '-' in word:
+        converted_name = standardize_name(word,4)
+        if converted_name in final_words:
+            return True, converted_name
         ratio_match = process.extractOne(converted_name, final_words, scorer=fuzz.ratio)
         
         if ratio_match:
             suggested_word, score, _ = ratio_match
             matched_check = score >= confidence
-            history.add((word, suggested_word, score, matched_check)) 
+            history.add((converted_name, suggested_word, score, matched_check)) 
             # Check initials and confidence
             if (suggested_word[0] == converted_name[0]) and (score >= confidence):
                 fuzzyCount += 1
                 matched.add(f"{converted_name}:{suggested_word}: ratio:{score}")
+                if suggested_word not in matched_alias:
+                    matched_alias[suggested_word] = []
+                if word not in matched_alias[suggested_word]:
+                    matched_alias[suggested_word].append(word)
                 return True, suggested_word
+            
+        converted_name = standardize_name(word,1)
+        if converted_name in final_words:
+            return True, converted_name
+        ratio_match = process.extractOne(converted_name, final_words, scorer=fuzz.ratio)
+        
+        if ratio_match:
+            suggested_word, score, _ = ratio_match
+            matched_check = score >= confidence
+            history.add((converted_name, suggested_word, score, matched_check)) 
+            # Check initials and confidence
+            if (suggested_word[0] == converted_name[0]) and (score >= confidence):
+                fuzzyCount += 1
+                matched.add(f"{converted_name}:{suggested_word}: ratio:{score}")
+                if suggested_word not in matched_alias:
+                    matched_alias[suggested_word] = []
+                if word not in matched_alias[suggested_word]:
+                    matched_alias[suggested_word].append(word)
+                return True, suggested_word
+        
+    
+    if len(word.split()) >= 3:
+        converted_name = standardize_name(word,2)
+        if converted_name in final_words:
+            return True, converted_name
+        # Try exact match first
+        if converted_name in final_words:
+            return True, converted_name
+        
+        # Fuzzy match on shortened name
+        ratio_match = process.extractOne(converted_name, final_words, scorer=fuzz.ratio)
+        if ratio_match:
+            suggested_word, score, _ = ratio_match
+            matched_check = score >= confidence
+            history.add((converted_name, suggested_word, score, matched_check)) 
+            
+            if (suggested_word[0] == converted_name[0]) and (score >= confidence):
+                fuzzyCount += 1
+                matched.add(f"{converted_name}:{suggested_word}: ratio:{score}")
+                if suggested_word not in matched_alias:
+                    matched_alias[suggested_word] = []
+                if word not in matched_alias[suggested_word]:
+                    matched_alias[suggested_word].append(word)
+                return True, suggested_word
+
+    if len(word.split()) < 3:
+        converted_name = standardize_name(word,3)
+        if converted_name in final_words:
+            return True, converted_name
+        ratio_match = process.extractOne(converted_name, final_words, scorer=fuzz.ratio)
+        
+        if ratio_match:
+            suggested_word, score, _ = ratio_match
+            matched_check = score >= confidence
+            history.add((converted_name, suggested_word, score, matched_check)) 
+            # Check initials and confidence
+            if (suggested_word[0] == converted_name[0]) and (score >= confidence):
+                fuzzyCount += 1
+                matched.add(f"{converted_name}:{suggested_word}: ratio:{score}")
+                if suggested_word not in matched_alias:
+                    matched_alias[suggested_word] = []
+                if word not in matched_alias[suggested_word]:
+                    matched_alias[suggested_word].append(word)
+                return True, suggested_word
+    
 
     
             
@@ -465,11 +515,22 @@ if __name__ == '__main__':
     parse_all_minutes(db)
     pd.DataFrame({
     "Passed Words Sorted": sorted(final_words)  # Sorted order
-}).to_csv("passed_names_" + str(batch) + ".csv", index=False)
+}).to_csv("passed_names.csv", index=False)
+    # pd.DataFrame({"history": list(history)}).to_csv('history.csv', index=False)
     pd.DataFrame(history, columns=["converted_name", "suggested_word", "score","matched"]).to_csv('history.csv', index=False)
     print("Passed Name Count:",len(final_words))
     print("Identified Duplicates:",len(matched))
     pd.DataFrame({"Original Names": sorted(original_names)}).to_csv("original_names.csv", index=False)
+    
+    data = []
 
+    for suggested_word, duplicates in matched_alias.items():
+        names_alias = []
+        for duplicate in duplicates:
+            names_alias.append(duplicate)
+        data.append({'Suggested Word': suggested_word, 'Duplicate Word': ', '.join(names_alias)})
+
+    # Create a pandas DataFrame from the list of tuples
+    df = pd.DataFrame(data).to_csv('matched_alias.csv')
     # parse_minutes_by_id(db, 5165)
     db.close()
