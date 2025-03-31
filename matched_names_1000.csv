@@ -1,10 +1,11 @@
 Matched Words
-A.A. Malone:A. A. Malone: ratio:95.65217391304348
-A.C. McGough:A. C. McGough: ratio:96.0
-A.D. Chandler:A. D. Chandler: ratio:96.2962962962963
-A.E. Probst:A. E. Probst: ratio:95.65217391304348
-A.L. Beckett:A. L. Beckett: ratio:96.0
+A.A. Malone:A. Malone: ratio:90.0
+A.C. McGough:A. McGough: ratio:90.9090909090909
+A.D. Chandler:A. Chandler: ratio:91.66666666666666
+A.E. Probst:A. Probst: ratio:90.0
+A.L. Beckett:A. Beckett: ratio:90.9090909090909
 A.M.:A. M.: ratio:88.88888888888889
+A.P. Malone:A. Malone: ratio:90.0
 AI Grindon:Al Grindon: ratio:90.0
 AI McCready:Al McCready: ratio:90.9090909090909
 AIdo Ceresa:Aldo Ceresa: ratio:90.9090909090909
@@ -19,6 +20,7 @@ Abigail McCool:Abbigail McCool: ratio:96.55172413793103
 Adalaide Hanson:Adelaide Hanson: ratio:93.33333333333333
 Adam Beeken:Adam Beekin: ratio:90.9090909090909
 Adam Kinsaul:Adam Kinsual: ratio:91.66666666666666
+Addi Townson:Addison Townson: ratio:88.88888888888889
 Adrian Mariana:Adrian Mariano: ratio:92.85714285714286
 Adrian Moriano:Adrian Mariano: ratio:92.85714285714286
 Adrian Stevenson:Adrienne Stevenson: ratio:88.23529411764706
@@ -27,7 +29,6 @@ Adrien Mariano:Adrian Mariano: ratio:92.85714285714286
 Adrienne Roberts:Adrienne Robertson: ratio:94.11764705882352
 Ady Rosen:Adi Rosen: ratio:88.88888888888889
 Aileen Woodley:Alene Woodley: ratio:88.88888888888889
-Aine Cheallaigh:Aine U. Cheallaigh: ratio:90.9090909090909
 Ainsley Allen:Ainslie Allen: ratio:92.3076923076923
 Al Gentle:Al Gentile: ratio:94.73684210526316
 Al Grinden:Al Ginden: ratio:94.73684210526316
@@ -46,9 +47,9 @@ Alene Donaldson:Avelene Donaldson: ratio:93.75
 Alene Woodly:Alene Woodley: ratio:96.0
 Alesha Nelson:Alisha Nelson: ratio:92.3076923076923
 Alex Baillie:Alix Baillie: ratio:91.66666666666666
+Alex Brinkman-Gramigna:Alex Brinkman-Granigna: ratio:95.45454545454545
 Alex Brown:Al Brown: ratio:88.88888888888889
 Alex Forsythe:Alex Forsyth: ratio:96.0
-Alex Gramigna:Alex Granigna: ratio:92.3076923076923
 Alex Ingliz:Alex Inglis: ratio:90.9090909090909
 Alex Jones:Alex Johns: ratio:90.0
 Alex Williams:Alec Williams: ratio:92.3076923076923
@@ -73,27 +74,26 @@ Alicia Greathouse:Alicia Greethouse: ratio:94.11764705882352
 Alicia Whitaker:Alecia Whitaker: ratio:93.33333333333333
 Aline Harris:Alene Harris: ratio:91.66666666666666
 Alisa Shore:Alisa Shor: ratio:95.23809523809523
-Alison Davis:Allison David: ratio:88.0
+Alison Davis:Allison Davis: ratio:96.0
 Alison Fisher:Allison Fischer: ratio:92.85714285714286
 Alison Grate:Allison Grate: ratio:96.0
+Alison Ivey:Allison Ivey: ratio:95.65217391304348
 Alison Langston:Allison Langston: ratio:96.7741935483871
 Alison Steel:Allison Steel: ratio:96.0
 Alison Steele:Allison Steel: ratio:92.3076923076923
 Alison Whitener:Allison Whitener: ratio:96.7741935483871
-Alison Zunklei:Alison M. Zunklei: ratio:90.32258064516128
 All Frank:Al Frank: ratio:94.11764705882352
 Allan Fannin:Allen Fannin: ratio:91.66666666666666
 Allan Staveley:Allan Stavely: ratio:96.2962962962963
 Allana Goodman:Alanna Goodman: ratio:92.85714285714286
-Allegra Wilson:Allegra C. Wilson: ratio:90.32258064516128
 Allen Dubose:Allen DuBose: ratio:91.66666666666666
+Allen Dugger:Allen Duggar: ratio:91.66666666666666
 Allen Fannan:Allen Fannin: ratio:91.66666666666666
 Allen Owens:Allen Owen: ratio:95.23809523809523
 Allen Stavely:Allan Stavely: ratio:92.3076923076923
 Allison Biery:Allisson Biery: ratio:96.2962962962963
 Allison Brown:Alison Brown: ratio:96.0
-Allison Davis:Allison David: ratio:92.3076923076923
-Allison Davis:Allison S. Davis: ratio:89.65517241379311
+Allison David:Allison Davis: ratio:92.3076923076923
 Allison Dodson:Alison Dodson: ratio:96.2962962962963
 Allison Fisher:Allison Fischer: ratio:96.55172413793103
 Allison Forster:Alison Forster: ratio:96.55172413793103
@@ -116,6 +116,7 @@ Amelia O’dell:Amelia O’Dell: ratio:92.3076923076923
 Amelie Kruger:Amelie Krüger: ratio:92.3076923076923
 Ames Biehlenberg:Ames Bielenberg: ratio:96.7741935483871
 Amritpal Singh:Amrit Singh: ratio:88.0
+Amy Anderson:Andy Anderson: ratio:88.0
 Amy Davies:Amy Davis: ratio:94.73684210526316
 Amy Findlay:Amy Finlay: ratio:95.23809523809523
 Amy Finley:Amy Finlay: ratio:90.0
@@ -133,7 +134,7 @@ Andrea Brown:Andrew Brown: ratio:91.66666666666666
 Andrea Phillips:Andrew Phillips: ratio:93.33333333333333
 Andreas Man:Andreas Manz: ratio:95.65217391304348
 Andres Albers:Andrew Albers: ratio:92.3076923076923
-Andres Wells:Andrew Wells: ratio:91.66666666666666
+Andres Wells:Anders Wells: ratio:91.66666666666666
 Andrew Clark:Andrew Clarkson: ratio:88.88888888888889
 Andrew Forsthofel:Andrew Forsthoefel: ratio:97.14285714285714
 Andrew Mashchek:Andrew Mashchak: ratio:93.33333333333333
@@ -144,9 +145,10 @@ Andy Gaye:Andy Gay: ratio:94.11764705882352
 Andy Johnathan:Andy Jonathan: ratio:96.2962962962963
 Andy Johnston:Andy Johnson: ratio:96.0
 Andy Johnston:Ann Johnston: ratio:88.0
-Andy LeBrun:Andy Lebrun: ratio:90.9090909090909
+Andy LeBrun:Andy LaBrun: ratio:90.9090909090909
 Angela Myers:Angela Byers: ratio:91.66666666666666
 Angela Tengesdal:Angela Tergesdal: ratio:93.75
+Angela VanHeest:Angela Heest: ratio:88.88888888888889
 Angelia Benton:Angela Benton: ratio:96.2962962962963
 Anghara Davis:Angharad Davis: ratio:96.2962962962963
 Angus Macdonald:Angus MacDonald: ratio:93.33333333333333
@@ -154,7 +156,7 @@ Ania Zóltek:Anna Zóltek: ratio:90.9090909090909
 Anita Boswell:Anita Buswell: ratio:92.3076923076923
 Anita Burwell:Anita Buswell: ratio:92.3076923076923
 Anita Buswoll:Anita Buswell: ratio:92.3076923076923
-Anita Landers:Anita Sanders: ratio:92.3076923076923
+Anita Landers:Anita Landess: ratio:92.3076923076923
 Anita Landis:Anita Landess: ratio:88.0
 Anita Narramore:Anita Naramore: ratio:96.55172413793103
 Anita Shaperd:Anita Shepherd: ratio:88.88888888888889
@@ -194,6 +196,7 @@ Ann Steel:Anne Steel: ratio:94.73684210526316
 Ann Steele:Anne Steel: ratio:90.0
 Ann Strange:Anne Strange: ratio:95.65217391304348
 Ann Wheeler:Anne Wheeler: ratio:95.65217391304348
+Anna Bullock:Ann Bullock: ratio:95.65217391304348
 Anna Dohman:Anna Doughman: ratio:91.66666666666666
 Anna Eashman:Anna Eastman: ratio:91.66666666666666
 Anna Godlewska:Anna Goldlewska: ratio:96.55172413793103
@@ -208,13 +211,11 @@ Anna Stadward:Anna Standward: ratio:96.2962962962963
 Anna Tighe:Ana Tighe: ratio:94.73684210526316
 Anna Williams:Ann Williams: ratio:96.0
 Anna Wooten:Anna Wootten: ratio:95.65217391304348
-Annabel Parkinson:Annabell Parkinson: ratio:97.14285714285714
+AnnaLiza Cull:Annaliza Cull: ratio:92.3076923076923
 Annaleigh Smith:AnnaLeigh Smith: ratio:93.33333333333333
-Annalise Veliz:Annalise P. Veliz: ratio:90.32258064516128
-Annaliza Cull:AnnaLiza Cull: ratio:92.3076923076923
-Annaliza Cull:Annaliza J. Cull: ratio:89.65517241379311
 Annamarie Bethune:AnnaMarie Bethune: ratio:94.11764705882352
 Anne Brantley:Ann Brantley: ratio:96.0
+Anne Bullock:Ann Bullock: ratio:95.65217391304348
 Anne Coxon:Anne Cox: ratio:88.88888888888889
 Anne Drexler:Ann Drexler: ratio:95.65217391304348
 Anne Eringan:Anne Eringa: ratio:95.65217391304348
@@ -230,6 +231,7 @@ Anne Kauslauskas:Anne Kazlauskas: ratio:90.32258064516128
 Anne Kaxlauskas:Anne Kazlauskas: ratio:93.33333333333333
 Anne Mashchak:Ann Mashchak: ratio:96.0
 Anne McLeod:Ann McLeod: ratio:95.23809523809523
+Anne McLucas:Ann McLucas: ratio:95.65217391304348
 Anne Miczulski:Ann Miczulski: ratio:96.2962962962963
 Anne Moss:Ann Moss: ratio:94.11764705882352
 Anne Patton:Anna Patton: ratio:90.9090909090909
@@ -239,9 +241,9 @@ Anne Sleeva:Ann Sleeva: ratio:95.23809523809523
 Anne Steele:Anne Steel: ratio:95.23809523809523
 Annie Grieshop’s:Annie Grieshop: ratio:93.33333333333333
 Annie Kinzer:Annie Kinzier: ratio:96.0
-Annie Price:Annie L. Price: ratio:88.0
 Annie Williams:Ann Williams: ratio:92.3076923076923
 Annie Wootten:Anna Wootten: ratio:88.0
+Annie-Lou Chester:Annie-Lou Chesrer: ratio:94.11764705882352
 Annita Parmelee:Annita Parmalee: ratio:93.33333333333333
 Annslee Stough:Anslie Stough: ratio:88.88888888888889
 Annslie Stough:Anslie Stough: ratio:96.2962962962963
@@ -293,7 +295,9 @@ Audrey Karabins:Audrey Karabinus: ratio:96.7741935483871
 Audrey Village:Audra Village: ratio:88.88888888888889
 Audrie Fannin:Audra Fannin: ratio:88.0
 Audry Karabinus:Audrey Karabinus: ratio:96.7741935483871
-AuraLee Furgason:Aura L. Furgason: ratio:87.5
+Aura Fergason:Aura Furgason: ratio:92.3076923076923
+Aura Furguson:Aura Furgason: ratio:92.3076923076923
+AuraLee Furgason:Aura Furgason: ratio:89.65517241379311
 Aurelia Miller:Amelia Miller: ratio:88.88888888888889
 Avalea Maxwell:Avalee Maxwell: ratio:92.85714285714286
 Avery Book:Avery Brook: ratio:95.23809523809523
@@ -301,11 +305,12 @@ Avery Brooks:Avery Brook: ratio:95.65217391304348
 Avie Blackwood:Ava Blackwood: ratio:88.88888888888889
 Azalee Adams:Azilee Adams: ratio:91.66666666666666
 B. White:B.F. White: ratio:88.88888888888889
-B.E. Matthews:B. E. Matthews: ratio:96.2962962962963
-B.J. Green:B. J. Green: ratio:95.23809523809523
-B.J. Harris:B. J. Harris: ratio:95.65217391304348
+B.E. Matthews:B. Matthews: ratio:91.66666666666666
+B.J. Green:B. Green: ratio:88.88888888888889
+B.J. Harris:B. Harris: ratio:90.0
 B.J. Schnorenberg:BJ Schnorenberg: ratio:93.75
-B.M. Smith:B. M. Smith: ratio:95.23809523809523
+B.M. Smith:B. Smith: ratio:88.88888888888889
+Barb Gingerich:Barbara Gingerich: ratio:90.32258064516128
 Barb Hohenstein:Barbara Hohenstein: ratio:90.9090909090909
 Barb Swetman:Barbara Swetman: ratio:88.88888888888889
 Barb Vanderjagt:Barb VanderJagt: ratio:93.33333333333333
@@ -334,7 +339,7 @@ Barry Parson:Barry Parsons: ratio:96.0
 Bascum Mattox:Bascom Mattox: ratio:92.3076923076923
 Basia Molędys:Basia Moledys: ratio:92.3076923076923
 Bea Carnathan:Bea Carnathon: ratio:92.3076923076923
-Bea Hamilton:Ben  Hamilton: ratio:88.0
+Bea Hamilton:Ben Hamilton: ratio:91.66666666666666
 Beacher Yancey:Beltcher Yancey: ratio:89.65517241379311
 Beatrice Phillips:Bernice Phillips: ratio:90.9090909090909
 Beautful Land:Beautiful Land: ratio:96.2962962962963
@@ -350,6 +355,7 @@ Becky Griggs:Becky Briggs: ratio:91.66666666666666
 Becky Schildman:Becky Schillman: ratio:93.33333333333333
 Beecher Yancey:Beecher Yancy: ratio:96.2962962962963
 Belinda Stansberry:Belinda Stansbery: ratio:97.14285714285714
+Ben  Hamilton:Ben Hamilton: ratio:96.0
 Ben Barrontine:Ben Barrentine: ratio:92.85714285714286
 Ben Cocchario:Ben Cocchiaro: ratio:92.3076923076923
 Ben Coccharo:Ben Cocchiaro: ratio:96.0
@@ -358,16 +364,13 @@ Ben Copenhauer:Ben Copenhaver: ratio:92.85714285714286
 Ben Finke:Ben Fink: ratio:94.11764705882352
 Ben Fitzgerald:Bess Fitzgerald: ratio:89.65517241379311
 Ben Green:Benny Green: ratio:90.0
-Ben Hamilton:Ben  Hamilton: ratio:96.0
 Ben Keebler:Ben Keeble: ratio:95.23809523809523
 Ben Zuckor:Ben Zucker: ratio:90.0
 Benard Denney:Bernard Denney: ratio:96.2962962962963
 Benjamin Bedroke:Benjamin Bedroske: ratio:96.96969696969697
 Benny Hornish:Benny Harnish: ratio:92.3076923076923
-Bentley Rose:Bentley C. Rose: ratio:88.88888888888889
 Bera Bradford:Ben Bradford: ratio:88.0
 Berkeley Moore:Berkley Moore: ratio:96.2962962962963
-Berkshire Day:Berkshire F. Day: ratio:89.65517241379311
 Bernadine Sommer:Bernardine Sommer: ratio:96.96969696969697
 Bernadine Sommers:Bernardine Sommer: ratio:94.11764705882352
 Bernardine Somers:Bernardine Sommer: ratio:94.11764705882352
@@ -388,6 +391,7 @@ Beth Garfinkle:Beth Garfinkel: ratio:92.85714285714286
 Beth Heuner:Beth Huener: ratio:90.9090909090909
 Beth Hill:Beth Hall: ratio:88.88888888888889
 Beth Hueber:Beth Huener: ratio:90.9090909090909
+Beth Kerkoff:Beth Kerkhoff: ratio:96.0
 Beth O’dell:Beth Odell: ratio:95.23809523809523
 BethAnn Clay:BethAnne Clay: ratio:96.0
 Bethanne Clay:BethAnne Clay: ratio:92.3076923076923
@@ -398,16 +402,15 @@ Betsy Shaver:Betty Shaver: ratio:91.66666666666666
 Betty Anderson:BettyLise Anderson: ratio:87.5
 Betty Bacchus:Betty Baccus: ratio:96.0
 Betty Backus:Betty Baccus: ratio:91.66666666666666
-Betty Busby:Betty A. Busby: ratio:88.0
 Betty Clabourn:Betty Claborn: ratio:96.2962962962963
 Betty Clayborn:Betty Claborn: ratio:96.2962962962963
 Betty Hermann:Betty Herman: ratio:96.0
-Betty Johnson:Betty S. Johnson: ratio:89.65517241379311
 Betty Shafer:Betty Shaver: ratio:91.66666666666666
 Betty Shaffer:Betty Shaver: ratio:88.0
 Betty Shavers:Betty Shaver: ratio:96.0
 Betty Shivers:Betty Shaver: ratio:88.0
 Beulah Reese:Buelah Reese: ratio:91.66666666666666
+Beulah York:Beaulah York: ratio:95.65217391304348
 Bev Yeager:Bev Yaeger: ratio:90.0
 Beverley Coates:Beverly Coates: ratio:96.55172413793103
 Beverley Enright:Beverly Enright: ratio:96.7741935483871
@@ -425,7 +428,7 @@ Bill Fazekas:Bill Fuzekas: ratio:91.66666666666666
 Bill Gesenschlag:Bill Giesenschlag: ratio:96.96969696969697
 Bill Greene:Bill Green: ratio:95.23809523809523
 Bill Hamlin:Bill Hamblin: ratio:95.65217391304348
-Bill Harris:Bill Farris: ratio:90.9090909090909
+Bill Harris:Billy Harris: ratio:95.65217391304348
 Bill Holk:Bill Holt: ratio:88.88888888888889
 Bill Hollingsworth:Billy Hollingsworth: ratio:97.2972972972973
 Bill Huot:Bill Holt: ratio:88.88888888888889
@@ -440,9 +443,11 @@ Bill Steward:Bill Stewart: ratio:91.66666666666666
 Bill Thomson:Billy Thompson: ratio:92.3076923076923
 Bill Walter:Bill Walters: ratio:95.65217391304348
 Bill Williams:Billy Williams: ratio:96.2962962962963
+Billie Harris:Billy Harris: ratio:88.0
 Billie Williams:Billy Williams: ratio:89.65517241379311
 Billy Dyer:Bill Dyer: ratio:94.73684210526316
 Billy Green:Bill Green: ratio:95.23809523809523
+Billy Hornsby:Billie Hornsby: ratio:88.88888888888889
 Blade Morris:Blake Morris: ratio:91.66666666666666
 Blaire Waters:Blair Waters: ratio:96.0
 Blaire Wouters:Blair Woulters: ratio:92.85714285714286
@@ -484,12 +489,14 @@ Brady Delong:Brady DeLong: ratio:91.66666666666666
 Brain Sears:Brian Sears: ratio:90.9090909090909
 Brandon Borchmen:Brandon Borchman: ratio:93.75
 Brandon Cogle:Brandon Cagle: ratio:92.3076923076923
+Brandon Martin:Brad Martin: ratio:88.0
 Brandon Thomspon:Brandon Thompson: ratio:93.75
 Breanna Wells:Brianna Wells: ratio:92.3076923076923
 Brenda Carrol:Brenda Carroll: ratio:96.2962962962963
 Brenda DeBoard:Brent DeBoard: ratio:88.88888888888889
 Brenda Mathews:Brenda Matthews: ratio:96.55172413793103
 Brenda Pena:Branda Pena: ratio:90.9090909090909
+Brenda Pena:Brenda Peña: ratio:90.9090909090909
 Brenda Pena:Brenda Pina: ratio:90.9090909090909
 Brenda Robins:Brenda Robbins: ratio:96.2962962962963
 Brenda Stansbery:Belinda Stansbery: ratio:90.9090909090909
@@ -512,13 +519,12 @@ Brianna Hirsch:Briana Hirsch: ratio:96.2962962962963
 Brianna Meek:Briana Meek: ratio:95.65217391304348
 Brice Roberts:Bruce Roberts: ratio:92.3076923076923
 Bridge Jamison:Bridget Jamison: ratio:96.55172413793103
-Bridge Kennedy:Bridge H. Kennedy: ratio:90.32258064516128
+Bridge Kennedy:Bridgett Kennedy: ratio:93.33333333333333
 Bridget Gullberg:Bridget Gallberg: ratio:93.75
 Bridget Hill:Bridgett Hill: ratio:96.0
-Bridget Kennedy:Bridgett H. Kennedy: ratio:88.23529411764706
+Bridget Kennedy:Bridgett Kennedy: ratio:96.7741935483871
 Bridget McVernon:Bridget McVennon: ratio:93.75
-Bridgett Kennedy:Bridgett H. Kennedy: ratio:91.42857142857143
-Bridgett Morgan:Bridget Morgan: ratio:96.55172413793103
+Bridgett McVennon:Bridget McVennon: ratio:96.96969696969697
 Brie Wildau:Bree Wildau: ratio:90.9090909090909
 Brigita Sebald:Brigita Sebold: ratio:92.85714285714286
 Britannah Foston:Britannah Foster: ratio:87.5
@@ -558,8 +564,8 @@ Buell Cob:Buell Cobb: ratio:94.73684210526316
 Bulah Reese:Buelah Reese: ratio:95.65217391304348
 Burt Collins:Bert Collins: ratio:91.66666666666666
 Byrne Culpepper:Byrn Culpepper: ratio:96.55172413793103
-C.V. Estes:C. V. Estes: ratio:95.23809523809523
-C.W. Garner:C. W. Garner: ratio:95.65217391304348
+C.V. Estes:C. Estes: ratio:88.88888888888889
+C.W. Garner:C. Garner: ratio:90.0
 Cacilia Mann:Cäcilia Mann: ratio:91.66666666666666
 Caelyn Treacy:Caelan Treacy: ratio:92.3076923076923
 Caitlin Caufield:Caitlin Caulfield: ratio:96.96969696969697
@@ -573,16 +579,16 @@ Calum Wood:Calum Woods: ratio:95.23809523809523
 Calvin Rodgers:Calvin Rogers: ratio:96.2962962962963
 Camel Wood:Carmel Wood: ratio:95.23809523809523
 Cameron Doerge:Carmen Doerge: ratio:88.88888888888889
-Camila Widholm:Camilla M. Widholm: ratio:87.5
-Camilla Widholm:Camilla M. Widholm: ratio:90.9090909090909
+Camila Widholm:Camilla Widholm: ratio:96.55172413793103
 Camillia Carlyon:Camilla Carlyon: ratio:96.7741935483871
 Cammia Hansen:Camilla Hansen: ratio:88.88888888888889
 Candace Bethune:Candice Bethune: ratio:93.33333333333333
 Candace Sisemore:Candice Sizemore: ratio:87.5
 Candace Sizemore:Candice Sizemore: ratio:93.75
-Cari Grindon:Carrie Grindon: ratio:92.3076923076923
+Caran Bramlettte:Caran Bramlette: ratio:96.7741935483871
+Cari Grindon:Carri Grindon: ratio:96.0
 Carie Allen:Carrie Allen: ratio:95.65217391304348
-Carie Wilkerson:Carrie A. Wilkerson: ratio:88.23529411764706
+Carie Wilkerson:Carrie Wilkerson: ratio:96.7741935483871
 Carl Crawford:Carol Crawford: ratio:96.2962962962963
 Carl Godsey:Carolyn Godsey: ratio:88.0
 Carlene Wallace:Charlene Wallace: ratio:96.7741935483871
@@ -591,9 +597,10 @@ Carly Gross:Carly Goss: ratio:95.23809523809523
 Carmen Brothers:Carmon Brothers: ratio:93.33333333333333
 Carmen Gordant:Carmen Gordon: ratio:88.88888888888889
 Carmon Brother:Carmon Brothers: ratio:96.55172413793103
-Caro Reuch:Caro Reusch: ratio:95.23809523809523
+Caro Stamm-Reuch:Caro Stamm-Reusch: ratio:96.96969696969697
 Carol Briggs:Carole Briggs: ratio:96.0
 Carol Crompton:Carol Crumpton: ratio:92.85714285714286
+Carol Crompton:Carole Cromton: ratio:92.85714285714286
 Carol Davis:Carla Davis: ratio:90.9090909090909
 Carol Dempsey:Carole Dempsey: ratio:96.2962962962963
 Carol Ensecki:Carol Enseki: ratio:96.0
@@ -604,10 +611,8 @@ Carol Juang:Carol Huang: ratio:90.9090909090909
 Carol Lunsford:Carrol Lunsford: ratio:96.55172413793103
 Carol Mears:Carol Myers: ratio:90.9090909090909
 Carol Meyer:Carol Myers: ratio:90.9090909090909
-Carol Moseley:Carol M. Moseley: ratio:89.65517241379311
-Carol Mosley:Carol M. Mosley: ratio:88.88888888888889
-Carol Mosley:Carol Mosely: ratio:91.66666666666666
-Carol Munro:Carol A. Munro: ratio:88.0
+Carol Moseley:Carol Mosley: ratio:96.0
+Carol Mosely:Carol Mosley: ratio:91.66666666666666
 Carol Richards:Carol Richard: ratio:96.2962962962963
 Carol Sellek:Carol Selleck: ratio:96.0
 Carol Smith:Carla Smith: ratio:90.9090909090909
@@ -625,8 +630,7 @@ Caroline Bullock:Carolyn Bullock: ratio:90.32258064516128
 Caroline Deacy:Carolyn Deacy: ratio:88.88888888888889
 Caroline Helmiczi:Caroline Helmeczi: ratio:94.11764705882352
 Caroline Parsons:Carol Parsons: ratio:89.65517241379311
-Caroline Thompson:Caroline Thomas: ratio:87.5
-Caroline Thompson:Carolyn Thompson: ratio:90.9090909090909
+Caroline Thomas:Caroline Thompson: ratio:87.5
 Carolyn  Gilkey:Carolyn Gilkey: ratio:96.55172413793103
 Carolyn Byrd:Caroline Byrd: ratio:88.0
 Carolyn Deacey:Carolyn Deacy: ratio:96.2962962962963
@@ -635,27 +639,27 @@ Carolyn Helmeczi:Caroline Helmeczi: ratio:90.9090909090909
 Carolyn McCareath:Carolyn McCarreth: ratio:94.11764705882352
 Carolyn McCareeth:Carolyn McCarreth: ratio:94.11764705882352
 Carolyn Pipkins:Carolyn Pipkin: ratio:96.55172413793103
+Carolyn Thompson:Caroline Thompson: ratio:90.9090909090909
 Carolyn Triplette:Caroline Triplette: ratio:91.42857142857143
-Carri Grindon:Carri P. Grindon: ratio:89.65517241379311
-Carri Grindon:Carrie Grindon: ratio:96.2962962962963
-Carrie Grindoon:Carrie Grindon: ratio:96.55172413793103
-Carrie Tolar:Carrie A. Tolar: ratio:88.88888888888889
+Caron Munro:Carol Munro: ratio:90.9090909090909
+Carrie Duzer:Corrie Duzer: ratio:91.66666666666666
+Carrie Grindon:Carri Grindon: ratio:96.2962962962963
+Carrie Grindoon:Carri Grindon: ratio:92.85714285714286
 Carroll Hanson:Carol Hanson: ratio:92.3076923076923
 Carroll Lunsford:Carrol Lunsford: ratio:96.7741935483871
 Carrone Bryant:Corrone Bryant: ratio:92.85714285714286
 Carter Cleary:Carter Clary: ratio:96.0
-Cary Grindon:Carol Grindon: ratio:88.0
+Cary Grindon:Carri Grindon: ratio:88.0
 Case O’dell:Case Odell: ratio:95.23809523809523
 Casey Atkins:Casey Akins: ratio:95.65217391304348
 Casie Cockrell:Casey Cockrell: ratio:92.85714285714286
-Cassie Allen:Cassie F. Allen: ratio:88.88888888888889
 Cassie Franlin:Cassie Franklin: ratio:96.55172413793103
 Cat Tucker:Cathy Tucker: ratio:90.9090909090909
 Catherine Bonk:Catherine Brown: ratio:89.65517241379311
 Catherine Walker:Catherine Baker: ratio:90.32258064516128
-Cathryn Bearov:Cathryn B. Bearov: ratio:90.32258064516128
 Cathy Lowe:Cathy Love: ratio:90.0
 Cathy Willis:Cathy Williams: ratio:92.3076923076923
+Catie VanDuzer:Catie Duzer: ratio:88.0
 Cece Callison:Cleve Callison: ratio:88.88888888888889
 Cecelia Kramer:Cecilia Kramer: ratio:92.85714285714286
 Cecelia Sanders:Celia Sanders: ratio:92.85714285714286
@@ -665,7 +669,7 @@ Cecile Kramer:Cecilia Kramer: ratio:88.88888888888889
 Cecilia Aslan:Cecilia Arslan: ratio:96.2962962962963
 Cecilia Cramer:Cecilia Kramer: ratio:92.85714285714286
 Cecilia Mann:Cäcilia Mann: ratio:91.66666666666666
-Cecilia Sanders:Cecil Sanders: ratio:92.85714285714286
+Cecilia Sanders:Celia Sanders: ratio:92.85714285714286
 Cefard Wood:Ceford Wood: ratio:90.9090909090909
 Ceford Woods:Ceford Wood: ratio:95.65217391304348
 Celia Devein:Celia Devine: ratio:91.66666666666666
@@ -681,11 +685,9 @@ Charles Carlston:Charles Coulston: ratio:87.5
 Charles Coine:Charles Cofone: ratio:88.88888888888889
 Charles Coulson:Charles Coulston: ratio:96.7741935483871
 Charles Derleth:Charles Derluth: ratio:93.33333333333333
-Charles Derleth:Charley Derleth: ratio:93.33333333333333
 Charles Grogan:Charles Grant: ratio:88.88888888888889
 Charles Hughes:Carl Hughes: ratio:88.0
 Charles Hunter:Charlie Hunter: ratio:92.85714285714286
-Charles Krugger:Charles E. Krugger: ratio:90.9090909090909
 Charles McCravey:Charles McCraney: ratio:93.75
 Charles McCravy:Charles McCraney: ratio:90.32258064516128
 Charles McGuire:Charlie McGuire: ratio:93.33333333333333
@@ -712,7 +714,6 @@ Charlie Williams:Carrie Williams: ratio:90.32258064516128
 Charlotte Ehrmann:Charlotte Ehrman: ratio:96.96969696969697
 Charlotte Ehrmen:Charlotte Ehrman: ratio:93.75
 Charlotte Erhman:Charlotte Ehrman: ratio:93.75
-Charlotte Gober:Charlotte K. Gober: ratio:90.9090909090909
 Charlotte Head:Charlotte Heard: ratio:96.55172413793103
 Charlotte Kiker:Charolette Kiker: ratio:90.32258064516128
 Charlotte McCann:Charlotte McCarn: ratio:93.75
@@ -721,7 +722,6 @@ Chase O’Dell:Case O’Dell: ratio:95.65217391304348
 Chasity Kauffman:Charity Kauffman: ratio:93.75
 Chaynne Ivey:Cheyenne Ivey: ratio:88.0
 Chelse Miller:Chelsea Miller: ratio:96.2962962962963
-Chelsea Sargent:Chelsea R. Sargent: ratio:90.9090909090909
 Chelsey Miller:Chelsea Miller: ratio:92.85714285714286
 Chelsey Wootten:Chelsea Wootten: ratio:93.33333333333333
 Chelsie Miller:Chelsea Miller: ratio:92.85714285714286
@@ -755,11 +755,10 @@ Chris Kinard:Chris Kinnard: ratio:96.0
 Chris Kotter:Chris Cotter: ratio:91.66666666666666
 Chris Lowry:Chris Lowery: ratio:95.65217391304348
 Chris Nicolson:Chris Nicholson: ratio:96.55172413793103
-Chris Nolen:Chris Noren: ratio:90.9090909090909
+Chris Nolen:Chris Nolan: ratio:90.9090909090909
 Chris Paris:Chris Parris: ratio:95.65217391304348
 Chris Rise:Chris Rice: ratio:90.0
-Chris Roberson:Chris J. Robertson: ratio:87.5
-Chris Robertson:Chris J. Robertson: ratio:90.9090909090909
+Chris Roberson:Chris Robertson: ratio:96.55172413793103
 Chris Taylor:Cheri Taylor: ratio:91.66666666666666
 Chris Tweedie:Chris Tweedy: ratio:88.0
 Chris Wean:Chris Bean: ratio:90.0
@@ -778,6 +777,7 @@ Christi Holcombe:Christy Holcombe: ratio:93.75
 Christi Smith:Christie Smith: ratio:96.2962962962963
 Christian Frey:Christin Frey: ratio:96.2962962962963
 Christie Blevins:Chris Blevins: ratio:89.65517241379311
+Christie Finley:Christy Finley: ratio:89.65517241379311
 Christie Harju:Christi Harju: ratio:96.2962962962963
 Christie Holcomb:Chrissie Holcombe: ratio:90.9090909090909
 Christie Holcombe:Chrissie Holcombe: ratio:94.11764705882352
@@ -785,7 +785,7 @@ Christie Holcombe:Christy Holcombe: ratio:90.9090909090909
 Christin McMurray:Cristin McMurray: ratio:96.96969696969697
 Christina Andrews:Christine Andrews: ratio:94.11764705882352
 Christina Holcombe:Christy Holcombe: ratio:88.23529411764706
-Christina Marie:Christina Martone: ratio:87.5
+Christina Marie:Christina Martich: ratio:87.5
 Christina Schumann:Christina Schümann: ratio:94.44444444444444
 Christina Smith:Christie Smith: ratio:89.65517241379311
 Christina Wootten:Christie Wootten: ratio:90.9090909090909
@@ -803,7 +803,6 @@ Christopher Weslowski:Christopher Wesolowski: ratio:97.67441860465115
 Christopher Wolfe:Christopher Wolf: ratio:96.96969696969697
 Christy Allen:Christie Allen: ratio:88.88888888888889
 Christy Blevins:Chris Blevins: ratio:92.85714285714286
-Christy Finley:Christy T. Finley: ratio:90.32258064516128
 Christy Gilbreath:Christeen Gilbreath: ratio:88.88888888888889
 Christy Holcomb:Christy Holcombe: ratio:96.7741935483871
 Christy Wootten:Christie Wootten: ratio:90.32258064516128
@@ -821,18 +820,19 @@ Cindy Knisse:Cindy Kissee: ratio:91.66666666666666
 Cindy Overmeyer:Cindy Overmyer: ratio:96.55172413793103
 Cindy Tanner:Cindy Danner: ratio:91.66666666666666
 CindyFranklin:Cindy Franklin: ratio:96.2962962962963
-Clair Cantwell:Claire Cantrell: ratio:89.65517241379311
 Clair Hogan:Claire Hogan: ratio:95.65217391304348
+Clair Moore-Cantwell:Claire Moore-Cantrell: ratio:92.6829268292683
 Clair Outten:Claire Outten: ratio:96.0
 Clair Sayles:Clare Sayles: ratio:91.66666666666666
 Clair Simon:Clare Simon: ratio:90.9090909090909
-Claire Cantwell:Claire Cantrell: ratio:93.33333333333333
 Claire Cardy:Clare Cardy: ratio:95.65217391304348
 Claire Chapin:Clare Chapin: ratio:96.0
 Claire Davidson:Claire Davis: ratio:88.88888888888889
 Claire Grogan:Claire Hogan: ratio:88.0
 Claire Maher:Clare Maher: ratio:95.65217391304348
 Claire Mee:Clare Mee: ratio:94.73684210526316
+Claire Moore-Cantwell:Claire Moore-Cantrell: ratio:95.23809523809523
+Claire O’Flynn:Clare Flynn: ratio:88.0
 Claire Simon:Clare Simon: ratio:95.65217391304348
 Clare Chapman:Clare Chapin: ratio:88.0
 Clare Hogan:Claire Hogan: ratio:95.65217391304348
@@ -876,10 +876,12 @@ Collin Parks:Colin Parks: ratio:95.65217391304348
 Colman Johnson:Coleman Johnson: ratio:96.55172413793103
 Colson DeLong:Colton DeLong: ratio:92.3076923076923
 Conner Campbell:Connor Campbell: ratio:93.33333333333333
+Connie Bakdini:Connie Baldini: ratio:92.85714285714286
 Connie Kardock:Connie Karduck: ratio:92.85714285714286
 Connie Karkuck:Connie Karduck: ratio:92.85714285714286
 Connie Robinson:Connie Robbins: ratio:89.65517241379311
 Conor O’Hanlon:Connor O’Hanlon: ratio:96.55172413793103
+Constance Marias:Constance Marais: ratio:93.75
 Cora Tareh:Cora Wareh: ratio:90.0
 Corah Wareh:Cora Wareh: ratio:95.23809523809523
 Corbin Rogers:Corbin Rodgers: ratio:96.2962962962963
@@ -888,6 +890,7 @@ Coressa Sweatt:Corissa Sweat: ratio:88.88888888888889
 Corey Griffin:Coty Griffin: ratio:88.0
 Corey Noel:Cory Noel: ratio:94.73684210526316
 Corey Walter:Corey Walters: ratio:96.0
+Corie Duzer:Corrie Duzer: ratio:95.65217391304348
 Corina Frische:Corinna Frische: ratio:96.55172413793103
 Corine Ducey:Corinne Ducey: ratio:96.0
 Corinne Serfas:Corinne Serfass: ratio:96.55172413793103
@@ -895,8 +898,8 @@ Corissa Sweatt:Cora Sweatt: ratio:88.0
 Corissa Sweatt:Corissa Sweat: ratio:96.2962962962963
 Corlan Johnson:Coleman Johnson: ratio:89.65517241379311
 Corlyn Johnson:Carolyn Johnson: ratio:89.65517241379311
-Cornelia Doel:Cornelia V. Doel: ratio:89.65517241379311
 Coronne Bryant:Corrone Bryant: ratio:92.85714285714286
+Corrie VanDuzer:Corrie Duzer: ratio:88.88888888888889
 Corrina Frische:Corinna Frische: ratio:93.33333333333333
 Corrine Bryant:Corrone Bryant: ratio:92.85714285714286
 Corrine Ducey:Corinne Ducey: ratio:92.3076923076923
@@ -904,6 +907,7 @@ Corrine Laminack:Corine Laminack: ratio:96.7741935483871
 Corrine Serfass:Corinne Serfass: ratio:93.33333333333333
 Corrine Wells:Corinne Wells: ratio:92.3076923076923
 Corrine White:Corene White: ratio:88.0
+Cory Duzer:Corey Duzer: ratio:95.23809523809523
 Cory Noël:Cory Noel: ratio:88.88888888888889
 Cory Sees:Corey Sees: ratio:94.73684210526316
 Cory Walters:Corey Walters: ratio:96.0
@@ -925,10 +929,10 @@ Crista Baker:Christa Baker: ratio:96.0
 Crystal Grober:Christal Grober: ratio:89.65517241379311
 Cuba Rey:Cuba Ray: ratio:87.5
 Cynthia Furman:Cynthia Fuhrman: ratio:96.55172413793103
-D.J. Hatfield:D. J. Hatfield: ratio:96.2962962962963
-DJ Hatfield:D. J. Hatfield: ratio:88.0
+D.J. Hatfield:D. Hatfield: ratio:91.66666666666666
+DJ Hatfield:D. Hatfield: ratio:90.9090909090909
 Daffyd Charles:Dafydd Charles: ratio:92.85714285714286
-Daire O’Sullivan:Daire O. Sullivan: ratio:90.9090909090909
+Daire O’Sullivan:Daire Sullivan: ratio:93.33333333333333
 Dale Green:Dave Green: ratio:90.0
 Dale Kennedy:Dale Kennidy: ratio:91.66666666666666
 Damian Wooten:Damien Wootten: ratio:88.88888888888889
@@ -945,7 +949,6 @@ Dan Dohman:Dan Doughman: ratio:90.9090909090909
 Dan Haven:Dan Havens: ratio:94.73684210526316
 Dan Hayes:Dan Haynes: ratio:94.73684210526316
 Dan Hertzler:Dan Hartzler: ratio:91.66666666666666
-Dan Hertzler:Dan Herztler: ratio:91.66666666666666
 Dan Hertzler:Daniel Hertzler: ratio:88.88888888888889
 Dan Housepian:Dan Hovsepian: ratio:92.3076923076923
 Dan Johnson:Diana Johnson: ratio:91.66666666666666
@@ -961,7 +964,6 @@ Dan Vosnick:Dan Voznick: ratio:90.9090909090909
 Dana Borelli:Dana Borrelli: ratio:96.0
 Dana Desmond:Dara Desmond: ratio:91.66666666666666
 Dana Jackson:DeVan Jackson: ratio:88.0
-Dana Murray:Dana B. Murray: ratio:88.0
 Dana Pauly:Dana Pauley: ratio:95.23809523809523
 Dana Thoma:Dan Thoma: ratio:94.73684210526316
 Dane Richardson:Dave Richardson: ratio:93.33333333333333
@@ -977,8 +979,8 @@ Daniel Hook:Daniel Hood: ratio:90.9090909090909
 Daniel Miller:Daniel Miles: ratio:88.0
 Daniel Wipperman:Daniel Wippermann: ratio:96.96969696969697
 Daniel Wooten:Daniel Wootten: ratio:96.2962962962963
-Daniela Muhr:Daniela C. Muhr: ratio:88.88888888888889
 Danika Thornton:Danica Thornton: ratio:93.33333333333333
+Danny Cooley:Donny Cooley: ratio:91.66666666666666
 Danny Hallum:Danny Haullum: ratio:96.0
 Daphene Ray:Daphine Ray: ratio:90.9090909090909
 Daphne Anderson:Diane Anderson: ratio:89.65517241379311
@@ -990,10 +992,9 @@ Darolene Moak:Darlene Moak: ratio:96.0
 Darrel Swarens:Darryl Swarens: ratio:92.85714285714286
 Darrell Criss:Darryl Criss: ratio:88.0
 Darrell Swarens:Darryl Swarens: ratio:89.65517241379311
+Darryl Chesney:Daryl Chesney: ratio:96.2962962962963
 Darryl Holley:Darrell Holley: ratio:88.88888888888889
 Darryl Mayberry:Daryl Mayberry: ratio:96.55172413793103
-Daryl Chesney:Darryl Chesney: ratio:96.2962962962963
-Daryl Chesney:Daryl M. Chesney: ratio:89.65517241379311
 Dave Anderson:Diane Anderson: ratio:88.88888888888889
 Dave Bradford:Dave Barford: ratio:88.0
 Dave Brodeur:David Brodeur: ratio:88.0
@@ -1033,7 +1034,6 @@ David Libbey:David Libby: ratio:95.65217391304348
 David Lunsford:Davis Lunsford: ratio:92.85714285714286
 David MacPherson:David McPherson: ratio:96.7741935483871
 David McGenty:David McGinty: ratio:92.3076923076923
-David Music:David W. Music: ratio:88.0
 David Olsen:David Olson: ratio:90.9090909090909
 David Ressler:Dave Ressler: ratio:88.0
 David Richardson:Dave Richardson: ratio:90.32258064516128
@@ -1044,7 +1044,6 @@ David Rosenberger:David Rosenburg: ratio:87.5
 David Rusk:David Rust: ratio:90.0
 David Sailors:David Saylors: ratio:92.3076923076923
 David Schulman:David Shulman: ratio:96.2962962962963
-David Smith:David I. Smith: ratio:88.0
 David Snead:David Smead: ratio:90.9090909090909
 David Stelch:David Stech: ratio:95.65217391304348
 David Stockwell:Dave Stockwell: ratio:89.65517241379311
@@ -1059,7 +1058,7 @@ Davida Johns:David Johnson: ratio:88.0
 Davis Ivey:David Ivey: ratio:90.0
 Davis Rust:David Rust: ratio:90.0
 Davis Schmitt:David Schmitt: ratio:92.3076923076923
-De Heeter:DeDe Heeter: ratio:90.0
+DeDe Heeter:De-De Heeter: ratio:95.65217391304348
 DeVann Jackson:DeVan Jackson: ratio:96.2962962962963
 Dean Daniels:Dean Daniel: ratio:95.65217391304348
 Dean Jeno:Dean Jens: ratio:88.88888888888889
@@ -1089,7 +1088,6 @@ Debra Brogden:Deborah Brogden: ratio:92.85714285714286
 Debra Gross:Deborah Gross: ratio:91.66666666666666
 Debra Grosse:Deborah Gross: ratio:88.0
 Debra Hall:Deb Hall: ratio:88.88888888888889
-Debra Jiles:Debra L. Jiles: ratio:88.0
 Debra Johnson:Deborah Johnson: ratio:92.85714285714286
 Debra Kane:Deborah Kane: ratio:90.9090909090909
 Debra Morton:Deborah Morton: ratio:92.3076923076923
@@ -1100,6 +1098,7 @@ Debra Taube:Deborah Taube: ratio:91.66666666666666
 Deck Levine:Dick Levine: ratio:90.9090909090909
 Declan Synnott:Declan Sinnott: ratio:92.85714285714286
 Declan Synott:Declan Sinnott: ratio:88.88888888888889
+Dee Heeter:De-De Heeter: ratio:90.9090909090909
 Deidra Montgomery:Deirdra Montgomery: ratio:97.14285714285714
 Deidre Brown:Deirdre Brown: ratio:96.0
 Deidre Browne:Deirdre Brown: ratio:92.3076923076923
@@ -1108,7 +1107,7 @@ Deirdre Browne:Deirdre Brown: ratio:96.2962962962963
 Deirdre Montgomery:Deirdra Montgomery: ratio:94.44444444444444
 Delaney Bowers:Delainey Bowers: ratio:96.55172413793103
 Delone Cobb:Delone Cobbs: ratio:95.65217391304348
-Delong-Roberts Roberts:DeLong-Roberts Roberts: ratio:95.45454545454545
+Delong-Roberts:DeLong-Roberts: ratio:92.85714285714286
 Delores Canada:Delores Canaday: ratio:96.55172413793103
 Delores Canady:Delores Canaday: ratio:96.55172413793103
 Delores Canerday:Delores Canaday: ratio:90.32258064516128
@@ -1194,18 +1193,16 @@ Donn Howard:Don Howard: ratio:95.23809523809523
 Donna Abraham:Donna Abrahams: ratio:96.2962962962963
 Donna Abrams:Donna Abrahams: ratio:92.3076923076923
 Donna Broumbach:Donna Brombach: ratio:96.55172413793103
-Donna Cooley:Donnie Cooley: ratio:88.0
-Donna Durden:Donna R. Durden: ratio:88.88888888888889
+Donna Cooley:Donny Cooley: ratio:91.66666666666666
+Donna Derden:Donna Durden: ratio:91.66666666666666
 Donna Johnson:Don Johnson: ratio:91.66666666666666
 Donna McCay:Donna McCray: ratio:95.65217391304348
 Donna Purdom:Donna Purdon: ratio:91.66666666666666
-Donna Sewell:Donna H. Sewell: ratio:88.88888888888889
 Donna Walter:Donna Walters: ratio:96.0
 Donna Wooten:Donna Wootten: ratio:96.0
 Donna Wotten:Donna Wootten: ratio:96.0
 Donne Duke:Donna Duke: ratio:90.0
 Donnie Simmett:Donnie Simmet: ratio:96.2962962962963
-Donny Cooley:Donnie Cooley: ratio:88.0
 Donny Simmet:Donnie Simmet: ratio:88.0
 Doran Henkin:Doron Henkin: ratio:91.66666666666666
 Dorcas Miller:Dora Miller: ratio:91.66666666666666
@@ -1255,8 +1252,10 @@ Dwight Engle:Dwight Ingle: ratio:91.66666666666666
 Dylan Brown:Dan Brown: ratio:90.0
 Dylan Fezzell:Dylan Feezell: ratio:92.3076923076923
 Dylan Frezell:Dylan Feezell: ratio:92.3076923076923
-E.E. Kilgo:E. E. Kilgo: ratio:95.23809523809523
-E.W. Bush:E. W. Bush: ratio:94.73684210526316
+E. Kilgoe:E. Kilgo: ratio:94.11764705882352
+E. Kilgore:E. Kilgo: ratio:88.88888888888889
+E.E. Kilgo:E. Kilgo: ratio:88.88888888888889
+E.W. Bush:E. Bush: ratio:87.5
 Eamon O’Neill:Eamonn O’Neill: ratio:96.2962962962963
 Eamonn Neill:Eamonn O’Neill: ratio:92.3076923076923
 Earl Ballingeer:Earl Ballinger: ratio:96.55172413793103
@@ -1266,6 +1265,7 @@ Earnest Phillips:Ernest Phillips: ratio:96.7741935483871
 Earnestine Parker:Ernestine Parker: ratio:96.96969696969697
 Easy Porter:Eady Porter: ratio:90.9090909090909
 Eckehart Neugebauer:Eckehard Neugebauer: ratio:94.73684210526316
+Ed Johson:Ed Johnson: ratio:94.73684210526316
 Ed Richardson:Edie Richardson: ratio:92.85714285714286
 Eda Pace:Edna Pace: ratio:94.11764705882352
 Edd Bass:Ed Bass: ratio:93.33333333333333
@@ -1276,6 +1276,7 @@ Edie White:Ed White: ratio:88.88888888888889
 Edit Tate:Edith Tate: ratio:94.73684210526316
 Edmund Goladay:Edmond Golladay: ratio:89.65517241379311
 Edmund Golladay:Edmond Golladay: ratio:93.33333333333333
+Edmund Golladay:Edmund Golloday: ratio:93.33333333333333
 Edouard Beaudry:Edward Beaudry: ratio:89.65517241379311
 Edward Howton:Edward Howten: ratio:92.3076923076923
 Edwin MacAdam:Edwin Macadam: ratio:92.3076923076923
@@ -1283,13 +1284,12 @@ Eileen Fergusono:Eileen Ferguson: ratio:96.7741935483871
 Eileen Roab:Eileen Raab: ratio:90.9090909090909
 Eimear Craddock:Eimear Cradock: ratio:96.55172413793103
 Eimear MacGuire:Eimear Maguire: ratio:89.65517241379311
-Eimear O’Donovan:Eimear O. Donovan: ratio:90.9090909090909
+Eimear O’Donovan:Eimear Donovan: ratio:93.33333333333333
 Elaine Denney:Elaine Denny: ratio:96.0
 Eldagene Robertson:Eldagene Roberson: ratio:97.14285714285714
 Eldagene Rogerson:Eldagene Roberson: ratio:94.11764705882352
 Eleanor Glewwe:Eleanor Glewe: ratio:96.2962962962963
 Eleanor Hasse:Eleanor Haase: ratio:92.3076923076923
-Eleanor McCauley:Eleanor McAuley: ratio:90.32258064516128
 Eleanor Solar:Eleanor Soler: ratio:92.3076923076923
 Elene Stoval:Elene Stovall: ratio:96.0
 Elene Stovell:Elene Stovall: ratio:92.3076923076923
@@ -1298,19 +1298,17 @@ Elie Snyder:Eli Snyder: ratio:95.23809523809523
 Elie Soler:Ellie Soler: ratio:95.23809523809523
 Elijah Petzold:Eli Petzold: ratio:88.0
 Elina Snyder:Eli Snyder: ratio:90.9090909090909
-Elinor Mullis:Elinor R. Mullis: ratio:89.65517241379311
 Elis Goldin:Ellis Goldin: ratio:95.65217391304348
 Elisa Fairless:Elise Fairless: ratio:92.85714285714286
-Elisabeth Allbritten:Elizabeth Allbritten: ratio:95.0
+Elisabeth Collier:Elizabeth Collier: ratio:94.11764705882352
 Elisabeth Fink:Elizabeth Fink: ratio:92.85714285714286
 Elisabeth Keeton:Elizabeth Keeton: ratio:93.75
 Elisabeth Pixley:Elizabeth Pixley: ratio:93.75
 Elisabeth Schallwig:Elizabeth Schallwig: ratio:94.73684210526316
 Elisabeth Schwallig:Elizabeth Schallwig: ratio:89.47368421052632
-Elise Bothing:Elise Bothling: ratio:96.2962962962963
 Elise DelMas:Elise delMas: ratio:91.66666666666666
 Elise Hollsinger:Elisa Hollsinger: ratio:93.75
-Elise Sparks:Elise E. Sparks: ratio:88.88888888888889
+Elise Meyer-Bothing:Elise Meyer-Bothling: ratio:97.43589743589743
 Elise delMar:Elise delMas: ratio:91.66666666666666
 Elisha Denborg:Elisha Denburg: ratio:92.85714285714286
 Elissa Krieg:Elissa Kreig: ratio:91.66666666666666
@@ -1318,6 +1316,7 @@ Elissa Lloyd:Elyssa Lloyd: ratio:91.66666666666666
 Elizabeth Benton:Elizabeth Keeton: ratio:87.5
 Elizabeth Betz:Elizabeth Betts: ratio:89.65517241379311
 Elizabeth Bidde:Elizabeth Biddie: ratio:96.7741935483871
+Elizabeth Bogal-Allbritten:Elisabeth Bogal-Allbritten: ratio:96.15384615384616
 Elizabeth Brown:Elizabeth Brownell: ratio:90.9090909090909
 Elizabeth Dobbs:Elizabeth Robbins: ratio:87.5
 Elizabeth Eaton:Elizabeth Patton: ratio:90.32258064516128
@@ -1331,6 +1330,7 @@ Elizabeth Murliesen:Elizabeth Muhleisen: ratio:89.47368421052632
 Elizabeth Picton:Elizabeth Patton: ratio:87.5
 Elizabeth Poss:Elisabeth Poss: ratio:92.85714285714286
 Elizabeth Rest:Elizabeth Roles: ratio:89.65517241379311
+Elizabeth Rogal:Elizabeth Rogan: ratio:93.33333333333333
 Elizabeth Rollins:Elizabeth Robbins: ratio:88.23529411764706
 Elizabeth Schulz:Elizabeth Schultz: ratio:96.96969696969697
 Elizabeth Warner:Elizabeth Carter: ratio:87.5
@@ -1367,11 +1367,10 @@ Elver Kilgore:Elver Kilgo: ratio:91.66666666666666
 Elvie Morris:Elvin Morris: ratio:91.66666666666666
 Elvin Buthrie:Elvin Guthrie: ratio:92.3076923076923
 Elyssa Loyd:Elyssa Lloyd: ratio:95.65217391304348
-Eléa Regembal:Elea Regembal: ratio:92.3076923076923
+Eléa Regembal:Eléa Régembal: ratio:92.3076923076923
 Em Eklund:Em Ekelund: ratio:94.73684210526316
 Emilee Ketterman:Emilee Ketteman: ratio:96.7741935483871
 Emily Adams:Emily Adam: ratio:95.23809523809523
-Emily Altman:Emily O. Altman: ratio:88.88888888888889
 Emily Holcomb:Emily Holcombe: ratio:96.2962962962963
 Emily Lemke:Emily Lemcke: ratio:95.65217391304348
 Emily Matteson:Emily Matterson: ratio:96.55172413793103
@@ -1405,6 +1404,8 @@ Eric Sailor:Eric Saylor: ratio:90.9090909090909
 Eric Sanberg:Eric Sandberg: ratio:96.0
 Eric Schwab:Erik Schwab: ratio:90.9090909090909
 Eric Tweed:Eric Tweedy: ratio:95.23809523809523
+Eric-Dardan Ymeraga:Eric-Darden Ymeraga: ratio:94.73684210526316
+Eric-Dardan Ymeraga:Erik-Derdan Ymeraga: ratio:89.47368421052632
 Erica Abrambski:Erica Abramski: ratio:96.55172413793103
 Erica Detemmerman:Erica DeTemmerman: ratio:94.11764705882352
 Erica Detemmermen:Erica DeTemmerman: ratio:88.23529411764706
@@ -1416,15 +1417,18 @@ Erick Mason:Erik Mason: ratio:95.23809523809523
 Ericka Mitchell:Erica Mitchell: ratio:96.55172413793103
 Ericka Wilson:Erika Wilson: ratio:96.0
 Erik Hildebrant:Eric Hiuldebrandt: ratio:87.5
-Erik Holt:Eric Holt: ratio:88.88888888888889
+Erik Holt:Erik Hold: ratio:88.88888888888889
 Erik Schutter:Eric Schutter: ratio:92.3076923076923
 Erik Wilson:Erika Wilson: ratio:95.65217391304348
-Erik Ymeraga:Erik D. Ymeraga: ratio:88.88888888888889
+Erik Ymerage:Erik Ymeraga: ratio:91.66666666666666
+Erik-Dardan Ymeraga:Erik-Derdan Ymeraga: ratio:94.73684210526316
+Erik-Darden Ymeraga:Eric-Darden Ymeraga: ratio:94.73684210526316
+Erik-Darden Ymeraga:Erik-Derdan Ymeraga: ratio:89.47368421052632
 Erika Detemmerman:Erica DeTemmerman: ratio:88.23529411764706
 Erika Martinez:Erica Martinez: ratio:92.85714285714286
 Erika Mitchell:Erica Mitchell: ratio:92.85714285714286
 Erika Smith:Erica Smith: ratio:90.9090909090909
-Erin Hall:Erin Hill: ratio:88.88888888888889
+Erin Johnson:Eric Johnson: ratio:91.66666666666666
 Erin Kelley:Erin Kelly: ratio:95.23809523809523
 Erin Kranz:Erin Krans: ratio:90.0
 Erlene Ellis:Earline Ellis: ratio:88.0
@@ -1434,12 +1438,12 @@ Ersell Jackson:Erselle Jackson: ratio:96.55172413793103
 Erskine Vandegrift:Erskine Vandergrift: ratio:97.2972972972973
 Erycl Vidrine:Ercyl Vidrine: ratio:92.3076923076923
 Estell Gilmore:Estelle Gilmore: ratio:96.55172413793103
-Ester Ellis:Esther Ellis: ratio:95.65217391304348
 Ester Huckaby:Esther Huckaby: ratio:96.2962962962963
-Esther Ellia:Esther Ellis: ratio:91.66666666666666
+Ester Morgan-Ellis:Esther Morgan-Ellis: ratio:97.2972972972973
 Esther Huchaby:Esther Huckaby: ratio:92.85714285714286
 Esther Huckabee:Esther Huckaby: ratio:89.65517241379311
 Esther Mann:Ester Mann: ratio:95.23809523809523
+Esther Morgan-Ellia:Esther Morgan-Ellis: ratio:94.73684210526316
 Esther Williams:Ester Williams: ratio:96.55172413793103
 Ethan Corbett:Ethan Corbitt: ratio:92.3076923076923
 Ethan McNerny:Ethan McNerney: ratio:96.2962962962963
@@ -1447,7 +1451,6 @@ Etma Barton:Etma Bardon: ratio:90.9090909090909
 Euell Freeman:Euel Freeman: ratio:96.0
 Eugene Forbes’:Eugene Forbes: ratio:96.2962962962963
 Eunice Web:Eunice Webb: ratio:95.23809523809523
-Eva Horsley:Eva G. Horsley: ratio:88.0
 Eva Striebech:Eva Striebeck: ratio:92.3076923076923
 Evan Druse:Evan Druce: ratio:90.0
 Evan Eddins:Ewan Eddins: ratio:90.9090909090909
@@ -1474,37 +1477,38 @@ Fay Donaldson:Faye Donaldson: ratio:96.2962962962963
 Fay Hollis:Faye Hollis: ratio:95.23809523809523
 Fay Kalteaux:Fay Kalteux: ratio:95.65217391304348
 Fay Narramore:Fay Naramore: ratio:96.0
-Faye Holbook:Faye Hollbrook: ratio:92.3076923076923
-Faye Holbrook:Faye Hollbrook: ratio:96.2962962962963
-Faye Holbrook:Faye P. Holbrook: ratio:89.65517241379311
+Faye Holbook:Faye Holbrook: ratio:96.0
+Faye Hollbrook:Faye Holbrook: ratio:96.2962962962963
 Faye Hughes:Fay Hughes: ratio:95.23809523809523
 Faye Naramore:Fay Naramore: ratio:96.0
 Faye Narramore:Fay Naramore: ratio:92.3076923076923
 Faye Thompson:Fay Thompson: ratio:96.0
 Faye Wakefield:Fayrene Wakefield: ratio:90.32258064516128
 Fayge Hughes:Fay Hughes: ratio:90.9090909090909
-Fayrene led:Fayrine led: ratio:90.9090909090909
+Fayrine Wakefield:Fayrene Wakefield: ratio:94.11764705882352
 Febrianne Box:Febrienne Box: ratio:92.3076923076923
 Febriene Box:Febrienne Box: ratio:96.0
 Felicia Stephens:Felicia Stevens: ratio:90.32258064516128
 Felton Denny:Felton Denney: ratio:96.0
 Fern Kitchens:Furn Kitchens: ratio:92.3076923076923
 Finley Ross:Findley Ross: ratio:95.65217391304348
-Finn Mock:Fynn Mock: ratio:88.88888888888889
+Finn Titford-Mock:Fynn Titford-Mock: ratio:94.11764705882352
 Fiona Burne:Fiona Byrne: ratio:90.9090909090909
 Florence Williamson:Florence Williams: ratio:94.44444444444444
 Florice Akins:Florice Akin: ratio:96.0
-Florine Éymard:Florine Eymard: ratio:92.85714285714286
+Florine Vieilly-Éymard:Florine Vieilly-Eymard: ratio:95.45454545454545
+Florine Vielly-Eymard:Florine Vieilly-Eymard: ratio:97.67441860465115
 Floy Driskill:Floye Driskill: ratio:96.2962962962963
 Floyd Beaters:Floyd Peters: ratio:88.0
+Forest Abbott-Lum:Forest Abbot-Lum: ratio:96.96969696969697
 Forest Ward:Forrest Ward: ratio:95.65217391304348
 Forrest Quay:Forest Quay: ratio:95.65217391304348
 Founder’s Lesson:Founders Lesson: ratio:96.7741935483871
 Fran Arnold:Frank Arnold: ratio:95.65217391304348
 Fran Miller:Frances Miller: ratio:88.0
 Frances Bliss:Francis Bliss: ratio:92.3076923076923
-Frances D’Andre:Frances M. D’Andrea: ratio:88.23529411764706
-Frances D’Andrea:Frances M. D’Andrea: ratio:91.42857142857143
+Frances DeAndrea:Frances D’Andrea: ratio:93.75
+Frances D’Andre:Frances D’Andrea: ratio:96.7741935483871
 Frances Gaskin:Francis Gaskin: ratio:92.85714285714286
 Frances Gurtz:Francis Gurtz: ratio:92.3076923076923
 Francis Carnell:Frances Carnell: ratio:93.33333333333333
@@ -1515,6 +1519,7 @@ Frank Adams:Fran Adams: ratio:95.23809523809523
 Frank Cornett:Frank Connet: ratio:88.0
 Frank Debolt:Frank DeBolt: ratio:91.66666666666666
 Frank Hattaway:Frank Hataway: ratio:96.2962962962963
+Frank Reaves:Frank Reeves: ratio:91.66666666666666
 Frank Wood:Frank Woods: ratio:95.23809523809523
 Franziska Schmidt:Franzi Schmidt: ratio:90.32258064516128
 Fred Bledsoe:Freida Bledsoe: ratio:92.3076923076923
@@ -1534,8 +1539,8 @@ Fredrick Ratsenberger:Frederik Rasenberger: ratio:92.6829268292683
 Freeman Wooten:Freeman Wootten: ratio:96.55172413793103
 Frédèric Eymard:Frédéric Eymard: ratio:93.33333333333333
 Frédéric Éymard:Frédéric Eymard: ratio:93.33333333333333
-G.C. Waldrep:G. C. Waldrep: ratio:96.0
-G.C. Waldrup:G. C. Waldrop: ratio:88.0
+G. Waldrop:G. Waldrep: ratio:90.0
+G.C. Waldrep:G. Waldrep: ratio:90.9090909090909
 Gabbie Jenkins:Gabby Jenkins: ratio:88.88888888888889
 Gabriel Castelle:Gabriel Kastelle: ratio:93.75
 Gabriel Feinwold:Gabriel Kleinwold: ratio:90.9090909090909
@@ -1555,6 +1560,7 @@ Gary Plazyck:Gary Plazyk: ratio:95.65217391304348
 GaryLee Johnson:Garylee Johnson: ratio:93.33333333333333
 Gavin Blakeley:Gavin Blakely: ratio:96.2962962962963
 Gaya Singer:Gaea Singer: ratio:90.9090909090909
+Gayle Englen:Gayle Engeln: ratio:91.66666666666666
 Gayle Muster:Gayle Musker: ratio:91.66666666666666
 Gaylon Powel:Gaylon Powell: ratio:96.0
 Gaylon Pwell:Gaylon Powell: ratio:96.0
@@ -1576,6 +1582,7 @@ George Burdette:George Burdett: ratio:96.55172413793103
 George Burnett:George Burdett: ratio:92.85714285714286
 George Burnette:George Burdett: ratio:89.65517241379311
 George Claghorn:George Cleghorn: ratio:93.33333333333333
+George Corbin:Georgia Corbin: ratio:88.88888888888889
 George Pomfret:George Pomfrett: ratio:96.55172413793103
 George Sigot:George Sigut: ratio:91.66666666666666
 George Sims:George Simms: ratio:95.65217391304348
@@ -1584,7 +1591,6 @@ George Snyder:George Snider: ratio:92.3076923076923
 George Whatelse:Georges Whatelse: ratio:96.7741935483871
 GeorgeAnn Evans:Georgeann Evans: ratio:93.33333333333333
 Georgeanna Presnell:Georgianna Presnell: ratio:94.73684210526316
-Georgia Corbin:Georgia A. Corbin: ratio:90.32258064516128
 Georgia Mitchell:Gloria Mitchell: ratio:90.32258064516128
 Gerald Clarke:Gerald Clark: ratio:96.0
 Gerald Currents:Gerald Currens: ratio:96.55172413793103
@@ -1670,17 +1676,17 @@ Gwenn Corneilus:Gwen Cornelius: ratio:89.65517241379311
 Gwenn Cornelius:Gwen Cornelius: ratio:96.55172413793103
 H. Godsey:H.A. Godsey: ratio:90.0
 H. Reese:H.S. Reese: ratio:88.88888888888889
-H.J. Jackson:H. J. Jackson: ratio:96.0
-H.P. O’Mary:H. P. O’Mary: ratio:95.65217391304348
+H.J. Jackson:H. Jackson: ratio:90.9090909090909
+H.P. O’Mary:H. O’Mary: ratio:90.0
 Haddassah Silva:Hadassah Silva: ratio:96.55172413793103
 Hailey Beasley:Haley Beasley: ratio:96.2962962962963
 Hal Kunkle:Hal Kunkel: ratio:90.0
 Haley Aaron:Hayley Aaron: ratio:95.65217391304348
 Haley Baker:Hailey Baker: ratio:95.65217391304348
 Haley Webb:Hayley Webb: ratio:95.23809523809523
-Halle Sisemore:Hallie Sisemore: ratio:96.55172413793103
-Hallie Sizemore:Halle G. Sizemore: ratio:87.5
-Hallie Sizemore:Hallie Sisemore: ratio:93.33333333333333
+Halle Sisemore:Halle Sizemore: ratio:92.85714285714286
+Hallie Sisemore:Halle Sizemore: ratio:89.65517241379311
+Hallie Sizemore:Halle Sizemore: ratio:96.55172413793103
 Hampus Meijer:Hampus Maijer: ratio:92.3076923076923
 Hank Schutze:Hank Schutz: ratio:95.65217391304348
 Hanna Henkin:Hannah Henkin: ratio:96.0
@@ -1693,6 +1699,8 @@ Hannah Souter:Hannah Sauter: ratio:92.3076923076923
 Hans Guttmann:Hans Guttman: ratio:96.0
 Harald Gründer:Harald Grundner: ratio:89.65517241379311
 Harden Arp:Hayden Arp: ratio:90.0
+Harlan VanCamp:Harlan Camp: ratio:88.0
+Harlen Camp:Harlan Camp: ratio:90.9090909090909
 Harley Harper:Harlie Harper: ratio:92.3076923076923
 Harold Grundner:Harald Grundner: ratio:93.33333333333333
 Harriet Hart:Harriet Dart: ratio:91.66666666666666
@@ -1742,8 +1750,7 @@ Hobart Ivey:Hobert Ivey: ratio:90.9090909090909
 Holly Corbitt:Holly Corbett: ratio:92.3076923076923
 Holly Powell:Hollie Powell: ratio:88.0
 Homer Rudolph:Homer Rudolf: ratio:88.0
-Honorata Żurakowska:Honorata Zurakowska: ratio:94.73684210526316
-Howard Brady:Howard D. Brady: ratio:88.88888888888889
+Honorata Pawlicka-Żurakowska:Honorata Pawlicka-Zurakowska: ratio:96.42857142857143
 Howard Keating:Howard King: ratio:88.0
 Hubert Nalls:Hubert Nall: ratio:95.65217391304348
 Hubert Wall:Hubert Nall: ratio:90.9090909090909
@@ -1755,12 +1762,11 @@ IIa Ingle:Ila Ingle: ratio:88.88888888888889
 Ian Fergusson:Ian Ferguson: ratio:96.0
 Ian McGuliam:Ian McGullam: ratio:91.66666666666666
 Ian McGullum:Ian McGullam: ratio:91.66666666666666
-Ida Starnes:Ida L. Starnes: ratio:88.0
+Ida Starnes:Ida Starves: ratio:90.9090909090909
 Ila Engle:Ila Ingle: ratio:88.88888888888889
 Ila Ingle’s:Ila Ingle: ratio:90.0
 Ines Luettgen:Ines Luttgen: ratio:96.0
 Ines Lüttgen:Ines Luttgen: ratio:91.66666666666666
-Ines Lüttgen:Ines Lüttger: ratio:91.66666666666666
 Inez Luttgen:Inez Lutglen: ratio:91.66666666666666
 Inez Salzer:Ines Salzer: ratio:90.9090909090909
 Inga Heubner:Inga Huebner: ratio:91.66666666666666
@@ -1771,48 +1777,53 @@ Ingrid Raedargard:Ingrid Raedergård: ratio:88.23529411764706
 Ingrid Raedergard:Ingrid Raedergård: ratio:94.11764705882352
 Ingrid Rædergård:Ingrid Raedergård: ratio:90.9090909090909
 Irene Robertson:Irene Roberson: ratio:96.55172413793103
+Isaac Bligh:Isaac Sligh: ratio:90.9090909090909
 Isaac Loyd:Isaac Lloyd: ratio:95.23809523809523
-Isaac Sligh:Isaac M. Sligh: ratio:88.0
 Isaac Steifel:Isaac Stiefel: ratio:92.3076923076923
 Isabel Green:Isabelle Green: ratio:92.3076923076923
 Isabel Keeton:Isabella Keeton: ratio:92.85714285714286
+Isabel Linhaves:Isabel Linhares: ratio:93.33333333333333
 Isabell Green:Isabelle Green: ratio:96.2962962962963
+Isabell Linhaves:Isabel Linhares: ratio:90.32258064516128
 Isabella Green:Isabelle Green: ratio:92.85714285714286
 Isabella Greene:Isabelle Green: ratio:89.65517241379311
-Isabelle Chapman:Isabelle G. Chapman: ratio:91.42857142857143
 Isabelle Greene:Isabelle Green: ratio:96.55172413793103
 Isabelle Keeton:Isabella Keeton: ratio:93.33333333333333
 Ishmael Stefannof:Ishmael Stefanov: ratio:90.9090909090909
-Ismael Wagner:Ishmael Wagner: ratio:96.2962962962963
+Ismael Stefanov:Ishmael Stefanov: ratio:96.7741935483871
 Isobelle Walker:Isabelle Walker: ratio:93.33333333333333
 Issac Lloyd:Isaac Lloyd: ratio:90.9090909090909
+Iva Cockrell:Ila Cockrell: ratio:91.66666666666666
 Ivaleen Donaldson:Ivalene Donaldson: ratio:94.11764705882352
-Ivey Cousins:Ivey F. Cousins: ratio:88.88888888888889
 Ivy Biddle:Ivey Biddle: ratio:95.23809523809523
 Ivy Hauer:Ivy Hauser: ratio:94.73684210526316
 Ivy Houser:Ivy Hauser: ratio:90.0
 J. Hardman:J.R. Hardman: ratio:90.9090909090909
-J.A. Mosley:J. A. Mosley: ratio:95.65217391304348
-J.C. Denney:J. C. Denney: ratio:95.65217391304348
-J.C. Moore:J. C. Moore: ratio:95.23809523809523
-J.C. Rutledge:J. C. Rutledge: ratio:96.2962962962963
-J.C. Smith:J. C. Smith: ratio:95.23809523809523
+J.A. Mosley:J. Mosley: ratio:90.0
+J.C. Denney:J. Denney: ratio:90.0
+J.C. Moore:J. Moore: ratio:88.88888888888889
+J.C. Rutledge:J. Rutledge: ratio:91.66666666666666
+J.C. Smith:J. Smith: ratio:88.88888888888889
 J.C. Waters:J.R. Waters: ratio:90.9090909090909
 J.D. Waters:J.R. Waters: ratio:90.9090909090909
-J.J. Aderhold:J. J. Aderhold: ratio:96.2962962962963
+J.H. Mosley:J. Mosley: ratio:90.0
+J.J. Aderhold:J. Aderhold: ratio:91.66666666666666
 J.J. Ryan:J.T. Ryan: ratio:88.88888888888889
-J.L. Hopper:J. L. Hopper: ratio:95.65217391304348
-J.O. Wooten:J. O. Wooten: ratio:95.65217391304348
+J.L. Hopper:J. Hopper: ratio:90.0
+J.L. White:J. White: ratio:88.88888888888889
+J.O. Wooten:J. Wooten: ratio:90.0
 J.P. Gizonachan:J.P. Gronachan: ratio:89.65517241379311
 J.P. Phillips:J.D. Phillips: ratio:92.3076923076923
-J.P. Reese:J. P. Reese: ratio:95.23809523809523
+J.P. Reese:J. Reese: ratio:88.88888888888889
 J.R. Hardeman:J.R. Hardman: ratio:96.0
+J.R. Harden:J. Harden: ratio:90.0
 J.R. Hartman:J.R. Hardman: ratio:91.66666666666666
 J.T. Shavers:J.P. Shavers: ratio:91.66666666666666
-J.W. Oliver:J. W. Oliver: ratio:95.65217391304348
+J.W. Oliver:J. Oliver: ratio:90.0
 J.W.:J. W.: ratio:88.88888888888889
 JP Gronachan:J.P. Gronachan: ratio:92.3076923076923
 JR Hardman:J.R. Hardman: ratio:90.9090909090909
+JT Harechmak:J.T. Harechmak: ratio:92.3076923076923
 Jacek Borkovicz:Jacek Borkowicz: ratio:93.33333333333333
 Jack Hachey:Jake Hachey: ratio:90.9090909090909
 Jack Kerr’s:Jack Kerr: ratio:90.0
@@ -1820,6 +1831,7 @@ Jack Ketteman:Jack Ketterman: ratio:96.2962962962963
 Jack Loftin:Jack Lofton: ratio:90.9090909090909
 Jack Smith’s:Jack Smith: ratio:90.9090909090909
 Jack Zeigler:Jack Ziegler: ratio:91.66666666666666
+Jacki Selby-McLeod:Jacqui Selby-MacLeod: ratio:89.47368421052632
 Jackie Hull:Jackie Hall: ratio:90.9090909090909
 Jackie O’Reily:Jackie O’Riley: ratio:92.85714285714286
 Jackie Sherer:Jackie Share: ratio:88.0
@@ -1846,9 +1858,6 @@ Jacob Stiefel:Jack Stiefel: ratio:88.0
 Jacoba Brunel:Jacoba Bruneel: ratio:96.2962962962963
 Jacoba Brunell:Jacoba Bruneel: ratio:92.85714285714286
 Jacolyn Henderson:Joslyn Henderson: ratio:90.9090909090909
-Jacqui  MacLeod:Jacqui MacLeod: ratio:96.55172413793103
-Jacqui Macleod:Jacqui MacLeod: ratio:92.85714285714286
-Jacqui McLeod:Jacqui MacLeod: ratio:96.2962962962963
 Jacqui Sanderson:Jackie Sanderson: ratio:87.5
 Jada Seymour:Jada Seymore: ratio:91.66666666666666
 Jada Thompson:Jade Thompson: ratio:92.3076923076923
@@ -1856,13 +1865,11 @@ Jael Anderson:Janet Anderson: ratio:88.88888888888889
 Jairus Shultz:Jairus Schultz: ratio:96.2962962962963
 Jake KiaKahi:Jake Kiakahi: ratio:91.66666666666666
 Jake Thomas:Jackie Thomas: ratio:91.66666666666666
-James Ballinger:James L. Ballinger: ratio:90.9090909090909
 James Baumgarter:James Baumgardner: ratio:90.9090909090909
 James Baumgartner:James Baumgardner: ratio:94.11764705882352
 James Caulfield:James Caufield: ratio:96.55172413793103
 James Dalton:Jamie Dalton: ratio:91.66666666666666
-James Gingerich:James N. Gingrich: ratio:87.5
-James Gingrich:James N. Gingrich: ratio:90.32258064516128
+James Gingerich:James Gingrich: ratio:96.55172413793103
 James Latimer:Jamie Latimer: ratio:92.3076923076923
 James Paige:James Page: ratio:95.23809523809523
 James Peterson:James Patterson: ratio:89.65517241379311
@@ -1890,6 +1897,7 @@ Jan Nesbilt:Jan Nesbitt: ratio:90.9090909090909
 Jan Pierce:Jan Pearce: ratio:90.0
 Jan Spencer:Jane Spencer: ratio:95.65217391304348
 Jan Steele:Jan Steel: ratio:94.73684210526316
+Jan-Erik Steele:Jan-Erik Steel: ratio:96.55172413793103
 Jana House:Jan House: ratio:94.73684210526316
 Jana Itter:Janna Itter: ratio:95.23809523809523
 Jane Armstrong:James Armstrong: ratio:89.65517241379311
@@ -1912,10 +1920,12 @@ Janet Wichet:Janet Wuichet: ratio:96.0
 Janet Wright:Jan Wright: ratio:90.9090909090909
 Janette Mosteller:Jeanette Mosteller: ratio:97.14285714285714
 Janice Ballinger:Janet Ballinger: ratio:90.32258064516128
+Janice Harrel:Janice Herrell: ratio:88.88888888888889
 Janice Harrell:Janice Herrell: ratio:92.85714285714286
 Janice Harrell:Janis Harrell: ratio:88.88888888888889
 Janice Haworth:Janaice Haworth: ratio:96.55172413793103
 Janice Hechsel:Janice Hecksel: ratio:92.85714285714286
+Janice Johnson:Jan Johnson: ratio:88.0
 Janice McCool:Jamie McCool: ratio:88.0
 Janice Paul:Janice Paulk: ratio:95.65217391304348
 Janie Campbell:Jane Campbell: ratio:96.2962962962963
@@ -1947,6 +1957,7 @@ Jay Parotta:Jy Parotta: ratio:95.23809523809523
 Jay Waters:Janey Waters: ratio:90.9090909090909
 Jayne Fulford:Jane Fulford: ratio:96.0
 Jayne Fulmer:Jane Fulmer: ratio:95.65217391304348
+Jazmine Mendoza:Jasmine Mendoza: ratio:93.33333333333333
 Jean Dolan:Jenn Dolan: ratio:90.0
 Jean Durdin:Joan Durdin: ratio:90.9090909090909
 Jean Garnett:Jean Gernett: ratio:91.66666666666666
@@ -1968,6 +1979,7 @@ Jeanette Ralston:Jeannette Ralston: ratio:96.96969696969697
 Jeanette Tidwell:Janette Tidwell: ratio:96.7741935483871
 Jeanette Tynes:Jeanette Tyner: ratio:92.85714285714286
 Jeanine Brown:Jennie Brown: ratio:88.0
+Jeanine Dougherty:Jeanine Daugherty: ratio:94.11764705882352
 Jeanine Oakes:Jeannine Oakes: ratio:96.2962962962963
 Jeanne Mahoney:Jean Mahoney: ratio:92.3076923076923
 Jeanne March:Jeanne Marsh: ratio:91.66666666666666
@@ -2006,13 +2018,12 @@ Jenn Blair:Jenn Blaire: ratio:95.23809523809523
 Jenna Frey:Jena Frey: ratio:94.73684210526316
 Jenna Harmen:Jenna Harmon: ratio:91.66666666666666
 Jenna Strizals:Jenna Strizak: ratio:88.88888888888889
-Jenna Thompkins:Jenna B. Tompkins: ratio:87.5
-Jenna Tompkins:Jenna B. Tompkins: ratio:90.32258064516128
+Jenna Thompkins:Jenna Tompkins: ratio:96.55172413793103
 Jenneith Coddrington:Jenneith Codrington: ratio:97.43589743589743
 Jennette Tidwell:Janette Tidwell: ratio:90.32258064516128
 Jenni Wallace:Jenny Wallace: ratio:92.3076923076923
-Jennie Grate:Jenni Grate: ratio:95.65217391304348
 Jennie Prater:Jenny Prater: ratio:88.0
+Jennie Wallace:Jenny Wallace: ratio:88.88888888888889
 Jennie Willard:Jenny Willard: ratio:88.88888888888889
 Jennifer Aldredge:Jennifer Allred: ratio:87.5
 Jennifer Bell:Jennifer Krell: ratio:88.88888888888889
@@ -2023,7 +2034,6 @@ Jennifer Kearn:Jennifer Kearns: ratio:96.55172413793103
 Jennifer Kerns:Jennifer Kearns: ratio:96.55172413793103
 Jennifer LaCluyze:Jennifer LeCluyze: ratio:94.11764705882352
 Jennifer Lacluyze:Jennifer LeCluyze: ratio:88.23529411764706
-Jennifer Lee:Jennifer A. Lee: ratio:88.88888888888889
 Jennifer McDonel:Jennifer McDaniel: ratio:90.9090909090909
 Jennifer Obeiden:Jennifer Obeidin: ratio:93.75
 Jennifer O’Beidin:Jennifer Obeidin: ratio:90.9090909090909
@@ -2034,9 +2044,9 @@ Jenny Stern:Jenny Sterne: ratio:95.65217391304348
 Jenny Wright:Johnny Wright: ratio:88.0
 Jenry Enright:Jerry Enright: ratio:92.3076923076923
 Jer Galvagni:Jeremy Galvagni: ratio:88.88888888888889
-Jeremy  O’Connell:Jeremy O’Connell: ratio:96.96969696969697
 Jeremy Elliett:Jeremy Elliott: ratio:92.85714285714286
 Jeremy Galvani:Jeremy Galvagni: ratio:96.55172413793103
+Jeremy O’Connell:Jeremy Day-O’Connell: ratio:88.88888888888889
 Jeremy Ship:Jeremy Shipp: ratio:95.65217391304348
 Jeremy Straughan:Jeremy Straughn: ratio:96.7741935483871
 Jeremy Wagner:Jeremy Warner: ratio:92.3076923076923
@@ -2058,9 +2068,7 @@ Jessca Weller:Jess Weller: ratio:91.66666666666666
 Jesse Karlberg:Jesse Karlsberg: ratio:96.55172413793103
 Jesse Karlsburg:Jesse Karlsberg: ratio:93.33333333333333
 Jesse McClendon:Jesse McClindon: ratio:93.33333333333333
-Jesse Polhemus:Jesse C. Polhemus: ratio:90.32258064516128
 Jesse Robert:Jesse Roberts: ratio:96.0
-Jessica Altman:Jessica R. Altman: ratio:90.32258064516128
 Jessica Bellaire:Jessica Belaire: ratio:96.7741935483871
 Jessica Cherones:Jessa Cherones: ratio:93.33333333333333
 Jessica Findlay:Jessica Finley: ratio:89.65517241379311
@@ -2073,7 +2081,7 @@ Jessie Huber:Jesse Huber: ratio:95.65217391304348
 Jessie Karlsberg:Jesse Karlsberg: ratio:96.7741935483871
 Jessie Karlsburg:Jesse Karlsberg: ratio:90.32258064516128
 Jessie Latimer:Jesse Latimer: ratio:96.2962962962963
-Jessie Polhemus:Jesse C. Polhemus: ratio:87.5
+Jessie Polhemus:Jesse Polhemus: ratio:96.55172413793103
 Jessie Roberts:Jesse Roberts: ratio:96.2962962962963
 Jessie Vear:Jesse Vear: ratio:95.23809523809523
 Jettie Lawson:Jetty Lawson: ratio:88.0
@@ -2090,6 +2098,7 @@ Jim Glazer:Jim Glaser: ratio:90.0
 Jim Hecke:Jim Helke: ratio:88.88888888888889
 Jim Herb:Jim Herr: ratio:87.5
 Jim Hery:Jim Herr: ratio:87.5
+Jim Hoerr:Jim Herr: ratio:94.11764705882352
 Jim Hurr:Jim Herr: ratio:87.5
 Jim Laurie:Jim Lawrie: ratio:90.0
 Jim Neal:Jim Neel: ratio:87.5
@@ -2115,6 +2124,7 @@ Jo Jones:Joe Jones: ratio:94.11764705882352
 Jo Schulz:Jo Schultz: ratio:94.73684210526316
 Jo Shultz:Jo Schultz: ratio:94.73684210526316
 Jo Vickers:Joe Vickers: ratio:95.23809523809523
+Jo-Anne Carlyle:Jo-anne Carlyle: ratio:93.33333333333333
 JoAnn Ward:Joann Ward: ratio:90.0
 JoAnna Lampert:Joanna Lampert: ratio:92.85714285714286
 Joan Brunskill:John Brunskill: ratio:92.85714285714286
@@ -2145,6 +2155,7 @@ Joanne Grimes:JoAnn Grimes: ratio:88.0
 Joanne Lampert:Joanna Lampert: ratio:92.85714285714286
 Joanne Lewis:Joanna Lewis: ratio:91.66666666666666
 Joanne Ward:Joann Ward: ratio:95.23809523809523
+Joanne deVoe:Joanne Voe: ratio:90.9090909090909
 Job Driggers:Job Triggers: ratio:91.66666666666666
 Jodi Seidenstein:Joni Seidenstein: ratio:93.75
 Jodie Liss:Jodi Liss: ratio:94.73684210526316
@@ -2167,7 +2178,7 @@ Joe Lovvorn:Joseph Lovvorn: ratio:88.0
 Joe Pendleton:Jo Pendleton: ratio:96.0
 Joe Plunkett:John Plunkett: ratio:88.0
 Joe Schultz:Jo Schultz: ratio:95.23809523809523
-Joe Thompson:John Thompson: ratio:88.0
+Joe Thompson:Jade Thompson: ratio:88.0
 Joel Basset:Joel Bassett: ratio:95.65217391304348
 Joel Holland:Joe Holland: ratio:95.65217391304348
 Joel Jones:Joe Jones: ratio:94.73684210526316
@@ -2177,8 +2188,9 @@ Joel Wallenburg:Joel Wallenberg: ratio:93.33333333333333
 Joel Warne:Joe Warner: ratio:90.0
 Joey Clinghan:Joey Clingan: ratio:96.0
 Joey Gilmore:Joe Gilmore: ratio:95.65217391304348
-Johanna Baer:Johanna G. Baer: ratio:88.88888888888889
+Joey Klingman:Joey Clingan: ratio:88.0
 Johannes Saver:Johannes Sauer: ratio:92.85714285714286
+John Baccus:Jon Baccus: ratio:95.23809523809523
 John Baker:John Bayer: ratio:90.0
 John Bayer’s:John Bayer: ratio:90.9090909090909
 John Beal:John Bealle: ratio:90.0
@@ -2192,13 +2204,13 @@ John Ethridge:John Etheridge: ratio:96.2962962962963
 John Feddersen:John Fedderson: ratio:92.85714285714286
 John Flynn:John O’Flynn: ratio:90.9090909090909
 John Foreman:John Forman: ratio:95.65217391304348
-John Gilmore:John H. Gilmore: ratio:88.88888888888889
 John Graven:John Greven: ratio:90.9090909090909
 John Green:John Greven: ratio:95.23809523809523
 John Greg:John Gregg: ratio:94.73684210526316
 John Hartsough:John Hartsougil: ratio:89.65517241379311
 John Herr:John Hoerr: ratio:94.73684210526316
 John Holbrooke:John Holbrook: ratio:96.2962962962963
+John Holcomb:Johnny Holcomb: ratio:92.3076923076923
 John Holmes:Josh Holmes: ratio:90.9090909090909
 John Howell:John Lowell: ratio:90.9090909090909
 John Hucutt:John Hocutt: ratio:90.9090909090909
@@ -2209,6 +2221,7 @@ John Kellerman:John Kellermann: ratio:96.55172413793103
 John Klaes:John Klaess: ratio:95.23809523809523
 John Lee:Johnny Lee: ratio:88.88888888888889
 John Markovtz:John Markovitz: ratio:96.2962962962963
+John Moore:Johnny Moore: ratio:90.9090909090909
 John Moorehead:John Morehead: ratio:96.2962962962963
 John Mortenson:Jon Mortensen: ratio:88.88888888888889
 John Neiber:John Nieber: ratio:90.9090909090909
@@ -2229,7 +2242,6 @@ John Schby:John Schly: ratio:90.0
 John Schley:John Schly: ratio:95.23809523809523
 John Seidenstein:Joni Seidenstein: ratio:93.75
 John Seton:John Seaton: ratio:95.23809523809523
-John Shavers:John T. Shavers: ratio:88.88888888888889
 John Shipley:John Shipey: ratio:95.65217391304348
 John Shipp:John Shippee: ratio:90.9090909090909
 John Shippey:John Shipey: ratio:95.65217391304348
@@ -2238,14 +2250,12 @@ John Szymansky:John Szymanski: ratio:92.85714285714286
 John Thomerson:John Thompson: ratio:88.88888888888889
 John Uhleman:John Uhlemann: ratio:96.0
 John Uhlmann:John Uhlemann: ratio:96.0
-John Warren:John P. Warren: ratio:88.0
 John Weins:John Wiens: ratio:90.0
 John Went:John Wendt: ratio:94.73684210526316
 John Whitmore:John Whittemore: ratio:92.85714285714286
 John Whittermore:John Whittemore: ratio:96.7741935483871
 John Wiles:John Giles: ratio:90.0
 John Wittemore:John Whittemore: ratio:96.55172413793103
-John Woodley:John H. Woodley: ratio:88.88888888888889
 John Wright:Johnny Wright: ratio:91.66666666666666
 Johnathan Kelso:Jonathon Kelso: ratio:89.65517241379311
 Johnathan Spencer:Jonathan Spencer: ratio:96.96969696969697
@@ -2253,7 +2263,6 @@ Johnathan Woods:Jonathan Wood: ratio:92.85714285714286
 Johnathon Kelso:Jonathon Kelso: ratio:96.55172413793103
 Johnnie Beasley:John Beasley: ratio:88.88888888888889
 Johnnie Humber:Johnny Humber: ratio:88.88888888888889
-Johnny Cooley:Johnny M. Cooley: ratio:89.65517241379311
 Johnny Johnson:John Johnson: ratio:92.3076923076923
 Johnny Kelso:John Kelso: ratio:90.9090909090909
 Johnny Umber:Johnny Humber: ratio:88.0
@@ -2262,20 +2271,22 @@ Johno Landsman:Johno Landson: ratio:88.88888888888889
 Jon Carson:John Carson: ratio:95.23809523809523
 Jon Gathje:John Gathje: ratio:95.23809523809523
 Jon Giles:John Giles: ratio:94.73684210526316
-Jon Gilmore:Joe Gilmore: ratio:90.9090909090909
+Jon Gilmore:John Gilmore: ratio:95.65217391304348
 Jon Gregg:John Gregg: ratio:94.73684210526316
 Jon Hewes:John Hewes: ratio:94.73684210526316
 Jon Marcovitz:John Markovitz: ratio:88.88888888888889
+Jon Warren:John Warren: ratio:95.23809523809523
 Jonathan Blakeley:Jonathan Blakely: ratio:96.96969696969697
 Jonathan Gaylord:Jonathon Gaylord: ratio:93.75
 Jonathan Kelso:Jonathon Kelso: ratio:92.85714285714286
 Jonathan Meiburg:Jonathon Meiburg: ratio:93.75
 Jonathan Mildner:Jonathan Miller: ratio:90.32258064516128
-Jonathan Scheer:Jonathan K. Scher: ratio:87.5
+Jonathan Scheer:Jonathan Scher: ratio:96.55172413793103
+Jonathan Schor:Jonathan Scher: ratio:92.85714285714286
 Jonathan Sumner:Johnathan Sumner: ratio:96.7741935483871
-Jonathan Surrency:Jonathan S. Surrency: ratio:91.89189189189189
 Jonathan Woods:Jonathan Wood: ratio:96.2962962962963
 Jonathon Blakeley:Jonathan Blakely: ratio:90.9090909090909
+Jonathon Levy-Wolins:Jonathan Levy-Wolins: ratio:95.0
 Jonathon Marquez:Jonathan Marquez: ratio:93.75
 Jonathon Pendleton:Jonathan Pendleton: ratio:94.44444444444444
 Jonathon Smith:Jonathan Smith: ratio:92.85714285714286
@@ -2283,7 +2294,6 @@ Jonathon Spencer:Jonathan Spencer: ratio:93.75
 Jonathon Sweatt:Jonathan Sweatt: ratio:93.33333333333333
 Jonathon Thompson:Jonathan Thompson: ratio:94.11764705882352
 Jonathon Vest:Johnathan Vest: ratio:88.88888888888889
-Jonathon Wolins:Jonathan Wolins: ratio:93.33333333333333
 Jonathon Wood:Jonathan Wood: ratio:92.3076923076923
 Jonathon Woods:Jonathan Wood: ratio:88.88888888888889
 JonathonSmith:Jonathan Smith: ratio:88.88888888888889
@@ -2312,7 +2322,6 @@ Joshua McClain:Josh McClain: ratio:92.3076923076923
 Josie Wootten:Joycie Wootten: ratio:88.88888888888889
 Joslene Schaefli:Joslene Schlaefli: ratio:96.96969696969697
 Joss Tate:Joss Tait: ratio:88.88888888888889
-José Cerna:Jose Cerna: ratio:90.0
 Joy Leggett:Joye Leggett: ratio:95.65217391304348
 Joy Nelson:Joe Nelson: ratio:90.0
 Joyce Forrey:Joyce Forry: ratio:95.65217391304348
@@ -2322,7 +2331,6 @@ Joyce Hubbit:Joyce Hubbin: ratio:91.66666666666666
 Joyce Hubbitt:Joyce Hubbin: ratio:88.0
 Joyce Hubert:Joyce Hubbert: ratio:96.0
 Joyce Jenkins:Joel Jenkins: ratio:88.0
-Joyce Lambert:Joyce C. Lambert: ratio:89.65517241379311
 Joyce Saxton:Joyce Saxon: ratio:95.65217391304348
 Joyce Waldon:Joyce Walton: ratio:91.66666666666666
 Joycee Wootten:Joycie Wootten: ratio:92.85714285714286
@@ -2333,7 +2341,6 @@ Joyelle Washington:Joyell Washington: ratio:97.14285714285714
 Juanita Heyerman:Juanita Heyermann: ratio:96.96969696969697
 Jude Neill:Jude O’Neill: ratio:90.9090909090909
 Judi Duerr:Judy Duerr: ratio:90.0
-Judith Morris:Judith K. Morris: ratio:89.65517241379311
 Judy Chambliss:Judy Chambless: ratio:92.85714285714286
 Judy Contempasis:Judy Contompasis: ratio:93.75
 Judy Duzer:Judy Duerr: ratio:90.0
@@ -2350,7 +2357,7 @@ Julia Inksetter:Jillian Inksetter: ratio:87.5
 Julia Jett:Julie Jett: ratio:90.0
 Julia Myers:Julie Myers: ratio:90.9090909090909
 Julia Postman:Julia Posten: ratio:88.0
-Julia Poston:Julia Posten: ratio:91.66666666666666
+Julia Poston:Julie Poston: ratio:91.66666666666666
 Julia Rikausrud:Julia Rikansrud: ratio:93.33333333333333
 Julia Seiderstein:Julia Seidenstein: ratio:94.11764705882352
 Julia Smith:Julie Smith: ratio:90.9090909090909
@@ -2368,8 +2375,8 @@ Julie Hereen:Julie Heeren: ratio:91.66666666666666
 Julie Herron:Julie Heron: ratio:95.65217391304348
 Julie McNeil:Junie McNeil: ratio:91.66666666666666
 Julie Postam:Julie Postum: ratio:91.66666666666666
-Julie Posten:Julia Posten: ratio:91.66666666666666
-Julie Postom:Julie Postum: ratio:91.66666666666666
+Julie Posten:Julie Poston: ratio:91.66666666666666
+Julie Postom:Julie Poston: ratio:91.66666666666666
 Julie Rikansrud:Julia Rikansrud: ratio:93.33333333333333
 Julie Via:Julie Vea: ratio:88.88888888888889
 Julietta Hayes:Juliette Haynes: ratio:89.65517241379311
@@ -2382,13 +2389,15 @@ June Cleghorn:Jane Cleghorn: ratio:92.3076923076923
 June Jolly:June Jolley: ratio:95.23809523809523
 June Mathews:June Matthews: ratio:96.0
 June Murph:June Murphy: ratio:95.23809523809523
+Junghea Baik:Jung-Hea Baik: ratio:88.0
 Juni Wooten:Junie Wooten: ratio:95.65217391304348
 Junie Wootten:Junie Wooten: ratio:96.0
-Junior Poston:Junior Postom: ratio:92.3076923076923
+Junior Poston:Junior Posten: ratio:92.3076923076923
 Junior Wooten:Junior Wootten: ratio:96.2962962962963
 Junita Whitman:Juanita Whitman: ratio:96.55172413793103
 Junnie Wooten:Junie Wooten: ratio:96.0
 Justin Burdett:Justin Burdette: ratio:96.55172413793103
+Justin Whitehead:Justine Whitehead: ratio:96.96969696969697
 Justina Orlikowska:Justyna Orlikowska: ratio:94.44444444444444
 Justine Bowen:Justin Bowen: ratio:96.0
 Justyna Orlikowski:Justyna Orlikowska: ratio:94.44444444444444
@@ -2405,8 +2414,7 @@ Kama Dembinska:Kamila Dembinska: ratio:93.33333333333333
 Kanöot Midkiff:Kanoot Midkiff: ratio:92.85714285714286
 Karen Carreli:Karen Carelli: ratio:92.3076923076923
 Karen Carrelli:Karen Carelli: ratio:96.2962962962963
-Karen Clark:Karen B. Clark: ratio:88.0
-Karen Clark:Karen Clarke: ratio:95.65217391304348
+Karen Clarke:Karen Clark: ratio:95.65217391304348
 Karen Covy:Karen Covi: ratio:90.0
 Karen Fruend:Karen Freund: ratio:91.66666666666666
 Karen Hojnacki’s:Karen Hojnacki: ratio:93.33333333333333
@@ -2430,9 +2438,7 @@ Karolina Materek:Karolina Maigrek: ratio:87.5
 Karter McGuire:Katie McGuire: ratio:88.88888888888889
 Kasey Cutchen:Kasey Crutcher: ratio:88.88888888888889
 Kass Mead:Kassie Mead: ratio:90.0
-Kat Kincade:Kat Kincaid: ratio:90.9090909090909
 Kat Kincade:Kat Kinkade: ratio:90.9090909090909
-Kat Kinkaid:Kat Kincaid: ratio:90.9090909090909
 Kat Kinkaid:Kat Kinkade: ratio:90.9090909090909
 Kate Ahern:Katie Ahern: ratio:95.23809523809523
 Kate Grindon:Katie Grindon: ratio:96.0
@@ -2452,15 +2458,16 @@ Katherine Hough:Katharine Hough: ratio:93.33333333333333
 Katherine O’Hara:Katharine O’Hara: ratio:93.75
 Katheryn Knecht:Kathryn Knecht: ratio:96.55172413793103
 Kathie Pilibosian:Kathe Pilibosian: ratio:96.96969696969697
+Kathleen Eshen-Pipes:Kathleen Eschen-Pipes: ratio:97.5609756097561
 Kathlene McDonnell:Kathleen McDonnell: ratio:94.44444444444444
 Kathrine Eldridge:Katherine Eldridge: ratio:97.14285714285714
-Kathryn Bowers:Kathy Bowers: ratio:92.3076923076923
 Kathryn Chillemi:Kathy Chillemi: ratio:93.33333333333333
 Kathryn Deckard:Katherine Deckard: ratio:87.5
 Kathryn Eldridge:Katherine Eldridge: ratio:88.23529411764706
 Kathryn Henderson:Karen Henderson: ratio:87.5
 Kathryn Krug:Kathy Krug: ratio:90.9090909090909
 Kathy Bieszczad:Kay Bieszczad: ratio:92.85714285714286
+Kathy Bowers:Kathryn Bowers: ratio:92.3076923076923
 Kathy Collet:Kathy Collett: ratio:96.0
 Kathy Corssley:Kathy Crossley: ratio:92.85714285714286
 Kathy Eastburn:Kathryn Eastburn: ratio:93.33333333333333
@@ -2484,10 +2491,9 @@ Katie Piche:Katie Piché: ratio:90.9090909090909
 Katie Reemers:Katie Reimers: ratio:92.3076923076923
 Katie Riemers:Katie Reimers: ratio:92.3076923076923
 Katie Shimizu:Katie Shimieu: ratio:92.3076923076923
-Katie Shimizu:Katie Shimizv: ratio:92.3076923076923
 Katie Thompson:Katherine Thompson: ratio:87.5
 Katie Zukoff:Katie Zukof: ratio:95.65217391304348
-Katlin Bailey:Katrina Bailey: ratio:88.88888888888889
+Katlin Bailey:Kaitlyn Bailey: ratio:88.88888888888889
 Katlyn Bailey:Kaitlyn Bailey: ratio:96.2962962962963
 Katri Ballinger:Katie Ballinger: ratio:93.33333333333333
 Katrina Homes:Katrina Holmes: ratio:96.2962962962963
@@ -2521,7 +2527,8 @@ Kelli Rane:Killi Rane: ratio:90.0
 Kelli Smith:Kelly Smith: ratio:90.9090909090909
 Kellie Morris:Kelly Morris: ratio:88.0
 Kelly Duncan:Kelly Dunn: ratio:90.9090909090909
-Kelly Kempen:Kelly B. Kempen: ratio:88.88888888888889
+Kelly Kempen:Kelly Kemp: ratio:90.9090909090909
+Kelly Kempen:Kelly VanKempen: ratio:88.88888888888889
 Kelly Taylor:Kelsey Taylor: ratio:88.0
 Kelly Upchurch:Kelley Upchurch: ratio:96.55172413793103
 Kelsey Nelson:Kelsey Nelsen: ratio:92.3076923076923
@@ -2539,6 +2546,7 @@ Ken Mattsson:Ken Mattson: ratio:95.65217391304348
 Ken Miller:Karen Miller: ratio:90.9090909090909
 Ken Robinson:Kevin Robinson: ratio:92.3076923076923
 Ken Smith:Kevin Smith: ratio:90.0
+Ken Smith:Koven Smith: ratio:90.0
 Kenan Serabetz:Kenan Serenbetz: ratio:89.65517241379311
 Kenan Serenbatz:Kenan Serenbetz: ratio:93.33333333333333
 Kenan Sterenbetz:Kenan Serenbetz: ratio:96.7741935483871
@@ -2556,6 +2564,7 @@ Kerry Culling:Kerry Cullinan: ratio:88.88888888888889
 Kevan Bailey:Kevan Barley: ratio:91.66666666666666
 Keven Beirne:Kevin Beirne: ratio:91.66666666666666
 Kevin Barley:Kevan Barley: ratio:91.66666666666666
+Kevin Barrans:Keven Barrans: ratio:92.3076923076923
 Kevin Barrans:Kevin Barrons: ratio:92.3076923076923
 Kevin Barrens:Kevin Barrons: ratio:92.3076923076923
 Kevin Eddins:Keven Eddins: ratio:91.66666666666666
@@ -2572,6 +2581,7 @@ Kirk Boyes:Kirk Boyer: ratio:90.0
 Kitty Kagey:Kitty Kagay: ratio:90.9090909090909
 Kitty Kagny:Kitty Kagay: ratio:90.9090909090909
 Kitty Kajay:Kitty Kagay: ratio:90.9090909090909
+Kori Guerrieri:Korey Guerrieri: ratio:89.65517241379311
 Kris Richardson:Kristin Richardson: ratio:90.9090909090909
 Kris Wiggens:Kris Wiggins: ratio:91.66666666666666
 Kristen Szakos:Kristin Szakos: ratio:92.85714285714286
@@ -2597,13 +2607,14 @@ Kurt Deffenbaugh:Kurt Deffinbaugh: ratio:93.75
 Kyle Blakeley:Kyle Blakely: ratio:96.0
 Kyle Greenleaf:Kyle Greenlee: ratio:88.88888888888889
 Kyle Hearne:Kyle Hearn: ratio:95.23809523809523
-L.E. Hannah:L. E. Hannah: ratio:95.65217391304348
-L.H. Gilmore:L. H. Gilmore: ratio:96.0
+L.B. Smith:L. Smith: ratio:88.88888888888889
+L.E. Hannah:L. Hannah: ratio:90.0
+L.H. Gilmore:L. Gilmore: ratio:90.9090909090909
 L.H.:L. H.: ratio:88.88888888888889
-L.L. Rogers:L. L. Rogers: ratio:95.65217391304348
-L.M. Gilmore:L. H. Gilmore: ratio:88.0
+L.L. Rogers:L. Rogers: ratio:90.0
+L.M. Gilmore:L. Gilmore: ratio:90.9090909090909
 L.O. Harper:L. Harper: ratio:90.0
-L.S. Gilmore:L. H. Gilmore: ratio:88.0
+L.S. Gilmore:L.H. Gilmore: ratio:91.66666666666666
 LJ Brubaker:L.J. Brubaker: ratio:91.66666666666666
 La Delahunt:LaRee Delahunt: ratio:88.0
 LaRee Delahurst:LaRee Delahunt: ratio:89.65517241379311
@@ -2624,7 +2635,6 @@ Larmar Smith:Lamar Smith: ratio:95.65217391304348
 Larry Ballingeer:Larry Ballinger: ratio:96.7741935483871
 Larry Brashear:Larry Brasher: ratio:96.2962962962963
 Larry Hale:Larry Hall: ratio:90.0
-Larry Humber:Larry W. Humber: ratio:88.88888888888889
 Larry MatIock:Larry Matlock: ratio:92.3076923076923
 Larry Nothweb:Larry Nothwehr: ratio:88.88888888888889
 Lars Christiansen:Lars Christensen: ratio:90.9090909090909
@@ -2649,18 +2659,18 @@ Laura Clauson:Laura Clawson: ratio:92.3076923076923
 Laura Clawsen:Laura Clawson: ratio:92.3076923076923
 Laura Dawson:Laura Clawson: ratio:88.0
 Laura Dempsey:Laurie Dempsey: ratio:88.88888888888889
-Laura Earles:Laura L. Earles: ratio:88.88888888888889
+Laura Earls:Laura Earles: ratio:95.65217391304348
 Laura Fry:Laura Frey: ratio:94.73684210526316
 Laura Frye:Laura Frey: ratio:90.0
 Laura Hall:Laura Hale: ratio:90.0
 Laura Jackson:Laurie Jackson: ratio:88.88888888888889
 Laura Murray:Laura McMurray: ratio:92.3076923076923
 Laura Pederson:Laura Pedersen: ratio:92.85714285714286
-Laura Russell:Laura B. Russell: ratio:89.65517241379311
-Laura Russell:Laura Russel: ratio:96.0
+Laura Russel:Laura Russell: ratio:96.0
 Laura Shaffer:Laura Shafer: ratio:96.0
 Laura Thompson:Lauralee Thompson: ratio:90.32258064516128
 Laura Webber:Laura Weber: ratio:95.65217391304348
+Laure Earles:Laura Earles: ratio:91.66666666666666
 Laurel Cornel:Laurel Cornell: ratio:96.2962962962963
 Laurel Cornwell:Laurel Cornell: ratio:96.55172413793103
 Laurel Dempsey:Laurie Dempsey: ratio:92.85714285714286
@@ -2670,7 +2680,6 @@ Lauren Brock:Lauren Bock: ratio:95.65217391304348
 Lauren Clampitt:Laura Clampitt: ratio:89.65517241379311
 Lauren Hassell:Lauren Hall: ratio:88.0
 Lauren Pedersen:Lauren Petersen: ratio:93.33333333333333
-Lauretta Price:Lauretta Rice: ratio:88.88888888888889
 Lauretta Price:Loretta Price: ratio:88.88888888888889
 Laurin Harrison:Lauren Harrison: ratio:93.33333333333333
 Lavaughn Balliner:Lavaughn Ballinger: ratio:97.14285714285714
@@ -2680,7 +2689,6 @@ Lavon Wootten:Levon Wootten: ratio:92.3076923076923
 LeAnn Carnell:Leann Carnell: ratio:92.3076923076923
 LeAnn Carter:Leanne Carter: ratio:88.0
 LeAnne Carnell:Leann Carnell: ratio:88.88888888888889
-Leah Commer:Leah N. Commer: ratio:88.0
 Leah Dagan:Leah Dagen: ratio:90.0
 Leah Latimer:Lea Latimer: ratio:95.65217391304348
 Leah Vellemen:Leah Velleman: ratio:92.3076923076923
@@ -2693,13 +2701,14 @@ Lee Robers:Lee Rogers: ratio:90.0
 Lee Williamon:Lee Willamon: ratio:96.0
 Lee Wouters:Lee Woulters: ratio:95.65217391304348
 Leeah Cooper:Lee Cooper: ratio:90.9090909090909
+Leigh VanSickle:Leigh Sickle: ratio:88.88888888888889
 LeighAnna Beatenbough:Leighanna Beatenbough: ratio:95.23809523809523
 Leighanna Sewell:Leighan Sewell: ratio:93.33333333333333
 Leila Immel:Leilai Immel: ratio:95.65217391304348
 Leila Leland:Lila Leland: ratio:95.65217391304348
-Leila Parkinson:Leilai Parkinson: ratio:96.7741935483871
 Leilai Immal:Leilai Immel: ratio:91.66666666666666
-Lelai Parkinson:Leilai Parkinson: ratio:96.7741935483871
+Leilai Immer:Leilai Immel: ratio:91.66666666666666
+Lelai Immel:Leilai Immel: ratio:95.65217391304348
 Leland Kuzmer:Leland Kusmer: ratio:92.3076923076923
 Leland Owens:Leland Owen: ratio:95.65217391304348
 Leland delRe:Leyland delRe: ratio:96.0
@@ -2719,10 +2728,9 @@ Leonore Tjia:Leonore Tija: ratio:91.66666666666666
 Lera Pollock:Leah Pollock: ratio:91.66666666666666
 Les Jones:Lee Jones: ratio:88.88888888888889
 Lesley Brady:Leslie Brady: ratio:91.66666666666666
+Lesley White:Leslie White: ratio:91.66666666666666
 Leslie Alpern:Leslie Alperin: ratio:96.2962962962963
 Leslie Clarke:Leslie Clark: ratio:96.0
-Leslie White:Lesley White: ratio:91.66666666666666
-Leslie White:Leslie W. White: ratio:88.88888888888889
 Letreive Bailey:Letrieve Bailey: ratio:93.33333333333333
 Levert Howell:Lavert Howell: ratio:92.3076923076923
 Levi Silver:Levi Silvers: ratio:95.65217391304348
@@ -2755,7 +2763,6 @@ Linda Hambourger:Lynda Hambourger: ratio:93.75
 Linda Heemskirk:Linda Heemskerk: ratio:93.33333333333333
 Linda Heemsterk:Linda Heemskerk: ratio:93.33333333333333
 Linda Janachek:Linda Janacek: ratio:96.2962962962963
-Linda Karlsberg:Linda P. Karlsberg: ratio:90.9090909090909
 Linda MacKay:Linda McKay: ratio:95.65217391304348
 Linda Ralston:Lisa Ralston: ratio:88.0
 Linda Saue:Lucinda Saue: ratio:90.9090909090909
@@ -2770,8 +2777,8 @@ Linn Schmidt:Lynn Schmidt: ratio:91.66666666666666
 Linnea Sablonsky:Linnea Sablosky: ratio:96.7741935483871
 Linnéa Clark:Linnea Clark: ratio:91.66666666666666
 Linsey Scherloom:Lindsey Scherloom: ratio:96.96969696969697
+Linton Balinger:Linton Ballinger: ratio:96.7741935483871
 Linton Ballenger:Linton Ballinger: ratio:93.75
-Liora Goldensher:Liora O. Goldensher: ratio:91.42857142857143
 Lisa Bennet:Lisa Bennett: ratio:95.65217391304348
 Lisa Blood:Lissa Blood: ratio:95.23809523809523
 Lisa Bulansky:Lisa Bulawsky: ratio:92.3076923076923
@@ -2780,14 +2787,12 @@ Lisa Bulowsky:Lisa Bulawsky: ratio:92.3076923076923
 Lisa Callirhoe:Lissa Callirhoe: ratio:96.55172413793103
 Lisa Echersberg:Liisa Eckersberg: ratio:90.32258064516128
 Lisa Eckersberg:Liisa Eckersberg: ratio:96.7741935483871
-Lisa Fitzpatrick:Lisa B. Fitzpatrick: ratio:91.42857142857143
 Lisa Frye:Lisa Frey: ratio:88.88888888888889
 Lisa Giest:Lisa Geist: ratio:90.0
 Lisa Gist:Lisa Geist: ratio:94.73684210526316
 Lisa Grady:Lisa O’Grady: ratio:90.9090909090909
 Lisa Ingle:Leisa Ingle: ratio:95.23809523809523
 Lisa McDevitt:Lisa McDivitt: ratio:92.3076923076923
-Lisa Morton:Lisa B. Morton: ratio:88.0
 Lisa Mutt:Lisa Matt: ratio:88.88888888888889
 Lisa Rollston:Lisa Ralston: ratio:88.0
 Liz Bryan:Liz Bryant: ratio:94.73684210526316
@@ -2797,6 +2802,8 @@ Liz Kaiser:Liz Kiser: ratio:94.73684210526316
 Liz Metzler:Liz Meitzler: ratio:95.65217391304348
 Liz Owens:Liz Owen: ratio:94.11764705882352
 Liz Wolf:Liz Wolff: ratio:94.11764705882352
+Lizzie Dun:Lizzie Dunn: ratio:95.23809523809523
+Lizzy Blerkam:Lizzy Blerkom: ratio:92.3076923076923
 Lloyd Hymnal:Lloyd’s Hymnal: ratio:92.3076923076923
 Lloyd Ivey:Loyd Ivey: ratio:94.73684210526316
 Lloyd Landrum:Loyd Landrum: ratio:96.0
@@ -2804,7 +2811,6 @@ Lloyd’s Hymn:Lloyd’s Hymnal: ratio:92.3076923076923
 Lois Armstrong:Louis Armstrong: ratio:96.55172413793103
 Lois Bader:Lois Badey: ratio:90.0
 Lois Bady:Lois Badey: ratio:94.73684210526316
-Lois Bowman:Lois K. Bowman: ratio:88.0
 Lois Hart:Lois Hurt: ratio:88.88888888888889
 Lois Hirt:Lois Hurt: ratio:88.88888888888889
 Lois Ivey:Louise Ivey: ratio:90.0
@@ -2860,15 +2866,13 @@ Loyd Toney:Lloyd Toney: ratio:95.23809523809523
 LuAnne Turner:Luanne Turner: ratio:92.3076923076923
 Luann Thomas:LuAnn Thomas: ratio:91.66666666666666
 Luann Turner:Luanne Turner: ratio:96.0
-Lucey Karlsberg:Lucey R. Karlsberg: ratio:90.9090909090909
 Lucile Gunnels:Lucille Gunnells: ratio:93.33333333333333
 Lucille Forman:Lucille Foreman: ratio:96.55172413793103
 Lucille Gunnels:Lucille Gunnells: ratio:96.7741935483871
 Lucille O’Flynn:Lucie O’Flynn: ratio:92.85714285714286
 Lucrease Franklin:Lucretia Franklin: ratio:88.23529411764706
 Lucregia Franklin:Lucretia Franklin: ratio:94.11764705882352
-Lucy Grindon:Lucy P. Grindon: ratio:88.88888888888889
-Lucy Karlsberg:Lucey R. Karlsberg: ratio:87.5
+Lucy Karlsberg:Lucey Karlsberg: ratio:96.55172413793103
 Lucy Leary:Lucy O’Leary: ratio:90.9090909090909
 Lucy O’Flynn:Lucie O’Flynn: ratio:88.0
 Lucy Sandidg:Lucy Sandridge: ratio:92.3076923076923
@@ -2881,12 +2885,10 @@ Luke Williams:Lee Williams: ratio:88.0
 Lula Lowrey:Lula Lowery: ratio:90.9090909090909
 LyAnn Thomas:LuAnn Thomas: ratio:91.66666666666666
 Lyda Jackson:Lydia Jackson: ratio:96.0
-Lydia Lewallen:Lydia Llewallan: ratio:89.65517241379311
 Lydia Lewallen:Lydia Llewellen: ratio:89.65517241379311
 Lydia Lewellen:Lydia Llewellen: ratio:96.55172413793103
 Lydia Lewellyn:Lydia Llewellen: ratio:89.65517241379311
 Lydia Llewallen:Lydia Llewellen: ratio:93.33333333333333
-Lydia Llewellan:Lydia Llewallan: ratio:93.33333333333333
 Lydia Llewellan:Lydia Llewellen: ratio:93.33333333333333
 Lydna Fagan:Lynda Fagan: ratio:90.9090909090909
 Lyle Lindsay:Lyle Lindsey: ratio:91.66666666666666
@@ -2912,14 +2914,16 @@ Lynne Wilson:Lynn Wilson: ratio:95.65217391304348
 Lynne deBennedette:Lynne deBenedette: ratio:97.14285714285714
 Lynnette Combes:Lynnette Combs: ratio:96.55172413793103
 Lynnette Coomb:Lynnette Combs: ratio:92.85714285714286
+Lyra OBrien:Lyra O’Brien: ratio:95.65217391304348
 Léopoldine Guillaume:Leopoldine Guillaume: ratio:95.0
 M.B. Gowins:MB Gowins: ratio:90.0
-M.H. Creel:M. H. Creel: ratio:95.23809523809523
+M.H. Creel:M. Creel: ratio:88.88888888888889
 MB Gowans:MB Gowins: ratio:88.88888888888889
 MacKenzie Carroll:Mackenzie Carroll: ratio:94.11764705882352
 Macey Bell:Macy Bell: ratio:94.73684210526316
 Machna Nowak:Machna Novak: ratio:91.66666666666666
 Mackenzie Steinruck:McKenzie Steinruck: ratio:91.89189189189189
+Macy McGuire:Mary McGuire: ratio:91.66666666666666
 Maddy Mullaney:Maddy Mullany: ratio:96.2962962962963
 Maddy Mulllany:Maddy Mullany: ratio:96.2962962962963
 Maddy Mulvaney:Maddy Mullany: ratio:88.88888888888889
@@ -2934,8 +2938,9 @@ Magdalena Zapedowske:Magdalena Zapedowska: ratio:95.0
 Magdalena Zapendowska:Magdalena Zapedowska: ratio:97.5609756097561
 Magdalena Zapsolowska:Magdalena Zapedowska: ratio:87.8048780487805
 Magdalena Zapędowska:Magdalena Zapedowska: ratio:95.0
+Maggie Eisman-Renyard:Maggie Eiseman-Renyard: ratio:97.67441860465115
+Maggie Eisman-Reynard:Maggie Eiseman-Renyard: ratio:93.02325581395348
 Maggie Lee:Margie Lee: ratio:90.0
-Maggie Reynard:Maggie Renyard: ratio:92.85714285714286
 Maggie Zhoe:Maggie Zhou: ratio:90.9090909090909
 Mahna Nowak:Magna Nowak: ratio:90.9090909090909
 Mairi Quodomina:Mairi Quodomine: ratio:93.33333333333333
@@ -2961,18 +2966,17 @@ Marg Davis:Mark Davis: ratio:90.0
 Margaret Barnick:Margaret Bornick: ratio:93.75
 Margaret Bernick:Margaret Bornick: ratio:93.75
 Margaret Gillander:Margaret Gillanders: ratio:97.2972972972973
-Margaret Gowen:Margaret Cowen: ratio:92.85714285714286
 Margaret Gowen:Margaret Gowan: ratio:92.85714285714286
 Margaret Gowin:Margaret Gowan: ratio:92.85714285714286
 Margaret Grover:Margaret Graver: ratio:93.33333333333333
 Margaret Ivey:Margaret Evey: ratio:92.3076923076923
 Margaret Keaton:Margaret Keeton: ratio:93.33333333333333
 Margaret McGowan:Margaret Gowan: ratio:93.33333333333333
-Margaret Oswald:Margaret H. Oswald: ratio:90.9090909090909
 Margie Deitz:Margie Dietz: ratio:91.66666666666666
 Maria Carson:Marti Carson: ratio:91.66666666666666
 Maria D’Agnostino:Maria D’Agostino: ratio:96.96969696969697
 Maria Kecht:Maria Knecht: ratio:95.65217391304348
+Maria Neuman:Maria Neumann: ratio:96.0
 Maria Schuman:Maria Schumann: ratio:96.2962962962963
 Mariah Husted:Mariah Hustel: ratio:92.3076923076923
 Marian Biddle:Marion Biddle: ratio:92.3076923076923
@@ -2981,7 +2985,6 @@ Marian Michell:Marion Mitchell: ratio:89.65517241379311
 Marian Mitchel:Marion Mitchell: ratio:89.65517241379311
 Marian Mitchell:Marion Mitchell: ratio:93.33333333333333
 Marianna Faircloth:Mariana Faircloth: ratio:97.14285714285714
-Marianne Miller:Marianne L. Miller: ratio:90.9090909090909
 Marianne Ritchey:Marianna Ritchey: ratio:93.75
 Marie Campbell:Mary Campbell: ratio:88.88888888888889
 Marie Corcoran:Maire Corcoran: ratio:92.85714285714286
@@ -2991,7 +2994,7 @@ Mariella Minutella:Marielle Minutella: ratio:94.44444444444444
 Maries Brandis:Marie Brandis: ratio:96.2962962962963
 Marilyn Burchette:Marilyn Burchett: ratio:96.96969696969697
 Marilyn Huffman:Mary Huffman: ratio:88.88888888888889
-Marilyn Marek:Marilyn Mark: ratio:96.0
+Marilyn Tucker-Marek:Marilyn Tucker-Mark: ratio:97.43589743589743
 Marion Block:Marion Black: ratio:91.66666666666666
 Marion McKenzie:Marian McKenzie: ratio:93.33333333333333
 Marion Pierce:Marie Pierce: ratio:88.0
@@ -3020,7 +3023,7 @@ Mark Lambert:Mary Lambert: ratio:91.66666666666666
 Mark Puckett:Mark Plunkett: ratio:88.0
 Mark Puckett:Mark Prickett: ratio:88.0
 Mark Wardlow:Mark Wardlaw: ratio:91.66666666666666
-Mark Williams:Malik Williams: ratio:88.88888888888889
+Mark Williams:Mary Williams: ratio:92.3076923076923
 Mark Wright:Mary Wright: ratio:90.9090909090909
 Marko Wessnigk:Marco Wessnigk: ratio:92.85714285714286
 Markus Volk:Marcus Volk: ratio:90.9090909090909
@@ -3048,16 +3051,18 @@ Martha Harrod:Martha Harold: ratio:92.3076923076923
 Martha Kaczovowska:Marta Kaczorowska: ratio:91.42857142857143
 Martha Long:Martha Lang: ratio:90.9090909090909
 Martha Roger:Martha Rogers: ratio:96.0
-Martha Stegar:Martha A. Stegar: ratio:89.65517241379311
+Martha Steeger:Martha Stegar: ratio:88.88888888888889
+Martha Steger:Martha Stegar: ratio:92.3076923076923
+Martha Stieger:Martha Stegar: ratio:88.88888888888889
 Martha Tucker:Marsha Tucker: ratio:92.3076923076923
 Martha Turner:Martha Tyner: ratio:88.0
 Marti Briggs:Marty Briggs: ratio:91.66666666666666
 Marti Hoerr:Marty Hoerr: ratio:90.9090909090909
-Martin Creel:Martin H. Creel: ratio:88.88888888888889
 Martin Hamilton:Marie Hamilton: ratio:89.65517241379311
 Martin Harden:Martin Hardin: ratio:92.3076923076923
 Martin Nys:Martin DeNys: ratio:90.9090909090909
 Martin Roger:Martin Rodger: ratio:96.0
+Marty Nys:Mary Nys: ratio:94.11764705882352
 Marty Smith:Mary Smith: ratio:95.23809523809523
 Marty Wooten:Marty Wootten: ratio:96.0
 Marty deNys:Marty DeNys: ratio:90.9090909090909
@@ -3068,18 +3073,23 @@ Mary Bachman:Mary Bauchman: ratio:96.0
 Mary Bachmann:Mary Bauchman: ratio:92.3076923076923
 Mary Barile:Mary Bailey: ratio:90.9090909090909
 Mary Beaumeister:Mary Baumeister: ratio:96.7741935483871
-Mary Bentley:Mary M. Bentley: ratio:88.88888888888889
+Mary Bergstom:Mary Bergstrom: ratio:96.2962962962963
 Mary Brown:Mark Brown: ratio:90.0
 Mary Caprin:Mary Capron: ratio:90.9090909090909
 Mary Crawford:Macy Crawford: ratio:92.3076923076923
-Mary Crisco:Mary A. Crisco: ratio:88.0
-Mary Curren:Mary Curran: ratio:90.9090909090909
+Mary Daley:Mary Daly: ratio:94.73684210526316
 Mary DeNys:Marty DeNys: ratio:95.23809523809523
+Mary DeReuil:Mary Dereuil: ratio:91.66666666666666
 Mary Donellan:Mary Donnellan: ratio:96.2962962962963
 Mary Donnellon:Mary Donnellan: ratio:92.85714285714286
+Mary Dupree:Mary DuPree: ratio:90.9090909090909
 Mary Edwards:Mark Edwards: ratio:91.66666666666666
+Mary Garrison:Mary Harrison: ratio:92.3076923076923
+Mary Green:Mary Greene: ratio:95.23809523809523
 Mary Griffith:Mary Griffin: ratio:88.0
-Mary Harrison:Mary C. Harrison: ratio:89.65517241379311
+Mary Haagan:Mary Haagen: ratio:90.9090909090909
+Mary Hagen:Mary Haagen: ratio:95.23809523809523
+Mary Hay:Mary Ray: ratio:87.5
 Mary Holcomb:Mary Holcome: ratio:91.66666666666666
 Mary Holcombe:Mary Holcome: ratio:96.0
 Mary Hulbert:Mary Hulburt: ratio:91.66666666666666
@@ -3087,31 +3097,47 @@ Mary Johnson:Mark Johnson: ratio:91.66666666666666
 Mary Johnson:Mary Johnston: ratio:96.0
 Mary Johnston:Mark Johnson: ratio:88.0
 Mary Lea:Mary Lee: ratio:87.5
+Mary Leary:Mary O’Leary: ratio:90.9090909090909
 Mary Mack:Mary Mac: ratio:94.11764705882352
-Mary McCarthy:Mary J. McCarthy: ratio:89.65517241379311
-Mary McGuire:Mary J. McGuire: ratio:88.88888888888889
+Mary McWilliams:Mary Williams: ratio:92.85714285714286
+Mary Mills-Curren:Mary Mills-Curran: ratio:94.11764705882352
 Mary Morrison:Mary Morris: ratio:91.66666666666666
 Mary Norris:Mary Morris: ratio:90.9090909090909
 Mary O’Brian:Mary O’Brien: ratio:91.66666666666666
-Mary O’Neal:Mary E. O’Neal: ratio:88.0
+Mary O’Reiley:Mary O’Reilly: ratio:92.3076923076923
+Mary O’Reilley:Mary O’Reilly: ratio:96.2962962962963
+Mary O’Reily:Mary O’Reilly: ratio:96.0
+Mary Pearson:Mary Peterson: ratio:88.0
 Mary Ryder:Mary Rider: ratio:90.0
+Mary Sausotte:Mary Saussotte: ratio:96.2962962962963
+Mary Schaeffer:Mary Shafer: ratio:88.0
+Mary Schafer:Mary Shafer: ratio:95.65217391304348
+Mary Shaffer:Mary Shafer: ratio:95.65217391304348
+Mary Shafter:Mary Shafer: ratio:95.65217391304348
 Mary Sharrer:Mary Sherrer: ratio:91.66666666666666
+Mary Shrock:Mary Schrock: ratio:95.65217391304348
 Mary Sicotello:Mary Cicotello: ratio:92.85714285714286
 Mary Skidmore:Mary Tidmore: ratio:88.0
-Mary Stiefel:Mary R. Stiefel: ratio:88.88888888888889
+Mary Slavic:Mary Slavik: ratio:90.9090909090909
+Mary Steifel:Mary Stiefel: ratio:91.66666666666666
 Mary Taylor:Mark Taylor: ratio:90.9090909090909
 Mary Townsend:Mandy Townsend: ratio:88.88888888888889
-Mary Wakefield:Mary A. Wakefield: ratio:90.32258064516128
+Mary VanLaanen:Mary Laanen: ratio:88.0
 Mary Ward:Mary Wade: ratio:88.88888888888889
+Mary Yarbrough:Mary Scarbrough: ratio:89.65517241379311
 Mary Yeomans:Marye Yeomans: ratio:96.0
+Mary deNys:Mary Nys: ratio:88.88888888888889
 MaryAnn Corbett:Maryann Corbett: ratio:93.33333333333333
 MaryAnne Morrison:MaryAnn Morrison: ratio:96.96969696969697
 MaryGrace Carnell:Marygrace Carnell: ratio:94.11764705882352
+MaryLou Laanen:Mary Laanen: ratio:88.0
+Maryann Holmes:Mary Holmes: ratio:88.0
 Maryann Morrison:MaryAnn Morrison: ratio:93.75
 Marylin Burchett:Marilyn Burchett: ratio:87.5
 Marylou Jolly:Marilou Jolly: ratio:92.3076923076923
 Mason McCool:Madison McCool: ratio:92.3076923076923
 Mason Shefa:Mason Schefa: ratio:95.65217391304348
+Masti-Denise Maynard:Masti-Denise Mayrand: ratio:90.0
 Mathew Bullington:Matthew Bullington: ratio:97.14285714285714
 Mathew Cook:Matthew Cook: ratio:95.65217391304348
 Mathew Keegan:Matthew Keegen: ratio:88.88888888888889
@@ -3120,10 +3146,12 @@ Mathew Robley:Matthew Robley: ratio:96.2962962962963
 Mathew Sellens:Matthew Sellens: ratio:96.55172413793103
 Mathew Small:Matthew Small: ratio:96.0
 Mathew Wojcik:Matthew Wojcik: ratio:96.2962962962963
+Mathias Murphy:Matthias Murphy: ratio:96.55172413793103
 Matt CartMill:Matt Cartmill: ratio:92.3076923076923
 Matt Delong:Matt DeLong: ratio:90.9090909090909
 Matt Drumheller:Matt Prumheller: ratio:93.33333333333333
 Matt Drumheller:Matthew Drumheller: ratio:90.9090909090909
+Matt Kaufmann:Matthew Kaufmann: ratio:89.65517241379311
 Matt Keeton:Matthew Keeton: ratio:88.0
 Matt Kegan:Matt Keegan: ratio:95.23809523809523
 Matt Knight:Matthew Knight: ratio:88.0
@@ -3135,7 +3163,6 @@ Matt Shomaker:Matt Shoemaker: ratio:96.2962962962963
 Matt Sikes:Matt Sides: ratio:90.0
 Matt Well:Matt Wells: ratio:94.73684210526316
 Matt Wojcik:Mat Wojcik: ratio:95.23809523809523
-Matthew  Siemonsma:Matthew Siemonsma: ratio:97.14285714285714
 Matthew Bell:Matthew Wells: ratio:88.0
 Matthew Cole:Matthew Cogle: ratio:96.0
 Matthew Dawson:Matthew Lawson: ratio:92.85714285714286
@@ -3151,8 +3178,6 @@ Matthew McLellan:Matthew MacLellan: ratio:96.96969696969697
 Matthew Siefert:Matthew Seifert: ratio:93.33333333333333
 Matthew Wojeik:Matthew Wojcik: ratio:92.85714285714286
 Matthew Wojick:Matthew Wojcik: ratio:92.85714285714286
-Mattie Prewett:Mattie S. Prewett: ratio:90.32258064516128
-Mattie Pruitt:Mattie S. Pruitt: ratio:89.65517241379311
 Maudie Frederick:Maude Frederick: ratio:96.7741935483871
 Maudie Fredericks:Maude Frederick: ratio:93.75
 Maudie Fredrick:Maude Frederick: ratio:93.33333333333333
@@ -3167,10 +3192,12 @@ May Conwill:Mae Conwill: ratio:90.9090909090909
 McKenna Milici:McKenna Milia: ratio:88.88888888888889
 McKenzie Carroll:Mackenzie Carroll: ratio:90.9090909090909
 McKenzie Carroll:McKinzey Carroll: ratio:87.5
+Mckenna Mullis:McKenna Mullis: ratio:92.85714285714286
 Meg Larsen:Meg Larson: ratio:90.0
 Meg Lawson:Meg Larson: ratio:90.0
 Meg Robinson:Mike Robinson: ratio:88.0
 Meg Winters:Meg Winter: ratio:95.23809523809523
+Megan Auston:Megan Austin: ratio:91.66666666666666
 Megan Holm:Megan Holmes: ratio:90.9090909090909
 Megan Jenning:Megan Jennings: ratio:96.2962962962963
 Megan Johns:Megan Jones: ratio:90.9090909090909
@@ -3186,14 +3213,14 @@ Melissa Kelly:Melissa Kelley: ratio:96.2962962962963
 Melissa Musik:Melissa Musick: ratio:96.2962962962963
 Melissa Stevenson:Melissa Stephenson: ratio:91.42857142857143
 Mella Tonnies:Mella Tünnies: ratio:92.3076923076923
-Mercy Oswald:Mercy P. Oswald: ratio:88.88888888888889
+Mella Tönnies:Mella Tünnies: ratio:92.3076923076923
 Meredith Brown:Meredith Browne: ratio:96.55172413793103
 Meriam Carnell:Miriam Carnell: ratio:92.85714285714286
 Merissa Nelson:Miss Nelson: ratio:88.0
 Merlene Marsa:Myrlene Marsa: ratio:92.3076923076923
 Micah Rogers:Micah Rodgers: ratio:96.0
-Micah Walter:Micah J. Walter: ratio:88.88888888888889
-Micah Wollins:Micah Wolins: ratio:96.0
+Micah Walker:Micah Walter: ratio:91.66666666666666
+Micha Walter:Micah Walter: ratio:91.66666666666666
 Michael Apert:Michael Appert: ratio:96.2962962962963
 Michael Carney:Michael Kearney: ratio:89.65517241379311
 Michael Gustin:Mitchell Gustin: ratio:89.65517241379311
@@ -3238,7 +3265,7 @@ Michelle Biery:Michele Biery: ratio:96.2962962962963
 Michelle Briand:Michele Brand: ratio:92.85714285714286
 Michelle Curran:Michele Curran: ratio:96.55172413793103
 Michelle Dohse:Michele Dohse: ratio:96.2962962962963
-Michelle Gutiérrez:Michele G. Gutiérrez: ratio:89.47368421052632
+Michelle Gutiérrez:Michele Gutiérrez: ratio:97.14285714285714
 Michelle Rice:Michelle Raine: ratio:88.88888888888889
 Michelle Rogan:Michele Rogan: ratio:96.2962962962963
 Midael Turner:Michael Turner: ratio:88.88888888888889
@@ -3268,9 +3295,10 @@ Milly Silva:Molly Silva: ratio:90.9090909090909
 Milton Olliver:Milton Oliver: ratio:96.2962962962963
 Minilia Hudson:Manila Hudson: ratio:88.88888888888889
 Miranda Gilreath:Miranda Gilbreath: ratio:96.96969696969697
-Miranda Rader:Miranda E. Rader: ratio:89.65517241379311
+Miranda Radar:Miranda Rader: ratio:92.3076923076923
 Miranel Swafford:Mironel Swafford: ratio:93.75
 Mirian Kilmer:Miriam Kilmer: ratio:92.3076923076923
+Mirium Delirium:Miriam Delirium: ratio:93.33333333333333
 Mirjana Lausevic’:Mirjana Lausevic: ratio:96.96969696969697
 Mischa Jamy:Misha Jamy: ratio:95.23809523809523
 Mitchell Brothers:Michael Brothers: ratio:90.9090909090909
@@ -3285,23 +3313,25 @@ Molly Merritt:Molly Merrett: ratio:92.3076923076923
 Molly Savetz:Molly Sayvetz: ratio:96.0
 Molly Savitz:Molly Sayvetz: ratio:88.0
 Molly Wedbee:Molly Whedbee: ratio:96.0
+Molly-Claire Gillet:Molly-Claire Gillett: ratio:97.43589743589743
+Molly-Clare Gillett:Molly-Claire Gillett: ratio:97.43589743589743
 Mona Levandoski:Mona Lewandoski: ratio:93.33333333333333
 Mona Lewandowski:Mona Lewandoski: ratio:96.7741935483871
 Mot Harrell:Mott Harrell: ratio:95.65217391304348
 Mozelle Sheppard:Mozell Sheppard: ratio:96.7741935483871
-Mryka Bayer:Mryka Beyer: ratio:90.9090909090909
-Mryka Boyer:Mryka Beyer: ratio:90.9090909090909
+Mryka Hall-Bayer:Mryka Hall-Beyer: ratio:93.75
+Mryka Hall-Bower:Mryka Hall-Beyer: ratio:87.5
+Mryka Hall-Boyer:Mryka Hall-Beyer: ratio:93.75
 Mustapha Hussein:Mustafa Hussein: ratio:90.32258064516128
 Mylene Marsa:Myrlene Marsa: ratio:96.0
 Myles Dakin:Myles Dakan: ratio:90.9090909090909
 Myril Jones:Myrl Jones: ratio:95.23809523809523
-Myrka Beyer:Mryka Beyer: ratio:90.9090909090909
+Myrka Hall-Beyer:Mryka Hall-Beyer: ratio:93.75
 Myrlene Redmond:Myrline Redmon: ratio:89.65517241379311
 Myrline Redman:Myrline Redmon: ratio:92.85714285714286
 Myrline Redmond:Myrline Redmon: ratio:96.55172413793103
 Myron Wilkinson:Marlon Wilkinson: ratio:90.32258064516128
 Myrtice Graham:Mertice Graham: ratio:92.85714285714286
-Myrtle Ballard:Myrtle A. Ballard: ratio:90.32258064516128
 Nadene Willis:Nadine Willis: ratio:92.3076923076923
 Nadine Wells:Nadine Willis: ratio:88.0
 Nadine Wills:Nadine Willis: ratio:96.0
@@ -3335,8 +3365,7 @@ Nathalie Adenot:Natalie Adenot: ratio:96.55172413793103
 Nathalie Jablonski:Natalie Jablonski: ratio:97.14285714285714
 Nathan Abell:Nathan Abbel: ratio:91.66666666666666
 Nathan Banning:Nathan Baring: ratio:88.88888888888889
-Nathan Bean:Nathan Dean: ratio:90.9090909090909
-Nathan Deen:Nathan Dean: ratio:90.9090909090909
+Nathan Bergmann:Nathan Bergman-Dean: ratio:88.23529411764706
 Nathan Migdalia:Nathan Migdal: ratio:92.85714285714286
 Nathan Reese:Nathan Rees: ratio:95.65217391304348
 Nathan Volfango:Nathaniel Volfango: ratio:90.9090909090909
@@ -3351,13 +3380,11 @@ Neil Prichard:Neal Prichard: ratio:92.3076923076923
 Nele Gilch:Nele Gilich: ratio:95.23809523809523
 Nell Alexander:Nellie Alexander: ratio:93.33333333333333
 Nell Delmonico:Nell Delmonaco: ratio:92.85714285714286
-Nell Morris:Nell R. Morris: ratio:88.0
 Nell Whitman:Nellie Whitman: ratio:92.3076923076923
 Nellie Estes:Nell Estes: ratio:90.9090909090909
 Nellie Farrington:Nelly Farrington: ratio:90.9090909090909
 Nena Zanetti:Nina Zanetti: ratio:91.66666666666666
 Nevaeh Broome:Neveah Broome: ratio:92.3076923076923
-Nicholas Schliapin:Nicholas P. Schliapin: ratio:92.3076923076923
 Nicholas Thomas:Nicholas Thompson: ratio:87.5
 Nichole Collins:Nicole Collins: ratio:96.55172413793103
 Nichole King:Nicholas King: ratio:88.0
@@ -3374,6 +3401,7 @@ Nicolas Lazipone:Nicholas Lazipone: ratio:96.96969696969697
 Nicole Manley:Nicole Nanley: ratio:92.3076923076923
 Nigel Anderson:Neal Anderson: ratio:88.88888888888889
 Nikola Collet:Nicola Collett: ratio:88.88888888888889
+Nillie White:Nellie White: ratio:91.66666666666666
 Nina Rieger:Nina Riegler: ratio:95.65217391304348
 Noah Austin:Noah Augustine: ratio:88.0
 Noel Silva:Noelle Silva: ratio:90.9090909090909
@@ -3389,13 +3417,14 @@ Norman Ruptier:Norma Ruptier: ratio:96.2962962962963
 Noëlle Copeland:Noelle Copeland: ratio:93.33333333333333
 Névé Duma:Névé Dumas: ratio:94.73684210526316
 Odem Hawkins:Oden Hawkins: ratio:91.66666666666666
+Oisin Kidson-Ireland:Oisin Kisdon-Ireland: ratio:95.0
+Oisin Kidston-Ireland:Oisin Kisdon-Ireland: ratio:92.6829268292683
 Ola Martin:Ora Martin: ratio:90.0
 Oleda Drummond:Oleta Drummond: ratio:92.85714285714286
 Oleda Stewart:Oleta Stewart: ratio:92.3076923076923
 Oleta Stuart:Oleta Stewart: ratio:88.0
 Olga Velitchkine:Olga Velichkina: ratio:90.32258064516128
 Olita Stewart:Oleta Stewart: ratio:92.3076923076923
-Olivia Allen:Olivia M. Allen: ratio:88.88888888888889
 Olivia Defoe:Olivia DeFoe: ratio:91.66666666666666
 Olivia Jay:Olivia Way: ratio:90.0
 Ollie Stokes:Oliver Stokes: ratio:88.0
@@ -3426,6 +3455,7 @@ Pan Nunn:Pam Nunn: ratio:87.5
 Part II:Part III: ratio:93.33333333333333
 Pat Coghlin:Pat Coghlan: ratio:90.9090909090909
 Pat Coughlan:Pat Coghlan: ratio:95.65217391304348
+Pat Forsberg-Smith:Pat Fosberg-Smith: ratio:97.14285714285714
 Pat Gertiz:Pat Geritz: ratio:90.0
 Pat Gueritz:Pat Geritz: ratio:95.23809523809523
 Pat Morse:Pat Moore: ratio:88.88888888888889
@@ -3433,8 +3463,8 @@ Pat Warden:Pat Ward: ratio:88.88888888888889
 Pat Wilson:Pam Wilson: ratio:90.0
 Paticia Lazicki:Patricia Lazicki: ratio:96.7741935483871
 Patrica Temple:Patricia Temple: ratio:96.55172413793103
+Patricia Butterfield:Patricia Doss-Butterfield: ratio:88.88888888888889
 Patricia Geritz:Particia Geritz: ratio:93.33333333333333
-Patricia Geritz:Patricia Garitz: ratio:93.33333333333333
 Patricia Gertz:Particia Geritz: ratio:89.65517241379311
 Patricia Niederer:Patricia Neiderer: ratio:94.11764705882352
 Patrick DeDauw:Patrick Dedauw: ratio:92.85714285714286
@@ -3474,6 +3504,7 @@ Paula Grove:Paula Groves: ratio:95.65217391304348
 Paula Sprinfield:Paula Springfield: ratio:96.96969696969697
 Pauline Childress:Pauline Childers: ratio:90.9090909090909
 Peggy Groening:Peg Groening: ratio:92.3076923076923
+Peggy Kadima-Mazela:Peggy Kadina-Mazela: ratio:94.73684210526316
 Peggy Kujawinski:Penny Kujawinski: ratio:87.5
 Peggy Laddengaard:Peggy Loddengaard: ratio:94.11764705882352
 Peggy Wright:Peggy Bright: ratio:91.66666666666666
@@ -3515,16 +3546,16 @@ Philip Langley:Phillip Langley: ratio:96.55172413793103
 Philip Nelson:Phillip Nelson: ratio:96.2962962962963
 Philippa Rispin:Phillippa Rispin: ratio:96.7741935483871
 Philippe Doyle:Phillipe Doyle: ratio:92.85714285714286
-Philippe Gosselin:Phillippe D. Gosselin: ratio:89.47368421052632
+Philippe Gosselin:Phillippe Gosselin: ratio:97.14285714285714
 Phillip Denny:Phillip Denney: ratio:96.2962962962963
 Phillip Ford:Philip Ford: ratio:95.65217391304348
 Phillip Gilmore:Philip Gilmore: ratio:96.55172413793103
 Phillip Langely:Phillip Langley: ratio:93.33333333333333
 Phillipa Rispin:Phillippa Rispin: ratio:96.7741935483871
 Phillipa Stoddard:Philippa Stoddard: ratio:94.11764705882352
-Phillipe Gosselin:Phillippe D. Gosselin: ratio:89.47368421052632
+Phillipe Gosselin:Phillippe Gosselin: ratio:97.14285714285714
 Phillippa Stoddard:Philippa Stoddard: ratio:97.14285714285714
-Phillippe Gosselin:Phillippe D. Gosselin: ratio:92.3076923076923
+Phillippe Doyle:Phillipe Doyle: ratio:96.55172413793103
 Phillips Farewell:Phillips Farwell: ratio:96.96969696969697
 Phillis Bickers:Phyllis Bickers: ratio:93.33333333333333
 Phoebe Palloth:Phoebe Pallotti: ratio:89.65517241379311
@@ -3536,6 +3567,7 @@ Piotr Zarzycki:Piotr Zorzcki: ratio:88.88888888888889
 Pippa Stoddard:Philippa Stoddard: ratio:90.32258064516128
 Pollie Griffin:Polly Griffin: ratio:88.88888888888889
 Polly Henniger:Polly Henninger: ratio:96.55172413793103
+Porter Lorentz-Underhill:Porter Lontz-Underhill: ratio:95.65217391304348
 Presley Baker:Presley Barker: ratio:96.2962962962963
 Pressley Barker:Presley Barker: ratio:96.55172413793103
 Preston McLendon:Preston McClendon: ratio:90.9090909090909
@@ -3554,8 +3586,7 @@ Rachael Rudi:Rachel Rudi: ratio:95.65217391304348
 Rachael Shavers:Rachel Shavers: ratio:96.55172413793103
 Racheal Geary:Rachael Geary: ratio:92.3076923076923
 Racheal Speer:Rachel Speer: ratio:96.0
-Rachel Brylawski:Rachel M. Brylawski: ratio:91.42857142857143
-Rachel Carlysle:Rachel Carlisle: ratio:93.33333333333333
+Rachel Carlysle:Rachael Carlyle: ratio:93.33333333333333
 Rachel Carnell:Rachael Carnell: ratio:96.55172413793103
 Rachel Edelstein:Rachel Adelstein: ratio:93.75
 Rachel Eliot:Rachel Elliott: ratio:92.3076923076923
@@ -3573,10 +3604,12 @@ Rachel Shaver:Rachel Shavers: ratio:96.2962962962963
 Rachel Spear:Rachel Speer: ratio:91.66666666666666
 Rachel Spears:Rachel Speer: ratio:88.0
 Rachel Speers:Rachel Speer: ratio:96.0
+Rachel Swearingen:Rachel VanSwearingen: ratio:91.89189189189189
 Rachel Wagner:Rachel Wagoner: ratio:96.2962962962963
 Rachel Williamson:Rachel Williams: ratio:93.75
 Rae Egglestone:Rachel Egglestone: ratio:90.32258064516128
 Rafael Finkel:Raphael Finkel: ratio:88.88888888888889
+Rafi Finkle:Rafi Finkel: ratio:90.9090909090909
 Randal Bradley:Randall Bradley: ratio:96.55172413793103
 Randle Bradley:Randall Bradley: ratio:89.65517241379311
 Randy Neely:Randy Nealy: ratio:90.9090909090909
@@ -3587,8 +3620,8 @@ Randy Webb:Randy Webber: ratio:90.9090909090909
 Randy Weber:Randy Webber: ratio:95.65217391304348
 Raphaël Boden:Raphael Boden: ratio:92.3076923076923
 Raven Townsend:Raven Townson: ratio:88.88888888888889
+Ray Cott-Meisel:Ray Cott-Meissel: ratio:96.7741935483871
 Ray Hunter:Ray Huener: ratio:90.0
-Ray Meisel:Ray Meissel: ratio:95.23809523809523
 Ray Milesky:Ray Milefsky: ratio:95.65217391304348
 Ray Nelson:Roy Nelson: ratio:90.0
 Ray Reckenberg:Ray Rechenberg: ratio:92.85714285714286
@@ -3603,8 +3636,6 @@ Rebecca Gereen:Rebecca Green: ratio:96.2962962962963
 Rebecca Hawking:Rebecca Hawkins: ratio:93.33333333333333
 Rebecca Loman:Rebecca Lowman: ratio:96.2962962962963
 Rebecca Tuley:Rebecca Tulie: ratio:92.3076923076923
-Rebeka Craster:Rebeka Crasta: ratio:88.88888888888889
-Rebekah Clay:Rebekah L. Clay: ratio:88.88888888888889
 Rebekah Eldridge:Rebecca Eldridge: ratio:87.5
 Reda Macintosh:Reda McIntosh: ratio:88.88888888888889
 Reed Schilback:Reed Schilbach: ratio:92.85714285714286
@@ -3622,7 +3653,6 @@ Rene Green:Rene Greene: ratio:95.23809523809523
 Rene Taylor:Renee Taylor: ratio:95.65217391304348
 Renetta Folds:Renita Folds: ratio:88.0
 Reuben Ball:Rueben Ball: ratio:90.9090909090909
-Reuben Beery:Reuben Berry: ratio:91.66666666666666
 Reuben Beery:Rueben Beery: ratio:91.66666666666666
 Rhonda Brown:Rhonda Barton: ratio:88.0
 Rhonda Henderschott:Rhonda Hendershot: ratio:94.44444444444444
@@ -3665,7 +3695,7 @@ Rob Mahony:Rob Mahoney: ratio:95.23809523809523
 Rob Ryan:Ron Ryan: ratio:87.5
 Rob Wedgbury:Robert Wedgbury: ratio:88.88888888888889
 Robbie Anderson:Robby Anderson: ratio:89.65517241379311
-Robbie Ketcham:Robbie Ketchan: ratio:92.85714285714286
+Robbie Ketcham:Robbie Ketchum: ratio:92.85714285714286
 Rober Chambless:Robert Chambless: ratio:96.7741935483871
 Robert Adams:Robert Adam: ratio:95.65217391304348
 Robert Baker:Robert Walker: ratio:88.0
@@ -3676,6 +3706,7 @@ Robert Dove:Robert Done: ratio:90.9090909090909
 Robert DuPre:Robert Dupree: ratio:88.0
 Robert DuPree:Robert Dupree: ratio:92.3076923076923
 Robert Dwarkin:Robert Dworkin: ratio:92.85714285714286
+Robert Glove:Robert Glover: ratio:96.0
 Robert Handal:Robert Handel: ratio:92.3076923076923
 Robert Handell:Robert Handel: ratio:96.2962962962963
 Robert Hartley:Roberta Hartley: ratio:96.55172413793103
@@ -3687,7 +3718,6 @@ Robert Koepcke:Robert Koepke: ratio:96.2962962962963
 Robert Miller:Roger Miller: ratio:88.0
 Robert Peek:Robert Meek: ratio:90.9090909090909
 Robert Strauss:Roberta Strauss: ratio:96.55172413793103
-Robert Todd:Robert H. Todd: ratio:88.0
 Robert Vaughan:Robert Vaughn: ratio:96.2962962962963
 Robert Williams:Roger Williams: ratio:89.65517241379311
 Roberts Chambless:Robert Chambless: ratio:96.96969696969697
@@ -3700,6 +3730,7 @@ Roger Keys:Roger Keyes: ratio:95.23809523809523
 Roise Setford:Rosie Setford: ratio:92.3076923076923
 Roland Hutchins:Roland Hutchinson: ratio:93.75
 Roland Hutchison:Roland Hutchinson: ratio:96.96969696969697
+Roman Zimmermann:Roman Zimmerman: ratio:96.7741935483871
 Romona Light:Ramona Light: ratio:91.66666666666666
 Ron Andrico:Ron Adnrico: ratio:90.9090909090909
 Ron Ballinger:Ronnie Ballinger: ratio:89.65517241379311
@@ -3721,7 +3752,6 @@ Rosalie Elkington:Rosalie Elkinton: ratio:96.96969696969697
 Rosalie Elkinston:Rosalie Elkinton: ratio:96.96969696969697
 Rosalind Woods:Rosalind Wood: ratio:96.2962962962963
 Rose Greenaway:Rosemary Greenaway: ratio:87.5
-Rose Yntema:Rose M. Yntema: ratio:88.0
 Rosemary Yntema:Rosemarie Yntema: ratio:90.32258064516128
 Rosey Sokolov:Rosie Sokolov: ratio:92.3076923076923
 Rosie Lindsay:Rosie Lindsey: ratio:92.3076923076923
@@ -3734,11 +3764,10 @@ Roxanna Lester:Rexanna Lester: ratio:92.85714285714286
 Roxie Duffey:Roxie Duffy: ratio:95.65217391304348
 Roy Tarrentine:Roy Turrentine: ratio:92.85714285714286
 Royal Nelson:Roy Nelson: ratio:90.9090909090909
-Ruby Francis:Ruby J. Francis: ratio:88.88888888888889
-Ruby Mauldin:Ruby D. Mauldin: ratio:88.88888888888889
 Russ Hansen:Russ Hanson: ratio:90.9090909090909
 Ruth Barton:Ruth Burton: ratio:90.9090909090909
 Ruth Burleson:Ruth Burlson: ratio:96.0
+Ruth Crumbley:Ruth Trumley: ratio:88.0
 Ruth Daniels:Ruth Daniel: ratio:95.65217391304348
 Ruth Dorfler:Ruth Doerfler: ratio:96.0
 Ruth Garzo:Ruth Garza: ratio:90.0
@@ -3750,8 +3779,8 @@ Ruth Parris:Ruth Parrish: ratio:95.65217391304348
 Ryan Showalter:Ray Showalter: ratio:88.88888888888889
 Rüdiger Forster:Rudiger Forster: ratio:93.33333333333333
 S.L.:S. L.: ratio:88.88888888888889
-S.T. Reed:S. T. Reed: ratio:94.73684210526316
-S.T. Reid:S. T. Reid: ratio:94.73684210526316
+S.T. Reed:S. Reed: ratio:87.5
+S.T. Reid:S. Reid: ratio:87.5
 Saara Paakarinen:Saara Pakarinen: ratio:96.7741935483871
 Saara Pakarainen:Saara Pakarinen: ratio:96.7741935483871
 Sabina Henzelmann:Sabina Heinzelmann: ratio:97.14285714285714
@@ -3759,9 +3788,9 @@ Sadbh O’Flynn:Sadhbh O’Flynn: ratio:96.2962962962963
 Sadhbh Flynn:Sadhbh O’Flynn: ratio:92.3076923076923
 Sadie Bagley:Sadie Bailey: ratio:91.66666666666666
 Sallie Langendorf:Sally Langendorf: ratio:90.9090909090909
-Sally  Lord:Sally Lord: ratio:95.23809523809523
 Sally Beery:Sally Berry: ratio:90.9090909090909
 Sally Findley:Sally Findlay: ratio:92.3076923076923
+Sally Greaves-Lloyd:Sally Greaves-Lord: ratio:91.89189189189189
 Sally Guylan:Sally Gwylan: ratio:91.66666666666666
 Sally Langdendorf:Sally Langendorf: ratio:96.96969696969697
 Sally MacEwen:Sally McEwen: ratio:96.0
@@ -3789,18 +3818,17 @@ Sandy Faloon:Sandy Falloon: ratio:96.0
 Sandy Klien:Sandy Klein: ratio:90.9090909090909
 Sandy Schulteis:Sandy Schultheis: ratio:96.7741935483871
 Sandy Semenoff:Sandy Semeonoff: ratio:96.55172413793103
-Sara  Fujioka:Sara Fujioka: ratio:96.0
 Sara Beasley:Sarah Beasley: ratio:96.0
 Sara Coates:Sarah Coates: ratio:95.65217391304348
 Sara Curry:Sarah Curry: ratio:95.23809523809523
-Sara Davis:Sara Davie: ratio:90.0
+Sara Davie:Sarah Davie: ratio:95.23809523809523
 Sara Deturk:Sara DeTurk: ratio:90.9090909090909
 Sara Galper:Sarah Galper: ratio:95.65217391304348
 Sara George:Sarah George: ratio:95.65217391304348
 Sara Gershon:Sarah Gershon: ratio:96.0
 Sara Huckaby:Sarah Huckaby: ratio:96.0
+Sara Jenkins:Sarah Jenkins: ratio:96.0
 Sara Knapton:Sarah Knapton: ratio:96.0
-Sara Koditschek:Sarah Koditschek: ratio:96.7741935483871
 Sara Leflar:Sarah Leflar: ratio:95.65217391304348
 Sara Lenox:Sara Lennox: ratio:95.23809523809523
 Sara Lynch:Sandra Lynch: ratio:90.9090909090909
@@ -3817,23 +3845,21 @@ Sara Underhill:Sarah Underhill: ratio:96.55172413793103
 Sara Vaughn:Sarah Vaughn: ratio:95.65217391304348
 Sara Warady:Sara Ward: ratio:90.0
 Sara White:Sarah White: ratio:95.23809523809523
+Sara Whites:Sarah White: ratio:90.9090909090909
 Sara Wilson:Sharman Wilson: ratio:88.0
 Sara Wootten:Sarah Wootten: ratio:96.0
 Sarah Baugh:Sara Baugh: ratio:95.23809523809523
+Sarah Beaber-Fujioka:Sara Beaber-Fujioka: ratio:97.43589743589743
 Sarah Berry:Sara Berry: ratio:95.23809523809523
 Sarah Bowen:Sara Bowen: ratio:95.23809523809523
 Sarah Carnell:Sara Carnell: ratio:96.0
-Sarah Davie:Sara Davie: ratio:95.23809523809523
-Sarah Davie:Sarah J. Davie: ratio:88.0
+Sarah Davis:Sara Davis: ratio:95.23809523809523
 Sarah Facceney:Sara Facceney: ratio:96.2962962962963
 Sarah Fujioka:Sara Fujioka: ratio:96.0
 Sarah Hood:Sara Hood: ratio:94.73684210526316
 Sarah Ingram:Sara Ingram: ratio:95.65217391304348
-Sarah Jenkins:Sara Jenkins: ratio:96.0
-Sarah Jenkins:Sarah H. Jenkins: ratio:89.65517241379311
 Sarah Kerhberg:Sarah Kehrberg: ratio:92.85714285714286
 Sarah Kostka:Sara Kostka: ratio:95.65217391304348
-Sarah Leitao:Sarah J. Leitao: ratio:88.88888888888889
 Sarah Lott:Sara Lott: ratio:94.73684210526316
 Sarah Maiko:Sarah Maika: ratio:90.9090909090909
 Sarah Martinez:Sara Martinez: ratio:96.2962962962963
@@ -3843,10 +3869,10 @@ Sarah Ng:Sara Ng: ratio:93.33333333333333
 Sarah Pilser:Sarah Pilzer: ratio:91.66666666666666
 Sarah Roberts:Sara Roberts: ratio:96.0
 Sarah Sandberg:Sara Sandberg: ratio:96.2962962962963
-Sarah Thomas:Sara Thomason: ratio:88.0
-Sarah Thomason:Sara Thomason: ratio:96.2962962962963
+Sarah Thomason:Sarah Thomas: ratio:92.3076923076923
 Sarah Toomey:Sarah Twomey: ratio:91.66666666666666
 Sarah Ward:Sara Ward: ratio:94.73684210526316
+Sarah Whites:Sarah White: ratio:95.65217391304348
 Sarah Whitten:Sarah White: ratio:91.66666666666666
 Sasha Hsucsyk:Sasha Hsuczyk: ratio:92.3076923076923
 Sasha Hzuczyk:Sasha Hsuczyk: ratio:92.3076923076923
@@ -3860,7 +3886,6 @@ Scott McCown:Scott McLown: ratio:91.66666666666666
 Scott Oliver:Scot Oliver: ratio:95.65217391304348
 Scott Polston:Scotty Polston: ratio:96.2962962962963
 Scott Stieg:Scott Stice: ratio:90.9090909090909
-Scottish Singers:Scottish E. Singers: ratio:91.42857142857143
 Sean Dougherty:Sean Doherty: ratio:92.3076923076923
 Sean MacPhearson:Sean MacPherson: ratio:96.7741935483871
 Sean McGrath:Shane McGrath: ratio:88.0
@@ -3902,16 +3927,16 @@ Shea Kelley:Shea Kelly: ratio:95.23809523809523
 Sheila Harris:Shelia Harris: ratio:92.3076923076923
 Sheila Kelly:Shea Kelly: ratio:90.9090909090909
 Sheila Kelly:Sheila Kelley: ratio:96.0
-Sheila Macadam:Sheila G. Macadam: ratio:90.32258064516128
-Sheila Smith:Sheila G. Smith: ratio:88.88888888888889
+Sheila MacAdam:Sheila Macadam: ratio:92.85714285714286
 Shelby Castillo:Shelbie Castillo: ratio:90.32258064516128
 Shelby Presnell:Shelbie Presnell: ratio:90.32258064516128
 Shelby Sheppard:Shelbie Sheppard: ratio:90.32258064516128
+Shelia Macadam:Sheila Macadam: ratio:92.85714285714286
 Shelia Nugent:Sheila Nugent: ratio:92.3076923076923
 Shelia Patterson:Sheila Patterson: ratio:93.75
+Shelia Smith:Sheila Smith: ratio:91.66666666666666
 Shelia Wootten:Sheila Wootten: ratio:92.85714285714286
 Shelley Campbell:Shelly Campbell: ratio:96.7741935483871
-Shelley Davis:Shelley C. Davis: ratio:89.65517241379311
 Shellia Harris:Shelia Harris: ratio:96.2962962962963
 Shellie Capps:Shelia Capps: ratio:88.0
 Shellie Capps:Shelley Capps: ratio:92.3076923076923
@@ -3921,15 +3946,16 @@ Shelly Phillips:Shelley Phillips: ratio:96.7741935483871
 Sheree Taylor:Sheri Taylor: ratio:88.0
 Sherill McKinnon:Sherrill McKinnon: ratio:96.96969696969697
 Sherona Nelson:Sharona Nelson: ratio:92.85714285714286
-Sherrel Durand:Sherrill Durand: ratio:89.65517241379311
+Sherrel Durand:Shirrell Durand: ratio:89.65517241379311
 Sherrell Clenio:Sherrell Cleino: ratio:93.33333333333333
-Sherrell Clieno:Sherrell Cleino: ratio:93.33333333333333
-Sherrell Durand:Sherrill Durand: ratio:93.33333333333333
+Sherrell Clieno:Sherrill Clieno: ratio:93.33333333333333
+Sherrell Durand:Shirrell Durand: ratio:93.33333333333333
 Sherri Taylor:Sheri Taylor: ratio:96.0
 Sherri Townson:Sherry Townson: ratio:92.85714285714286
 Sherrie Guthery:Sherry Guthery: ratio:89.65517241379311
 Sherrie Lovvorn:Sherry Lovvorn: ratio:89.65517241379311
 Sherrill Cleino:Sherrell Cleino: ratio:93.33333333333333
+Sherrill Cleino:Sherrill Clieno: ratio:93.33333333333333
 Sherry Anderson:Sherrel Anderson: ratio:90.32258064516128
 Sherry Guthrie:Sherrie Guthrie: ratio:89.65517241379311
 Sherry Louvorn:Sherry Lovvorn: ratio:92.85714285714286
@@ -3981,14 +4007,15 @@ Stella Platt:Stella Pratt: ratio:91.66666666666666
 Stephan O’Leary:Stephen O’Leary: ratio:93.33333333333333
 Stephanie Priskos:Stephani Priskos: ratio:96.96969696969697
 Stephe Jardine:Stephen Jardine: ratio:96.55172413793103
-Stephen Caner:Stephen Warner: ratio:88.88888888888889
-Stephen Conte:Stephen Cole: ratio:88.0
-Stephen Conte:Steven Conte: ratio:88.0
+Stephen Caner:Stephen Carver: ratio:88.88888888888889
+Stephen Cole:Stephen Conte: ratio:88.0
 Stephen Latimer:Steven Latimer: ratio:89.65517241379311
 Stephen Levine:Steven Levine: ratio:88.88888888888889
 Stephen Marman:Stephan Marman: ratio:92.85714285714286
 Stephen Meeks:Steven Meeks: ratio:88.0
 Stephen Meidinger:Steven Meidinger: ratio:90.9090909090909
+Stephen Metcalf-Conte:Steven Metcalf-Conte: ratio:92.6829268292683
+Stephen Metcalfe-Conte:Steven Metcalf-Conte: ratio:90.47619047619048
 Stephen Postellon:Steve Postellon: ratio:87.5
 Stephen Rogers:Stephen Rogge: ratio:88.88888888888889
 Stephen Schmidgall:Steve Schmidgall: ratio:88.23529411764706
@@ -3997,7 +4024,6 @@ Steve Adams:Steve McAdams: ratio:91.66666666666666
 Steve Angel:Steve Angell: ratio:95.65217391304348
 Steve Bzdyra:Steven Bzydra: ratio:88.0
 Steve Cobb:Steve Cobbs: ratio:95.23809523809523
-Steve Conte:Steven Conte: ratio:95.65217391304348
 Steve Hackley:Steve Cackley: ratio:92.3076923076923
 Steve Harrison:Steve Harris: ratio:92.3076923076923
 Steve Helwig’s:Steve Helwig: ratio:92.3076923076923
@@ -4018,6 +4044,8 @@ Steve Toriello:Steven Toriello: ratio:96.55172413793103
 Steve Welsh:Steve Walsh: ratio:90.9090909090909
 Steve Werner:Steve Warner: ratio:91.66666666666666
 Steven Bzdyra:Steven Bzydra: ratio:92.3076923076923
+Steven Conte:Stephen Conte: ratio:88.0
+Steven Conte:Steve Conte: ratio:95.65217391304348
 Steven Galob:Steven Golob: ratio:91.66666666666666
 Steven Hammock:Stephen Hammock: ratio:89.65517241379311
 Steven Helwig:Steve Helwig: ratio:96.0
@@ -4025,6 +4053,7 @@ Steven Holland:Steve Holland: ratio:96.2962962962963
 Steven Hoyt:Steve Hoyt: ratio:95.23809523809523
 Steven Huffman:Stephen Huffman: ratio:89.65517241379311
 Steven Hullett:Stephen Hullett: ratio:89.65517241379311
+Steven Krueger:Stephen Krueger: ratio:89.65517241379311
 Steven Lambert:Steve Lambert: ratio:96.2962962962963
 Steven McLeod:Stephen McLeod: ratio:88.88888888888889
 Steven McMaster:Stephen McMaster: ratio:90.32258064516128
@@ -4059,6 +4088,8 @@ Sue Hansen:Sue Hanson: ratio:90.0
 Sue Hengelsberger:Sue Hengelsberg: ratio:93.75
 Sue Henglesberg:Sue Hengelsberg: ratio:93.33333333333333
 Sue Kessel:Sue Kessell: ratio:95.23809523809523
+Sue Lankear:Sue Lanfear: ratio:90.9090909090909
+Sue Reinesch:Sue Reinisch: ratio:91.66666666666666
 Sun Hanson:Susan Hanson: ratio:90.9090909090909
 Sunny Doyle:Sonny Doyle: ratio:90.9090909090909
 Susan Allredge:Susan Allred: ratio:92.3076923076923
@@ -4093,6 +4124,7 @@ Susan Piltcher:Susan Pilcher: ratio:96.2962962962963
 Susan Smiley:Susan Shirley: ratio:88.0
 Susan Willette:Susan Willett: ratio:96.2962962962963
 Susan William:Susan Williams: ratio:96.2962962962963
+Susan Willis:Susan Williams: ratio:92.3076923076923
 Susan Wood:Susan Good: ratio:90.0
 Susannah Engdahl:Susana Engdahl: ratio:93.33333333333333
 Susannah Gill:Susannah Hill: ratio:92.3076923076923
@@ -4116,13 +4148,14 @@ Suzie Smith:Susie Smith: ratio:90.9090909090909
 Suzy Lee:Susy Lee: ratio:87.5
 Sybil Adams:Syble Adams: ratio:90.9090909090909
 Syble Adms:Syble Adams: ratio:95.23809523809523
+Syd Calwell:Syd Caldwell: ratio:95.65217391304348
 Sydney Burleson:Sidney Burleson: ratio:93.33333333333333
 Sydney Thomas:Sidney Thomas: ratio:92.3076923076923
 Sylvia Marin:Sylvia Martin: ratio:96.0
 Sylvia Senauke:Sylvie Senauke: ratio:92.85714285714286
-T.J. Funderburk:T. J. Funderburk: ratio:96.7741935483871
-T.J. Stewart:T. J. Stewart: ratio:96.0
-T.J. Willard:T. J. Willard: ratio:96.0
+T.J. Funderburk:T. Funderburk: ratio:92.85714285714286
+T.J. Stewart:T. Stewart: ratio:90.9090909090909
+T.J. Willard:T. Willard: ratio:90.9090909090909
 Tabatha Cook:Tabitha Cook: ratio:91.66666666666666
 Tabetha Murphy:Tabatha Murphy: ratio:92.85714285714286
 Tabitha Hancock:Tabatha Hancock: ratio:93.33333333333333
@@ -4138,6 +4171,7 @@ Tarik Waseh:Tarik Wareh: ratio:90.9090909090909
 Tat Bailey:Taft Bailey: ratio:95.23809523809523
 Tate Bailey:Taft Bailey: ratio:90.9090909090909
 Tatiana Hargraves:Tatiana Hargreaves: ratio:97.14285714285714
+Teacher-Dan Brittain:Teacher--Dan Brittain: ratio:97.5609756097561
 Ted Browne:Ted Brown: ratio:94.73684210526316
 Ted Creel:Teddy Creel: ratio:90.0
 Teddy Godsey:Ted Godsey: ratio:90.9090909090909
@@ -4156,7 +4190,6 @@ Terri Schill:Terre Schill: ratio:91.66666666666666
 Terry Hoag:Terry Hogg: ratio:90.0
 Terry Wooten:Terry Wootten: ratio:96.0
 The Danby:The Day: ratio:87.5
-The Singers:The T. Singers: ratio:88.0
 Thelma Elliot:Thelma Elliott: ratio:96.2962962962963
 Theo Waddel:Theo Waddell: ratio:95.65217391304348
 Theresa Bethune:Teresa Bethune: ratio:96.55172413793103
@@ -4176,21 +4209,22 @@ Thomas Futral:Thomas Gutral: ratio:92.3076923076923
 Thomas McDonald:Thomas MacDonald: ratio:96.7741935483871
 Thomas Schultz:Tom Schultz: ratio:88.0
 Thomas Sprackland:Tom Sprackland: ratio:90.32258064516128
-Thomas Willard:Thomas J. Willard: ratio:90.32258064516128
+Thomas Ward:Thomas Willard: ratio:88.0
 Thomson Yeh:Thompson Yeh: ratio:95.65217391304348
 Thyra Balentine:Thyra Ballentine: ratio:96.7741935483871
 Tim Cook’s:Tim Cook: ratio:88.88888888888889
 Tim Culberston:Tim Culbertson: ratio:92.85714285714286
+Tim Englen:Tim Engeln: ratio:90.0
+Tim Englin:Tim Engeln: ratio:90.0
 Tim Erickson:Tim Erikson: ratio:95.65217391304348
 Tim Eriksen:Tim Erikson: ratio:90.9090909090909
 Tim Kinkley:Tim Binkley: ratio:90.9090909090909
+Tim Raynolds:Tim Reynolds: ratio:91.66666666666666
 Tim VonEngeln:Tim VonEnglen: ratio:92.3076923076923
 Tim Whittaker:Tim Whitaker: ratio:96.0
-Timothy Studstill:Timothy J. Studstill: ratio:91.89189189189189
 Tina Dubberly:Tina Dubbery: ratio:96.0
 Tina Kramer:Tina Cramer: ratio:90.9090909090909
 Tina Letts:Tina Lett: ratio:94.73684210526316
-Tina Marquez:Tina B. Marquez: ratio:88.88888888888889
 Tobias Kannegießer:Tobias Kanngiesser: ratio:88.88888888888889
 Tobias Kanngießer:Tobias Kanngiesser: ratio:91.42857142857143
 Tofer Lawton:Topher Lawton: ratio:88.0
@@ -4240,14 +4274,13 @@ Tonya George:Tonia George: ratio:91.66666666666666
 Tori Cramer:Tori Kramer: ratio:90.9090909090909
 Tory O’dell:Tory Odell: ratio:95.23809523809523
 Travis McCay:Travis McCoy: ratio:91.66666666666666
-Travis McCay:Travis McKay: ratio:91.66666666666666
 Travis Peak:Travis Peek: ratio:90.9090909090909
 Travis Peck:Travis Peek: ratio:90.9090909090909
 Travis Peet:Travis Peek: ratio:90.9090909090909
 Trent Peachy:Trent Peachey: ratio:96.0
 Tressie Adkins:Tressie Atkins: ratio:92.85714285714286
 Tricia Entwistle:Tricia Entwhistle: ratio:96.96969696969697
-Trish McClain:Tresha McClain: ratio:88.88888888888889
+Trish McClain:Travis McClain: ratio:88.88888888888889
 Trish Neilsen:Trish Nielsen: ratio:92.3076923076923
 Tristan Gordan:Tristan Gordon: ratio:92.85714285714286
 Tristan Gorden:Tristan Gordon: ratio:92.85714285714286
@@ -4261,6 +4294,7 @@ Ulla Schlohbohm:Ulla Schlobohm: ratio:96.55172413793103
 Ulricke Tietjen:Ulrike Tietjen: ratio:96.55172413793103
 Ulrike Brauners:Ulrike Brauneis: ratio:93.33333333333333
 Uncle Jack’s:Uncle Jack: ratio:90.9090909090909
+Vale Cofer-Shabica:Vale Coter-Shabica: ratio:94.44444444444444
 Vasili Gletsos:Vasilios Gletsos: ratio:93.33333333333333
 Vaudie Shearer:Vaudie Sherer: ratio:96.2962962962963
 Vaudie Sherrer:Vaudie Sherer: ratio:96.2962962962963
@@ -4288,7 +4322,6 @@ Vicky Hayes:Vicki Hayes: ratio:90.9090909090909
 Vicky Morgan:Vicki Morgan: ratio:91.66666666666666
 Vicky Neyman:Vickie Neyman: ratio:88.0
 Vicky See:Vicki See: ratio:88.88888888888889
-Victoria Cofield:Victoria G. Cofield: ratio:91.42857142857143
 Victoria Elliott:Victoria Elliot: ratio:96.7741935483871
 Vikki Elliott:Vicki Elliott: ratio:92.3076923076923
 Vila Tyree:Viola Tyree: ratio:95.23809523809523
@@ -4297,16 +4330,15 @@ Violet Crumben:Violet Krumbein: ratio:89.65517241379311
 Violet Thomason:Violet Thomaston: ratio:96.7741935483871
 Virgil Campbell:Virgel Campbell: ratio:93.33333333333333
 Virgina Bonham:Virginia Bonham: ratio:96.55172413793103
-Virginia Belveal:Virginia B. Belveal: ratio:91.42857142857143
 Virginia Benaid:Virginia Benade: ratio:93.33333333333333
 Virginia Douglass:Virginia Douglas: ratio:96.96969696969697
 Virginia Watson:Virginia Watts: ratio:89.65517241379311
 Virginia Wyatts:Virginia Watts: ratio:96.55172413793103
 Vivian Rogers’:Vivian Rogers: ratio:96.2962962962963
 W. Green:W.L. Green: ratio:88.88888888888889
-W.A. Parker:W. A. Parker: ratio:95.65217391304348
+W.A. Parker:W. Parker: ratio:90.0
 W.C. Green:W.L. Green: ratio:90.0
-W.M. Allen:W. M. Allen: ratio:95.23809523809523
+W.M. Allen:W. Allen: ratio:88.88888888888889
 Wade Cotter:Wade Kotter: ratio:90.9090909090909
 Wallace McKenzie:Wallace MacKenzie: ratio:96.96969696969697
 Wally Block:Wally Bloch: ratio:90.9090909090909
@@ -4320,7 +4352,6 @@ Walton Donaldson:Wilton Donaldson: ratio:93.75
 Wanda Capp:Wanda Capps: ratio:95.23809523809523
 Wanda Caps:Wanda Capps: ratio:95.23809523809523
 Wanda Greg:Wanda Gregg: ratio:95.23809523809523
-Warren Meadows:Warren G. Meadows: ratio:90.32258064516128
 Warren Steele:Warren Steel: ratio:96.0
 Waylon Blakely:Waylon Blakeley: ratio:96.55172413793103
 Waymon Minor:Wayman Minor: ratio:91.66666666666666
@@ -4339,16 +4370,19 @@ Wendy Gillchrist:Wendy Gilchrist: ratio:96.7741935483871
 Wendy Hoffman:Wendy Hofmann: ratio:92.3076923076923
 Wendy Hoffmann:Wendy Hofmann: ratio:96.2962962962963
 Wendy Hofman:Wendy Hofmann: ratio:96.0
+Wener Ullah:Werner Ullah: ratio:95.65217391304348
 Wes Burrell:Wesley Burrell: ratio:88.0
 Wes Reid:Wes Reed: ratio:87.5
 Wilburn Ellison:Wilborn Ellison: ratio:93.33333333333333
 Wilda Homes:Wilda Holmes: ratio:95.65217391304348
 Will Dove:Will Dover: ratio:94.73684210526316
+Will Dubose:William Dubose: ratio:88.0
 Will Fesberman:Will Fespeman: ratio:88.88888888888889
 Will Fesperman:Will Fespeman: ratio:96.2962962962963
 Will Fitzgerald:William Fitzgerald: ratio:90.9090909090909
 Will Freeman:Willie Freeman: ratio:92.3076923076923
 Will Hall:Willie Hall: ratio:90.0
+Will Harran:Will Harron: ratio:90.9090909090909
 Will Ingram:Will Ingraham: ratio:91.66666666666666
 Will Kelley:Will Kelly: ratio:95.23809523809523
 Will Kerby:Will Kirby: ratio:90.0
@@ -4363,11 +4397,10 @@ Willadean Brunette:Willa Brunette: ratio:87.5
 Willard Fredericks:Willard Frederick: ratio:97.14285714285714
 William Allred:Will Allred: ratio:88.0
 William Cleary:William Clay: ratio:92.3076923076923
-William Dubose:William Debose: ratio:92.85714285714286
+William Debose:William Dubose: ratio:92.85714285714286
 William Gilman:Will Gilman: ratio:88.0
 William Gilman:William Gillman: ratio:96.55172413793103
 William Hays:William Hayes: ratio:96.0
-William Reynolds:William J. Reynolds: ratio:91.42857142857143
 William Thompson:Will Thompson: ratio:89.65517241379311
 Willie McCumber:Willis McCumber: ratio:93.33333333333333
 Willouise Malone:Willowese Malone: ratio:87.5
@@ -4403,10 +4436,11 @@ Zack Lindal:Zack Lindahl: ratio:95.65217391304348
 Zackery Thomas:Zack Thomas: ratio:88.0
 Zemirah Moffat:Zemirah Moffatt: ratio:96.55172413793103
 Zenna Tucker:Zena Tucker: ratio:95.65217391304348
-Zilfa Cornett:Zilpha Cornett: ratio:88.88888888888889
+Zilfa Cornett:Zelfa Cornett: ratio:92.3076923076923
 Zoe Carpentieri:Zoë Carpentieri: ratio:93.33333333333333
 Zoe Griffis:Zoey Griffis: ratio:95.65217391304348
 Zoe Madonna:Zoë Madonna: ratio:90.9090909090909
 Zofia Przykowska:Zosia Przyrowska: ratio:87.5
 Zofia Przyrowska:Zosia Przyrowska: ratio:93.75
 Zosia Przykowska:Zosia Przyrowska: ratio:93.75
+Álvaro Duarté:Álvaro Duarte: ratio:92.3076923076923

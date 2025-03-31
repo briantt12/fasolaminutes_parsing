@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf-8
+#original
 import pandas as pd
 import re
 import util
@@ -9,23 +10,28 @@ import matplotlib.pyplot as plt
 import time
 nlp = spacy.load("en_core_web_sm")
 batch = 1000
-confidence = 80
-
-times=[]
+confidence = 87
 names_count = []
 # Caching sets
 cached_non_name_words = set()
-passed_names = set()  # Store full names for fuzzy matching
+# passed_names = set()  # Store full names for fuzzy matching
 matched = set()
 final_words = set()
 failed = set()
 fuzzyCount = 0
 start_time = time.time()
-
+history = set()
+original_names = set()
 
 def convert_to_initials(name):
     """Convert the second name to an initial if there are more than two words."""
+    original_names.add(name)
     words = name.split()
+    if '-' in name:
+        firstname = words[0]
+        lastname = name.split('-')[-1]
+        return firstname+' '+lastname
+    
     if len(words) >= 3:  # If there's a middle name or extra names
         return f"{words[0]} {words[1][0]}. {words[-1]}"  # Convert only the second word to an initial
     if len(words) == 2:
@@ -49,59 +55,65 @@ def ner_check_person_is_name(text):
 
 def is_name(word,confidence):
     global start_time, fuzzyCount
-    
-    
-    if(len(passed_names)% batch == 0 and batch < 22000):
-        elapsed_time = time.time() - start_time
+
+    if(len(final_words)% batch == 0):
         
-        final_words.update(passed_names)
-        pd.DataFrame({
-    "Passed Words Ordered": list(final_words),  # Original order
-    "Passed Words Sorted": sorted(final_words)  # Sorted order
-}).to_csv("passed_names_" + str(batch) + ".csv", index=False)
+        pd.DataFrame({"Passed Words Sorted": sorted(final_words)}).to_csv("passed_names_" + str(batch) + ".csv", index=False)
         
-        pd.DataFrame({"Matched Words": sorted(list(matched))}).to_csv("matched_names_"+str(batch)+".csv", index=False)
-        times.append(elapsed_time/60)
+        pd.DataFrame({"Matched Words": sorted(list(matched))}).to_csv("matched_names.csv", index=False)
         names_count.append(len(final_words))
-        passed_names.clear()
         
-        plt.figure(figsize=(8, 5))  # Set figure size
-        plt.plot(times,names_count, marker='o', linestyle='-', color='b', label="Processing Time")
-        plt.ylabel("Number of Items in final_words")
-        plt.xlabel("Time Taken (Min)")
-        plt.title("Number of Passed Names vs Time")
-        plt.grid(True)
-        plt.legend()
-        plt.savefig("time_count_"+str(batch)+".png")  # Saves as a PNG file
-        plt.close()
-    else:
-        if(len(passed_names)> 20000):
-            
-            final_words.update(passed_names)
-            pd.DataFrame({"Passed Words": sorted(list(final_words))}).to_csv("passed_names_full.csv", index=False)
-            pd.DataFrame({"Matched Words": sorted(list(matched))}).to_csv("matched_names_full.csv", index=False)
         
     converted_name = convert_to_initials(word)
     
-    if converted_name in final_words or converted_name in passed_names:
+    
+    
+    if converted_name in final_words:
         return True, converted_name
 
     elif converted_name in cached_non_name_words:
         return False, "fail:" + word  # Cached as non-name
 
     
-    # Try fuzzy matching on 
-    match = process.extractOne(converted_name, final_words, scorer=fuzz.ratio)
-    if match:
-        matched_word, score, _ = match  # rapidfuzz returns a tuple (match, score, index)
-        if score >= confidence:
-            fuzzyCount += 1
-            matched.add(f"{matched_word}: {score}")
-            return True, matched_word
+    if len(converted_name.split()) >= 3:
+        firstname = converted_name.split()[0]
+        lastname = converted_name.split()[-1]
+        shortened_name = f"{firstname} {lastname}"
+        
+        # Try exact match first
+        if shortened_name in final_words:
+            return True, shortened_name
+        
+        # Fuzzy match on shortened name
+        ratio_match = process.extractOne(shortened_name, final_words, scorer=fuzz.ratio)
+        if ratio_match:
+            suggested_word, score, _ = ratio_match
+            matched_check = score >= confidence
+            history.add((word, suggested_word, score, matched_check)) 
+            
+            if (suggested_word[0] == shortened_name[0]) and (score >= confidence):
+                fuzzyCount += 1
+                matched.add(f"{shortened_name}:{suggested_word}: ratio:{score}")
+                return True, suggested_word
+    # Only fall back for less than 3 names
+    elif len(converted_name.split()) < 3:
+        ratio_match = process.extractOne(converted_name, final_words, scorer=fuzz.ratio)
+        
+        if ratio_match:
+            suggested_word, score, _ = ratio_match
+            matched_check = score >= confidence
+            history.add((word, suggested_word, score, matched_check)) 
+            # Check initials and confidence
+            if (suggested_word[0] == converted_name[0]) and (score >= confidence):
+                fuzzyCount += 1
+                matched.add(f"{converted_name}:{suggested_word}: ratio:{score}")
+                return True, suggested_word
+
+    
             
     # if not found in history, check NER
     if ner_check_person_is_name(converted_name):
-        passed_names.add(converted_name)
+        final_words.add(converted_name)
         return True, converted_name
         
     cached_non_name_words.add(converted_name)  # Cache as non-name
@@ -109,9 +121,10 @@ def is_name(word,confidence):
     return False, "fail:" + word  # Ensure a tuple is always returned
 
 def clean_ner(name):
+
     """Process names and avoid redundant spaCy checks."""
     name = name.strip()
-    is_name_flag, returned_name = is_name(name, 80)
+    is_name_flag, returned_name = is_name(name, confidence)
     return returned_name, is_name_flag  # Return the matched name and flag
 
 
@@ -450,14 +463,13 @@ if __name__ == '__main__':
     db = util.open_db()
     clear_minutes(db)
     parse_all_minutes(db)
-    final_words.update(passed_names)
     pd.DataFrame({
-    "Passed Words Ordered": list(final_words),  # Original order
     "Passed Words Sorted": sorted(final_words)  # Sorted order
 }).to_csv("passed_names_" + str(batch) + ".csv", index=False)
+    pd.DataFrame(history, columns=["converted_name", "suggested_word", "score","matched"]).to_csv('history.csv', index=False)
     print("Passed Name Count:",len(final_words))
     print("Identified Duplicates:",len(matched))
-
+    pd.DataFrame({"Original Names": sorted(original_names)}).to_csv("original_names.csv", index=False)
 
     # parse_minutes_by_id(db, 5165)
     db.close()
