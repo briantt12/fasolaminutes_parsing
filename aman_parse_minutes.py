@@ -162,11 +162,15 @@ def is_name(word,confidence):
     
             
     # if not found in history, check NER
-    if ner_check_person_is_name(converted_name):
-        final_words.add(converted_name)
-        return True, converted_name
+    if ner_check_person_is_name(word):
+        final_words.add(word)
+        if word not in matched_alias:
+            matched_alias[word] = []
+        if word not in matched_alias[word]:
+            matched_alias[word].append(word)
+        return True, word
         
-    cached_non_name_words.add(converted_name)  # Cache as non-name
+    cached_non_name_words.add(word)  # Cache as non-name
     
     return False, "fail:" + word  # Ensure a tuple is always returned
 
@@ -529,8 +533,10 @@ if __name__ == '__main__':
         for duplicate in duplicates:
             names_alias.append(duplicate)
         data.append({'Suggested Word': suggested_word, 'Duplicate Word': ', '.join(names_alias)})
+    print(len(matched_alias))
 
     # Create a pandas DataFrame from the list of tuples
-    df = pd.DataFrame(data).to_csv('matched_alias.csv')
+    df = pd.DataFrame(data).sort_values(by='Suggested Word')
+    df.to_csv('matched_alias.csv')
     # parse_minutes_by_id(db, 5165)
     db.close()
