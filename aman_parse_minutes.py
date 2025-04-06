@@ -52,7 +52,7 @@ def ner_check_person_is_name(text):
     for token in doc:
         if token.pos_ == "PROPN":
             return True, token.text  # Detected as a proper noun
-
+    cached_non_name_words.add(text)
     return False, "fail:" + text  # Neither detected
 
 
@@ -452,6 +452,15 @@ def insert_minutes(conn, d, minutes_id, debug_print=False):
 
     curs.close()
 
+def parse_all_minutes_from_file(file_path):
+    with open(file_path, "r", encoding="utf-8") as file:
+        for line in file:
+            # Split line into fields (assuming '|' as delimiter)
+            row = line.strip().split("|")  
+
+            minutes_text = row[0]
+            
+            parse_minutes(minutes_text)
 
 def parse_all_minutes(conn):
     curs = conn.cursor()
@@ -516,15 +525,18 @@ def clear_minutes(conn):
 if __name__ == '__main__':
     db = util.open_db()
     clear_minutes(db)
-    parse_all_minutes(db)
+    # parse_all_minutes(db)
+    parse_all_minutes_from_file("test_minutes.txt")
     pd.DataFrame({
     "Passed Words Sorted": sorted(final_words)  # Sorted order
-}).to_csv("passed_names.csv", index=False)
+}).to_csv("passed_names_benchmark.csv", index=False)
     # pd.DataFrame({"history": list(history)}).to_csv('history.csv', index=False)
     pd.DataFrame(history, columns=["converted_name", "suggested_word", "score","matched"]).to_csv('history.csv', index=False)
     print("Passed Name Count:",len(final_words))
     print("Identified Duplicates:",len(matched))
     pd.DataFrame({"Original Names": sorted(original_names)}).to_csv("original_names.csv", index=False)
+    print("NonNames:",len(cached_non_name_words))
+    pd.DataFrame({"Original Names": sorted(cached_non_name_words)}).to_csv("spacy_non_names.csv", index=False)
     
     data = []
 
