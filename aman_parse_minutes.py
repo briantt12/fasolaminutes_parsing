@@ -17,7 +17,7 @@ fuzzyCount = 0
 history = set()
 original_names = set()
 
-excluded_abbreviated = ['USA.']
+excluded_abbreviated = {'USA.'}
 
 def standardize_name(name,case):
     """Convert the second name to an initial if there are more than two words."""
