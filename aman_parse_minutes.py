@@ -17,10 +17,14 @@ fuzzyCount = 0
 history = set()
 original_names = set()
 
+excluded_abbreviated = ['USA.']
+
 def standardize_name(name,case):
     """Convert the second name to an initial if there are more than two words."""
     original_names.add(name)
     words = name.split()
+    if words[0].upper() in excluded_abbreviated:
+        words = words[1:]  # remove it
     if case ==1:
     # if '-' in name:
         firstname = words[0]
@@ -29,15 +33,15 @@ def standardize_name(name,case):
     elif case == 2:
     # if len(words) >= 3:  # If there's a middle name or extra names
         return f"{words[0]} {words[-1]}"  # Convert only the second word to an initial
-    elif case==3:
-    # if len(words) == 2:
-        return name  # Keep first and last name as is
+
     
-    elif case == 4 and len(words) > 1:
+    elif case == 3 and len(words) > 1:
         # Extract first name and first part of hyphenated last name
         firstname = words[0]
         lastname_first_half = words[1].split('-')[0]
         return firstname + ' ' + lastname_first_half
+    elif case == 4 and len(words)==3:
+        return f"{words[0]} {words[1]}-{words[2]}" #try hyphenated name
     else:
         return name  # Return as is if single word
 
@@ -75,7 +79,7 @@ def is_name(word,confidence):
         return False, "fail:" + word  # Cached as non-name
 
     if '-' in word:
-        converted_name = standardize_name(word,4)
+        converted_name = standardize_name(word,1) # was 4
         if converted_name in final_words:
             return True, converted_name
         ratio_match = process.extractOne(converted_name, final_words, scorer=fuzz.ratio)
@@ -94,7 +98,7 @@ def is_name(word,confidence):
                     matched_alias[suggested_word].append(word)
                 return True, suggested_word
             
-        converted_name = standardize_name(word,1)
+        converted_name = standardize_name(word,3) #was 1
         if converted_name in final_words:
             return True, converted_name
         ratio_match = process.extractOne(converted_name, final_words, scorer=fuzz.ratio)
@@ -111,14 +115,34 @@ def is_name(word,confidence):
                     matched_alias[suggested_word] = []
                 if word not in matched_alias[suggested_word]:
                     matched_alias[suggested_word].append(word)
+                
                 return True, suggested_word
         
     
     if len(word.split()) >= 3:
-        converted_name = standardize_name(word,2)
+        converted_name = standardize_name(word,4)
+        # print('occurred:', converted_name)
         if converted_name in final_words:
             return True, converted_name
-        # Try exact match first
+        
+        # Fuzzy match on shortened name
+        ratio_match = process.extractOne(converted_name, final_words, scorer=fuzz.ratio)
+        if ratio_match:
+            suggested_word, score, _ = ratio_match
+            matched_check = score >= confidence
+            history.add((converted_name, suggested_word, score, matched_check)) 
+            
+            if (suggested_word[0] == converted_name[0]) and (score >= confidence):
+                fuzzyCount += 1
+                matched.add(f"{converted_name}:{suggested_word}: ratio:{score}")
+                if suggested_word not in matched_alias:
+                    matched_alias[suggested_word] = []
+                if word not in matched_alias[suggested_word]:
+                    matched_alias[suggested_word].append(word)
+                return True, suggested_word
+            
+        
+        converted_name = standardize_name(word,2)
         if converted_name in final_words:
             return True, converted_name
         
@@ -138,8 +162,9 @@ def is_name(word,confidence):
                     matched_alias[suggested_word].append(word)
                 return True, suggested_word
 
+
     if len(word.split()) < 3:
-        converted_name = standardize_name(word,3)
+        converted_name = standardize_name(word,6)
         if converted_name in final_words:
             return True, converted_name
         ratio_match = process.extractOne(converted_name, final_words, scorer=fuzz.ratio)
@@ -163,6 +188,10 @@ def is_name(word,confidence):
             
     # if not found in history, check NER
     if ner_check_person_is_name(word):
+        # if '-' in word:
+        #     word = standardize_name(word,1)
+        # word = standardize_name(word,4)
+        
         final_words.add(word)
         if word not in matched_alias:
             matched_alias[word] = []
