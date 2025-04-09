@@ -421,64 +421,170 @@ LEADERS = {} # leader -> id
 SONGS = {}   # page -> id
 ALIASES = {} # alias -> name
 INVALID = set()
-def insert_minutes(conn, d, minutes_id, debug_print=False):
+# def insert_minutes(conn, d, minutes_id, debug_print=False):
 
+#     curs = conn.cursor()
+#     # Seed dicts
+#     if not SONGS:
+#         for (id, page) in curs.execute("SELECT id, PageNum FROM songs"):
+#             SONGS[page] = id
+#         for (name, alias) in curs.execute("SELECT name, alias FROM leader_name_aliases"):
+#             ALIASES[alias] = ALIASES.get(alias, name) # don't overwrite existing
+#         for (name,) in curs.execute("SELECT name FROM leader_name_invalid"):
+#             INVALID.add(name)
+
+#     for session in d:
+#         for leader in session['leaders']:
+
+#             #get song_id
+#             song_id = SONGS.get(leader['song'])
+#             if not song_id:
+#                 if leader['song'][-1:] == 't' or leader['song'][-1:] == 'b':
+#                     #check for song without "t" or "b"
+#                     song_id = SONGS.get(leader['song'][0:-1])
+#                 else:
+#                     #check for song on "top"
+#                     song_id = SONGS.get(leader['song']+'t')
+#                 SONGS[leader['song']] = song_id # memoize this result
+#             if not song_id:
+#                 print(leader)
+#                 print("\tno song id! %s"%(leader['song']))
+#                 continue
+
+#             #find leader by name if exists, create if not
+#             name = leader['name']
+
+#             if name in INVALID:
+#                 if debug_print: print("invalid name! %s" % (name))
+#                 continue
+
+#             real_name = ALIASES.get(name)
+#             if real_name:
+#                 if debug_print: print("replacing %s with %s" % (name, real_name))
+#                 name = real_name
+
+#             if name == '?':
+#                 # marked as a "bad" name in the alias table so let's just ignore this altogether
+#                 continue
+
+#             leader_id = LEADERS.get(name)
+#             if not leader_id:
+#                 curs.execute("INSERT INTO leaders (name) VALUES (?)", [name])
+#                 leader_id = curs.lastrowid
+#                 curs.execute("UPDATE leader_name_aliases SET leader_id=? WHERE name=?", [leader_id, name])
+#                 LEADERS[name] = leader_id
+
+#             if song_id and leader_id and minutes_id:
+#                 curs.execute("INSERT INTO song_leader_joins (song_id, leader_id, minutes_id) VALUES (?,?,?)", (song_id, leader_id, minutes_id))
+#             else:
+#                 print("problem?! %d %d %d" % (song_id, leader_id, minutes_id))
+
+#     curs.close()
+
+def insert_minutes(conn, d, minutes_id, debug_print=False):
     curs = conn.cursor()
-    # Seed dicts
+    
+    # Seed dicts (unchanged)
     if not SONGS:
         for (id, page) in curs.execute("SELECT id, PageNum FROM songs"):
             SONGS[page] = id
         for (name, alias) in curs.execute("SELECT name, alias FROM leader_name_aliases"):
-            ALIASES[alias] = ALIASES.get(alias, name) # don't overwrite existing
+            ALIASES[alias] = ALIASES.get(alias, name)
         for (name,) in curs.execute("SELECT name FROM leader_name_invalid"):
             INVALID.add(name)
 
+    # Phase 1: Collect all unique names and aliases
+    all_names = set()
+    name_to_canonical = {}
+    song_leader_joins = []
+    
     for session in d:
         for leader in session['leaders']:
-
-            #get song_id
+            # Get song_id (unchanged)
             song_id = SONGS.get(leader['song'])
             if not song_id:
                 if leader['song'][-1:] == 't' or leader['song'][-1:] == 'b':
-                    #check for song without "t" or "b"
                     song_id = SONGS.get(leader['song'][0:-1])
                 else:
-                    #check for song on "top"
                     song_id = SONGS.get(leader['song']+'t')
-                SONGS[leader['song']] = song_id # memoize this result
+                SONGS[leader['song']] = song_id
             if not song_id:
-                print(leader)
-                print("\tno song id! %s"%(leader['song']))
                 continue
 
-            #find leader by name if exists, create if not
+            # Process name
             name = leader['name']
-
             if name in INVALID:
-                if debug_print: print("invalid name! %s" % (name))
                 continue
 
-            real_name = ALIASES.get(name)
-            if real_name:
-                if debug_print: print("replacing %s with %s" % (name, real_name))
-                name = real_name
-
-            if name == '?':
-                # marked as a "bad" name in the alias table so let's just ignore this altogether
-                continue
-
-            leader_id = LEADERS.get(name)
-            if not leader_id:
-                curs.execute("INSERT INTO leaders (name) VALUES (?)", [name])
-                leader_id = curs.lastrowid
-                curs.execute("UPDATE leader_name_aliases SET leader_id=? WHERE name=?", [leader_id, name])
-                LEADERS[name] = leader_id
-
-            if song_id and leader_id and minutes_id:
-                curs.execute("INSERT INTO song_leader_joins (song_id, leader_id, minutes_id) VALUES (?,?,?)", (song_id, leader_id, minutes_id))
+            # Resolve to canonical name
+            canonical_name = None
+            # Check existing aliases first
+            if name in ALIASES:
+                canonical_name = ALIASES[name]
             else:
-                print("problem?! %d %d %d" % (song_id, leader_id, minutes_id))
+                # Check our matched_alias
+                for canonical, aliases in matched_alias.items():
+                    if name in aliases:
+                        canonical_name = canonical
+                        break
+            
+            final_name = canonical_name if canonical_name else name
+            all_names.add(final_name)
+            
+            # Store join info for later
+            if song_id and minutes_id:
+                song_leader_joins.append((song_id, final_name, minutes_id))
 
+    # Phase 2: Bulk insert all leaders
+    # Get existing leaders first
+    existing_leaders = {}
+    curs.execute("SELECT id, name FROM leaders")
+    for leader_id, name in curs.fetchall():
+        existing_leaders[name] = leader_id
+    
+    # Insert new leaders
+    new_leaders = [name for name in all_names if name not in existing_leaders]
+    if new_leaders:
+        curs.executemany("INSERT INTO leaders (name) VALUES (?)", 
+                        [(name,) for name in new_leaders])
+        # Refresh existing_leaders with new IDs
+        curs.execute("SELECT id, name FROM leaders WHERE name IN ({})".format(
+            ','.join(['?']*len(new_leaders))), new_leaders)
+        for leader_id, name in curs.fetchall():
+            existing_leaders[name] = leader_id
+    
+    # Phase 3: Bulk insert all aliases
+    alias_records = []
+    for canonical, aliases in matched_alias.items():
+        leader_id = existing_leaders.get(canonical)
+        if leader_id:
+            for alias in aliases:
+                if alias != canonical and alias not in ALIASES:
+                    alias_records.append((canonical, alias, leader_id))
+    
+    if alias_records:
+        curs.executemany("""
+            INSERT OR IGNORE INTO leader_name_aliases (name, alias, leader_id) 
+            VALUES (?, ?, ?)
+        """, alias_records)
+        # Update ALIASES cache
+        for canonical, alias, _ in alias_records:
+            ALIASES[alias] = canonical
+
+    # Phase 4: Bulk insert song_leader_joins
+    join_records = []
+    for song_id, name, minutes_id in song_leader_joins:
+        leader_id = existing_leaders.get(name)
+        if leader_id:
+            join_records.append((song_id, leader_id, minutes_id))
+    
+    if join_records:
+        curs.executemany("""
+            INSERT OR IGNORE INTO song_leader_joins 
+            (song_id, leader_id, minutes_id) VALUES (?, ?, ?)
+        """, join_records)
+
+    conn.commit()
     curs.close()
 
 def parse_all_minutes_from_file(file_path):
@@ -554,8 +660,8 @@ def clear_minutes(conn):
 if __name__ == '__main__':
     db = util.open_db()
     clear_minutes(db)
-    # parse_all_minutes(db)
-    parse_all_minutes_from_file("test_minutes.txt")
+    parse_all_minutes(db)
+    # parse_all_minutes_from_file("test_minutes.txt")
     pd.DataFrame({
     "Passed Words Sorted": sorted(final_words)  # Sorted order
 }).to_csv("passed_names_benchmark.csv", index=False)
