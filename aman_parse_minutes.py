@@ -4,6 +4,10 @@ import util
 import spacy
 from rapidfuzz import process, fuzz
 import matplotlib.pyplot as plt
+import time
+
+start_time = time.time()
+
 nlp = spacy.load("en_core_web_sm")
 batch = 1000
 confidence = 87
@@ -16,6 +20,7 @@ failed = set()
 fuzzyCount = 0
 history = set()
 original_names = set()
+time_counts = [(0,0)]
 
 excluded_abbreviated = {'USA.'}
 
@@ -59,15 +64,20 @@ def ner_check_person_is_name(text):
     cached_non_name_words.add(text)
     return False, "fail:" + text  # Neither detected
 
+def plot_pts():
+    global start_time, time_counts
+   
+    if(len(final_words)% batch==0):
+        elapsed_time = time.time() - start_time
+        time_counts.append((elapsed_time,len(final_words)))
+        df = pd.DataFrame(time_counts, columns=['time', 'count'])
+        df.to_csv('timeDataSpacyEnhanced.csv', index=False)
 
 def is_name(word,confidence):
     global fuzzyCount
+    plot_pts()
 
-    if(len(final_words)% batch == 0):
-        
-        pd.DataFrame({"Passed Words Sorted": sorted(final_words)}).to_csv("passed_names.csv", index=False)
-        
-        pd.DataFrame({"Matched Words": sorted(list(matched))}).to_csv("matched_names.csv", index=False)
+    
         
     
     
@@ -664,14 +674,14 @@ if __name__ == '__main__':
     # parse_all_minutes_from_file("test_minutes.txt")
     pd.DataFrame({
     "Passed Words Sorted": sorted(final_words)  # Sorted order
-}).to_csv("passed_names_benchmark.csv", index=False)
+}).to_csv("passed_names_spacy.csv", index=False)
     # pd.DataFrame({"history": list(history)}).to_csv('history.csv', index=False)
     pd.DataFrame(history, columns=["converted_name", "suggested_word", "score","matched"]).to_csv('history.csv', index=False)
     print("Passed Name Count:",len(final_words))
     print("Identified Duplicates:",len(matched))
     pd.DataFrame({"Original Names": sorted(original_names)}).to_csv("original_names.csv", index=False)
     print("NonNames:",len(cached_non_name_words))
-    pd.DataFrame({"Original Names": sorted(cached_non_name_words)}).to_csv("spacy_non_names.csv", index=False)
+    pd.DataFrame({"Non Names": sorted(cached_non_name_words)}).to_csv("spacy_non_names.csv", index=False)
     
     data = []
 
@@ -685,5 +695,9 @@ if __name__ == '__main__':
     # Create a pandas DataFrame from the list of tuples
     df = pd.DataFrame(data).sort_values(by='Suggested Word')
     df.to_csv('matched_alias.csv')
+    elapsed_time = time.time() - start_time
+    time_counts.append((elapsed_time,len(final_words)))
+    df = pd.DataFrame(time_counts, columns=['time', 'count'])
+    df.to_csv('timeDataSpacyEnhanced.csv', index=False)
     # parse_minutes_by_id(db, 5165)
     db.close()
