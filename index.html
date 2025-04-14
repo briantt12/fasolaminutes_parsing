@@ -1,130 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Next Generation NLP Parser for Sacred Harp Minutes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sacred Harp NLP Parser</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-  <div class="max-w-5xl mx-auto px-6 py-10">
-    <h1 class="text-4xl font-bold text-blue-700 mb-6">Next Generation NLP Parser for Sacred Harp Minutes</h1>
+<body class="bg-gray-50 text-gray-800 scroll-smooth">
 
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold text-gray-700 mb-2">About the Project</h2>
-      <p class="text-gray-600">The Sacred Harp Minutes project is dedicated to parsing the records of Sacred Harp singings, a tradition of sacred choral music that originated in New England and was later perpetuated in the American South. These records, known as "Sacred Harp Minutes," document the leaders and songs in each singing session. The minutes are stored in a database that researchers and singers can query for historical insights into the Sacred Harp tradition.
-        The goal of this project is to develop a next-generation natural language processing (NLP) parser capable of accurately parsing these minutes, while handling various issues such as OCR errors, misspelled names, and ambiguous entries. The parser will integrate with the existing SQL-based database and provide improved usability for scholars and researchers.
-        </p>
-    </section>
+  <!-- Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50 ">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Sacred Harp NLP Parser</h1>
+      <nav class="space-x-4">
+        <a href="#overview" class="text-blue-600 hover:underline">Overview</a>
+        <a href="#methodology" class="text-blue-600 hover:underline">Methodology</a>
+        <a href="#visuals" class="text-blue-600 hover:underline">Visualizations</a>
+        <a href="#usecases" class="text-blue-600 hover:underline">Use Cases</a>
+        <a href="#future" class="text-blue-600 hover:underline">Future Work</a>
+      </nav>
+    </div>
+  </header>
 
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold text-gray-700 mb-2">Project Goal</h2>
-      <ul class="list-disc list-inside text-gray-600">
-        <li>Accurately parse leader names, song numbers, and titles</li>
-        <li>Handle OCR errors and ambiguous/misspelled names</li>
-        <li>Integrate with an existing SQL-based database</li>
-      </ul>
-    </section>
+  <main class="max-w-5xl mx-auto px-4 py-10 space-y-16">
 
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold text-gray-700 mb-2">Project Requirements</h2>
-      <div class="mb-4">
-        <h3 class="text-lg font-semibold text-gray-600">Dependencies</h3>
-        <ul class="list-disc list-inside text-gray-600">
-          <li><strong>Regex:</strong> Extract song page numbers and names</li>
-          <li><strong>Ollama:</strong> LLM for validating names in context</li>
-          <li><strong>RapidFuzz:</strong> Fuzzy matching for misspelled names</li>
-          <li><strong>SQLite:</strong> Database integration</li>
-          <li><strong>Pandas:</strong> Data handling and analysis</li>
+    <!-- Overview -->
+    <section id="overview" class="scroll-mt-24">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-3xl font-bold mb-4">About the Project</h2>
+        <p class="mb-2">The Sacred Harp Minutes project is dedicated to parsing the records of Sacred Harp singings, a tradition of sacred choral music that originated in New England and was later perpetuated in the American South. These records, known as "Sacred Harp Minutes," document the leaders and songs in each singing session. The minutes are stored in a database that researchers and singers can query for historical insights into the Sacred Harp tradition.
+          The goal of this project is to develop a next-generation natural language processing (NLP) parser capable of accurately parsing these minutes, while handling various issues such as OCR errors, misspelled names, and ambiguous entries. The parser will integrate with the existing SQL-based database and provide improved usability for scholars and researchers.
+          </p>
+        
+        <h3 class="text-xl font-semibold mt-6">Project Goals</h3>
+        <ul class="list-disc ml-6 mt-2 space-y-1">
+          <li>Parse leader names and songs accurately</li>
+          <li>Handle OCR errors and misspelled names</li>
+          <li>Integrate cleanly with the SQL database</li>
         </ul>
-      </div>
 
-      <div class="mb-4">
-        <h3 class="text-lg font-semibold text-gray-600">Software & Tools</h3>
-        <ul class="list-disc list-inside text-gray-600">
-          <li>Python 3.x</li>
-          <li>SQLite</li>
-          <li>LLM API access via Ollama</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-lg font-semibold text-gray-600">Installation</h3>
-        <pre class="bg-gray-100 p-4 rounded text-sm text-gray-700 overflow-auto"><code>pip install ollama
+        <h3 class="text-xl font-semibold mt-6">Installation</h3>
+        <pre class="bg-gray-100 p-4 rounded text-sm mt-2">
+pip install ollama
 pip install rapidfuzz
-pip install pandas</code></pre>
+pip install pandas
+        </pre>
       </div>
     </section>
 
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold text-gray-700 mb-2">Project Evolution</h2>
-      <div class="space-y-2 text-gray-600">
-        <div>
-          <h3 class="text-lg font-semibold text-gray-600">Original Approach: parse_minutes.py</h3>
-          <p>Used regular expressions for basic extraction. Limited handling of errors and name diversity.</p>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold text-gray-600">Second Approach: aman_parse_minutes.py</h3>
-          <p>Introduced spaCy for NER and RapidFuzz for fuzzy matching. Improved performance but had context limitations.</p>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold text-gray-600">Current Approach: llm_parse_minutes.py</h3>
-          <ul class="list-disc list-inside">
-            <li>Regex for patterns</li>
-            <li>RapidFuzz for fuzzy matching</li>
-            <li>Ollama LLM for context-based validation</li>
-          </ul>
-          <p>This approach significantly improves name recognition and parsing accuracy.</p>
-        </div>
+    <!-- Methodology -->
+    <section id="methodology" class="scroll-mt-24">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-3xl font-bold mb-4">Methodology & Design</h2>
+        <p class="mb-4">The parser has evolved through multiple stages:</p>
+
+        <ul class="space-y-4">
+          <li>
+            <span class="font-semibold">1. Original:</span> Simple regex-based parsing via <code>parse_minutes.py</code>.
+          </li>
+          <li>
+            <span class="font-semibold">2. Intermediate:</span> Added spaCy NER and RapidFuzz fuzzy matching.
+          </li>
+          <li>
+            <span class="font-semibold">3. Current:</span> Uses regex + RapidFuzz + LLM (via Ollama) for context-aware validation.
+          </li>
+        </ul>
+
+        <h3 class="text-xl font-semibold mt-6">Benchmarking</h3>
+        <p class="mt-2">Performance is evaluated using:</p>
+        <ul class="list-disc ml-6 space-y-1">
+          <li>Accuracy, Precision, Recall</li>
+          <li>True/False Positives and Negatives</li>
+        </ul>
       </div>
     </section>
 
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold text-gray-700 mb-2">Methodology</h2>
-      <ol class="list-decimal list-inside text-gray-600">
-        <li><strong>Regex:</strong> Used for basic parsing of songs and names.</li>
-        <li><strong>Fuzzy Matching:</strong> Identifies misspelled names using RapidFuzz.</li>
-        <li><strong>Contextual Validation:</strong> LLM (Ollama) verifies real names vs roles or orgs.</li>
-        <li><strong>Benchmarking:</strong> Evaluates accuracy, precision, and recall.</li>
-      </ol>
-    </section>
-
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold text-gray-700 mb-2">Results and Value</h2>
-      <ul class="list-disc list-inside text-gray-600">
-        <li>Improved name validation and accuracy using LLM</li>
-        <li>Seamless integration with SQL database</li>
-        <li>Benchmarking to quantify parsing improvements</li>
-      </ul>
-    </section>
-
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold text-gray-700 mb-2">Future Work</h2>
-      <ul class="list-disc list-inside text-gray-600">
-        <li>Expand LLM datasets for rare name recognition</li>
-        <li>Optimize parser speed and performance</li>
-        <li>Explore additional NLP features (e.g., sentiment analysis)</li>
-      </ul>
-    </section>
-
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold text-gray-700 mb-2">Visualizations</h2>
-      <p class="text-gray-600">This section will host performance visualizations including a runtime vs. passed names scatter plot and analysis of parsing efficiency.</p>
-      <div id="runtime-scatter-plot" class="mt-4 p-4 border rounded bg-white shadow">
-        <!-- Plotly plot will be embedded here -->
+    <!-- Visualizations -->
+    <section id="visuals" class="scroll-mt-24">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-3xl font-bold mb-4">Visualizations</h2>
+        <p>This section will contain runtime vs. passed names plots, generated with Plotly.</p>
+        <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+          View Runtime Scatter Plot
+        </button>
       </div>
     </section>
 
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold text-gray-700 mb-2">Use Cases</h2>
-      <p class="text-gray-600">The parsed data can be used for historical research, trend analysis of song leadership, and data visualizations showing popularity over time.</p>
-      <p class="text-gray-600 mt-2">Example analyses will be added here, showing how this cleaned dataset enables new forms of data storytelling.</p>
+    <!-- Use Cases -->
+    <section id="usecases" class="scroll-mt-24">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-3xl font-bold mb-4">Use Cases & Analysis</h2>
+        <p>The parsed name data can be analyzed to reveal trends in singing leadership, song popularity, and historical participation patterns.</p>
+        <button class="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">
+          See Example Analysis
+        </button>
+        <p class="mt-6">Also, check out the companion <strong>mobile app</strong> available on the App Store that allows users to browse their own Sacred Harp minutes powered by this parser.</p>
+      </div>
     </section>
 
-    <section>
-      <h2 class="text-2xl font-semibold text-gray-700 mb-2">Mobile App Integration</h2>
-      <p class="text-gray-600">There is an existing mobile app available in the App Store that allows users to view and explore their own Sacred Harp minutes using this very database.</p>
+    <!-- Future Work -->
+    <section id="future" class="scroll-mt-24">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-3xl font-bold mb-4">Future Work</h2>
+        <ul class="list-disc ml-6 space-y-1">
+          <li>Expand LLM's name recognition dataset</li>
+          <li>Optimize performance and speed</li>
+          <li>Add advanced features like sentiment analysis of minutes</li>
+        </ul>
+      </div>
     </section>
-  </div>
+
+  </main>
+
+  <footer class="bg-white py-6 mt-16 text-center text-sm text-gray-500">
+    © 2025 Sacred Harp NLP Parser Project — Built with ❤️ using Tailwind CSS
+  </footer>
 </body>
 </html>
