@@ -15,7 +15,7 @@
       <nav class="space-x-4">
         <a href="#overview" class="text-blue-600 hover:underline">Overview</a>
         <a href="#methodology" class="text-blue-600 hover:underline">Methodology</a>
-        <a href="#visuals" class="text-blue-600 hover:underline">Visualizations</a>
+        <a href="#benchmarking" class="text-blue-600 hover:underline">Benchmarking</a>
         <a href="#usecases" class="text-blue-600 hover:underline">Use Cases</a>
         <a href="#future" class="text-blue-600 hover:underline">Future Work</a>
       </nav>
@@ -58,33 +58,72 @@ pip install pandas
         <h2 class="text-3xl font-bold mb-4">Methodology & Design</h2>
         <p class="mb-4">The parser has evolved through multiple stages:</p>
 
-        <ul class="space-y-4">
+        <ul class="space-y-4 list-disc list-inside">
           <li>
             <span class="font-semibold">1. Original:</span> Simple regex-based parsing via <code>parse_minutes.py</code>.
+            <ul class="list-disc list-inside pl-6 space-y-1">
+              <li>Very fast.</li>
+              <li>No context or model used to verify names.</li>
+              <li>Leads to many false positives and missed names.</li>
+            </ul>
           </li>
           <li>
             <span class="font-semibold">2. Intermediate:</span> Added spaCy NER and RapidFuzz fuzzy matching.
+            <ul class="list-disc list-inside pl-6 space-y-1">
+              <li>Still fast and reduces many common errors.</li>
+              <li>spaCy catches standard names; RapidFuzz helps with typos.</li>
+              <li>Fails to recognize uncommon names and lacks contextual reasoning.</li>
+            </ul>
           </li>
           <li>
             <span class="font-semibold">3. Current:</span> Uses regex + RapidFuzz + LLM (via Ollama) for context-aware validation.
+            <ul class="list-disc list-inside pl-6 space-y-1">
+              <li>Most accurate solution so far.</li>
+              <li>LLM brings contextual awareness to name validation.</li>
+              <li>RapidFuzz handles duplicates and variations effectively.</li>
+              <li>Slower runtime, but acceptable as a one-time fix for past 30 years and future-proofing.</li>
+            </ul>
           </li>
         </ul>
+        
+        
 
-        <h3 class="text-xl font-semibold mt-6">Benchmarking</h3>
-        <p class="mt-2">Performance is evaluated using:</p>
-        <ul class="list-disc ml-6 space-y-1">
-          <li>Accuracy, Precision, Recall</li>
-          <li>True/False Positives and Negatives</li>
-          <iframe src="model_performance_comparison.html" width="100%" height="600" class="rounded-xl shadow mt-6"></iframe>
-        </ul>
+        
       </div>
     </section>
 
-    <!-- Visualizations -->
-    <section id="visuals" class="scroll-mt-24">
+    <!-- Benchmarking -->
+    <section id="benchmarking" class="scroll-mt-24">
       <div class="bg-white p-6 rounded-xl shadow">
-        <h2 class="text-3xl font-bold mb-4">Visualizations</h2>
-        <p>This section will contain runtime vs. passed names plots, generated with Plotly.</p>
+        <h2 class="text-3xl font-bold mb-4">Benchmarking</h2>
+        <h3>To evaluate model accuracy, a custom benchmarking evaluator was developed. Thirty events were randomly selected from the 30-year dataset, and names were manually parsed to establish a gold standard reference. This benchmark was then used to compute evaluation metrics for all three parsing methods, enabling a quantitative comparison of their effectiveness.</h3>
+        <p class="mt-2">Performance is evaluated using:</p>
+<ul class="list-disc ml-6 space-y-3">
+  <li>
+    <strong>Accuracy</strong>: Measures overall correctness.
+    <ul class="list-disc ml-6">
+      <li>Definition: Proportion of correctly predicted names out of all predictions.</li>
+      <li>Formula: <code>(TP + TN) / (TP + TN + FP + FN)</code></li>
+    </ul>
+  </li>
+  <li>
+    <strong>Precision</strong>: Focuses on correctness of positive predictions.
+    <ul class="list-disc ml-6">
+      <li>Definition: How many predicted names were actually correct.</li>
+      <li>Formula: <code>TP / (TP + FP)</code></li>
+    </ul>
+  </li>
+  <li>
+    <strong>Recall</strong>: Focuses on completeness.
+    <ul class="list-disc ml-6">
+      <li>Definition: How many actual names were correctly identified.</li>
+      <li>Formula: <code>TP / (TP + FN)</code></li>
+    </ul>
+  </li>
+  
+</ul>
+<iframe src="model_performance_comparison.html" width="100%" height="600" class="rounded-xl shadow mt-6"></iframe>
+
         <iframe src="countVsTime.html" width="100%" height="600" class="rounded-xl shadow mt-6"></iframe>
       </div>
     </section>
@@ -94,9 +133,7 @@ pip install pandas
       <div class="bg-white p-6 rounded-xl shadow">
         <h2 class="text-3xl font-bold mb-4">Use Cases & Analysis</h2>
         <p>The parsed name data can be analyzed to reveal trends in singing leadership, song popularity, and historical participation patterns.</p>
-        <button class="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">
-          See Example Analysis
-        </button>
+        
         <p class="mt-6">Also, check out the companion <strong>mobile app</strong> available on the App Store that allows users to browse their own Sacred Harp minutes powered by this parser.</p>
       </div>
     </section>
