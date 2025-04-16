@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sacred Harp NLP Parser</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-50 text-gray-800 scroll-smooth">
 
   <!-- Navbar -->
@@ -28,12 +30,20 @@
     <section id="overview" class="scroll-mt-24">
       <div class="bg-white p-6 rounded-xl shadow">
         <h2 class="text-3xl font-bold mb-4">About the Project</h2>
-        <p class="mb-2">The Sacred Harp Minutes project is dedicated to parsing the records of Sacred Harp singings, a tradition of sacred choral music that originated in New England and was later perpetuated in the American South. These records, known as "Sacred Harp Minutes," document the leaders and songs in each singing session. The minutes are stored in a database that researchers and singers can query for historical insights into the Sacred Harp tradition.
-          The goal of this project is to develop a next-generation natural language processing (NLP) parser capable of accurately parsing these minutes, while handling various issues such as OCR errors, misspelled names, and ambiguous entries. The parser will integrate with the existing SQL-based database and provide improved usability for scholars and researchers.
-          </p>
-        
+        <p class="mb-2">The Sacred Harp Minutes project is dedicated to parsing the records of Sacred Harp singings, a
+          tradition of sacred choral music that originated in New England and was later perpetuated in the American
+          South. These records, known as "Sacred Harp Minutes," document the leaders and songs in each singing session.
+          The minutes are stored in a database that researchers and singers can query for historical insights into the
+          Sacred Harp tradition.
+          The goal of this project is to develop a next-generation natural language processing (NLP) parser capable of
+          accurately parsing these minutes, while handling various issues such as OCR errors, misspelled names, and
+          ambiguous entries. The parser will integrate with the existing SQL-based database and provide improved
+          usability for scholars and researchers.
+        </p>
+
         <h3 class="text-xl font-semibold mt-6">Project Goals</h3>
-        <p class="mb-2">The main objective is to improve the existing parsing solution for the Sacred Harp Minutes by creating a robust, scalable NLP solution that is capable of:
+        <p class="mb-2">The main objective is to improve the existing parsing solution for the Sacred Harp Minutes by
+          creating a robust, scalable NLP solution that is capable of:
         </p>
         <ul class="list-disc ml-6 mt-2 space-y-1">
           <li>Accurately parsing the text for leader names, song numbers, and song titles</li>
@@ -60,7 +70,8 @@ pip install pandas
 
         <ul class="space-y-4 list-disc list-inside">
           <li>
-            <span class="font-semibold">1. Original:</span> Simple regex-based parsing via <code>parse_minutes.py</code>.
+            <span class="font-semibold">1. Original:</span> Simple regex-based parsing via
+            <code>parse_minutes.py</code>.
             <ul class="list-disc list-inside pl-6 space-y-1">
               <li>Very fast.</li>
               <li>No context or model used to verify names.</li>
@@ -76,7 +87,8 @@ pip install pandas
             </ul>
           </li>
           <li>
-            <span class="font-semibold">3. Current:</span> Uses regex + RapidFuzz + LLM (via Ollama) for context-aware validation.
+            <span class="font-semibold">3. Current:</span> Uses regex + RapidFuzz + LLM (via Ollama) for context-aware
+            validation.
             <ul class="list-disc list-inside pl-6 space-y-1">
               <li>Most accurate solution so far.</li>
               <li>LLM brings contextual awareness to name validation.</li>
@@ -85,10 +97,10 @@ pip install pandas
             </ul>
           </li>
         </ul>
-        
-        
 
-        
+
+
+
       </div>
     </section>
 
@@ -96,33 +108,37 @@ pip install pandas
     <section id="benchmarking" class="scroll-mt-24">
       <div class="bg-white p-6 rounded-xl shadow">
         <h2 class="text-3xl font-bold mb-4">Benchmarking</h2>
-        <h3>To evaluate model accuracy, a custom benchmarking evaluator was developed. Thirty events were randomly selected from the 30-year dataset, and names were manually parsed to establish a gold standard reference. This benchmark was then used to compute evaluation metrics for all three parsing methods, enabling a quantitative comparison of their effectiveness.</h3>
+        <h3>To evaluate model accuracy, a custom benchmarking evaluator was developed. Thirty events were randomly
+          selected from the 30-year dataset, and names were manually parsed to establish a gold standard reference. This
+          benchmark was then used to compute evaluation metrics for all three parsing methods, enabling a quantitative
+          comparison of their effectiveness.</h3>
         <p class="mt-2">Performance is evaluated using:</p>
-<ul class="list-disc ml-6 space-y-3">
-  <li>
-    <strong>Accuracy</strong>: Measures overall correctness.
-    <ul class="list-disc ml-6">
-      <li>Definition: Proportion of correctly predicted names out of all predictions.</li>
-      <li>Formula: <code>(TP + TN) / (TP + TN + FP + FN)</code></li>
-    </ul>
-  </li>
-  <li>
-    <strong>Precision</strong>: Focuses on correctness of positive predictions.
-    <ul class="list-disc ml-6">
-      <li>Definition: How many predicted names were actually correct.</li>
-      <li>Formula: <code>TP / (TP + FP)</code></li>
-    </ul>
-  </li>
-  <li>
-    <strong>Recall</strong>: Focuses on completeness.
-    <ul class="list-disc ml-6">
-      <li>Definition: How many actual names were correctly identified.</li>
-      <li>Formula: <code>TP / (TP + FN)</code></li>
-    </ul>
-  </li>
-  
-</ul>
-<iframe src="model_performance_comparison.html" width="100%" height="600" class="rounded-xl shadow mt-6"></iframe>
+        <ul class="list-disc ml-6 space-y-3">
+          <li>
+            <strong>Accuracy</strong>: Measures overall correctness.
+            <ul class="list-disc ml-6">
+              <li>Definition: Proportion of correctly predicted names out of all predictions.</li>
+              <li>Formula: <code>(TP + TN) / (TP + TN + FP + FN)</code></li>
+            </ul>
+          </li>
+          <li>
+            <strong>Precision</strong>: Focuses on correctness of positive predictions.
+            <ul class="list-disc ml-6">
+              <li>Definition: How many predicted names were actually correct.</li>
+              <li>Formula: <code>TP / (TP + FP)</code></li>
+            </ul>
+          </li>
+          <li>
+            <strong>Recall</strong>: Focuses on completeness.
+            <ul class="list-disc ml-6">
+              <li>Definition: How many actual names were correctly identified.</li>
+              <li>Formula: <code>TP / (TP + FN)</code></li>
+            </ul>
+          </li>
+
+        </ul>
+        <iframe src="model_performance_comparison.html" width="100%" height="600"
+          class="rounded-xl shadow mt-6"></iframe>
 
         <iframe src="countVsTime.html" width="100%" height="600" class="rounded-xl shadow mt-6"></iframe>
       </div>
@@ -135,9 +151,10 @@ pip install pandas
 
         <h3 class="text-xl font-semibold mb-2">Potential Data Analysis</h3>
         <p>
-          The parsed name data can be analyzed to reveal trends in singing leadership, song popularity, regional activity, and historical participation patterns over the past 30 years.
+          The parsed name data can be analyzed to reveal trends in singing leadership, song popularity, regional
+          activity, and historical participation patterns over the past 30 years.
         </p>
-    
+
         <!-- Data Analysis Images -->
         <div class="space-y-4 mt-4">
           <img src="Alias Patterns.png" alt="DA1" class="w-full rounded-lg shadow">
@@ -147,32 +164,45 @@ pip install pandas
           <img src="Name Statistics.png" alt="DA3" class="w-full rounded-lg shadow">
           <img src="Title Frequencies.png" alt="DA3" class="w-full rounded-lg shadow">
         </div>
-        
-    
+
+
         <p class="mt-6">
-          The parsed database also powers the <strong>FaSoLa Minutes</strong> mobile app, available on the iOS App Store. 
-          This app enables users to browse and search Sacred Harp minutes by singers, songs, or singings — with detailed stats, leader histories, usage graphs, and searchable hymn texts — all driven by this cleaned and structured data.
+          The parsed database also powers the <strong>FaSoLa Minutes</strong> mobile app, available on the iOS App
+          Store.
+          This app enables users to browse and search Sacred Harp minutes by singers, songs, or singings — with detailed
+          stats, leader histories, usage graphs, and searchable hymn texts — all driven by this cleaned and structured
+          data.
         </p>
-    
+
         <!-- App Logo and Screenshots -->
         <div class="mt-6">
           <h3 class="text-xl font-semibold mb-2">Explore the FaSoLa Minutes App</h3>
           <div class="flex flex-wrap items-start gap-4">
             <!-- App Icon -->
-            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/58/1d/5a/581d5aa4-eaf4-0cee-124f-44b3ce0a765c/AppIcon-0-0-1x_U007emarketing-0-6-0-0-85-220.png/217x0w.webp" alt="FaSoLa Minutes App Icon" class="w-16 sm:w-20 rounded-lg shadow-md">
-    
+            <img
+              src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/58/1d/5a/581d5aa4-eaf4-0cee-124f-44b3ce0a765c/AppIcon-0-0-1x_U007emarketing-0-6-0-0-85-220.png/217x0w.webp"
+              alt="FaSoLa Minutes App Icon" class="w-16 sm:w-20 rounded-lg shadow-md">
+
             <!-- App Screenshots -->
             <div class="flex flex-wrap gap-4 w-full sm:w-[85%]">
-              <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/a0/3a/e2/a03ae2f8-b0fb-ef68-0a11-9a8fba59e364/pr_source.png/157x0w.webp" alt="App Screenshot 1" class="w-full sm:w-[23%] rounded-lg shadow">
-              <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/45/c8/a3/45c8a3b1-fdea-7cfa-ff39-697aed69d7d3/pr_source.png/157x0w.webp" alt="App Screenshot 2" class="w-full sm:w-[23%] rounded-lg shadow">
-              <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/3e/3e/d0/3e3ed061-fee5-219a-1119-b230c23c878b/pr_source.png/157x0w.webp" alt="App Screenshot 3" class="w-full sm:w-[23%] rounded-lg shadow">
-              <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/3e/3e/d0/3e3ed061-fee5-219a-1119-b230c23c878b/pr_source.png/157x0w.webp" alt="App Screenshot 4" class="w-full sm:w-[23%] rounded-lg shadow">
+              <img
+                src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/a0/3a/e2/a03ae2f8-b0fb-ef68-0a11-9a8fba59e364/pr_source.png/157x0w.webp"
+                alt="App Screenshot 1" class="w-full sm:w-[23%] rounded-lg shadow">
+              <img
+                src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/45/c8/a3/45c8a3b1-fdea-7cfa-ff39-697aed69d7d3/pr_source.png/157x0w.webp"
+                alt="App Screenshot 2" class="w-full sm:w-[23%] rounded-lg shadow">
+              <img
+                src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/3e/3e/d0/3e3ed061-fee5-219a-1119-b230c23c878b/pr_source.png/157x0w.webp"
+                alt="App Screenshot 3" class="w-full sm:w-[23%] rounded-lg shadow">
+              <img
+                src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/3e/3e/d0/3e3ed061-fee5-219a-1119-b230c23c878b/pr_source.png/157x0w.webp"
+                alt="App Screenshot 4" class="w-full sm:w-[23%] rounded-lg shadow">
             </div>
           </div>
         </div>
       </div>
     </section>
-    
+
 
     <!-- Future Work -->
     <section id="future" class="scroll-mt-24">
@@ -189,4 +219,5 @@ pip install pandas
   </main>
 
 </body>
+
 </html>
