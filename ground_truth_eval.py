@@ -1,5 +1,7 @@
 import csv
 
+# ground_truth.csv, parser_output.csv
+
 def load_names_from_csv(filename):
     """
     Loads names from a CSV file that contains one column labeled "Name Words".
@@ -34,17 +36,19 @@ if __name__ == "__main__":
     ground_truth_csv = "ground_truth.csv"
     parser_output_csv = "parser_output.csv"
     
-    # Load the names from each CSV file (change parser_output_csv accordingly)
+    # Load the names from each CSV file
     ground_truth_names = load_names_from_csv(ground_truth_csv)
     parser_names = load_names_from_csv(parser_output_csv)
     
     # Compare the ground truth to the parser's output
     precision, recall, f1, true_positives, false_positives, false_negatives = compare_names(ground_truth_names, parser_names)
     
-    # Print the evaluation metrics
-    print("Precision: {:.2f}".format(precision))
-    print("Recall: {:.2f}".format(recall))
-    print("F1 Score: {:.2f}".format(f1))
-    print("True Positives:", true_positives)
-    print("False Positives:", false_positives)
-    print("False Negatives:", false_negatives)
+    with open("evaluation_results.txt", "w", encoding="utf-8") as outfile:
+        outfile.write("Precision: {:.4f}\n".format(precision))
+        outfile.write("Recall: {:.4f}\n".format(recall))
+        outfile.write("F1 Score: {:.4f}\n".format(f1))
+        outfile.write("True Positives: {}\n".format(true_positives))
+        outfile.write("False Positives: {}\n".format(false_positives))
+        outfile.write("False Negatives: {}\n".format(false_negatives))
+    
+    print("Evaluation results have been written to evaluation_results.txt")
