@@ -7,6 +7,9 @@ import openai
 import os
 import ollama
 import pandas as pd
+from rapidfuzz import process, fuzz
+import matplotlib.pyplot as plt
+import time
 
 bad_words = [
     'Chairman',
@@ -161,6 +164,21 @@ def build_non_denson():
 
 cached_non_name_words = set()  # Cache of confirmed non-names
 cached_name_words = set()  # Cache of confirmed names
+batch = 1000
+confidence = 87
+
+times=[]
+names_count = []
+passed_names = set()  # Store full names for fuzzy matching
+matched = set()
+final_words = set()
+failed = set()
+fuzzyCount = 0
+start_time = time.time()
+history = set()
+original_names = set()
+matched_alias = {}
+time_counts = [(0,0)]
 
 def is_valid_name(candidate, context):
     """
@@ -179,6 +197,8 @@ def is_valid_name(candidate, context):
     "{context}"
 
     Does "{candidate}" appear to be a personal name (not a role or organization)? 
+    You should only respond "Yes" for names of people who lead songs at Sacred Harp singings.
+    If they are song writers or included in names of places for instance, you should respond "No".
     Respond with "Yes" or "No" only.
     """
     if candidate in cached_name_words:
@@ -186,7 +206,7 @@ def is_valid_name(candidate, context):
     if candidate in cached_non_name_words:
         return False
 
-    response = ollama.chat(model="mistral", messages=[{"role": "user", "content": prompt}])
+    response = ollama.chat(model="mistral", messages=[{"role": "user", "content": prompt}], options={"num_ctx": 32768})
     
     is_valid = response["message"]["content"].strip().lower() == "yes"
     
@@ -198,7 +218,284 @@ def is_valid_name(candidate, context):
 
     return is_valid
 
+def clean_ner(name, context):
+    """Process names and avoid redundant checks using is_valid_name."""
+    name = name.strip()
+    is_name_flag = is_name(name, confidence, context)  # Use the LLM-based name validation
+    return name, is_name_flag  # Return the processed name and flag
 
+excluded_abbreviated = {'USA.'}
+
+def standardize_name(name,case):
+    """Convert the second name to an initial if there are more than two words."""
+    original_names.add(name)
+    words = name.split()
+    if words[0].upper() in excluded_abbreviated:
+        words = words[1:]  # remove it
+    if case ==1:
+    # if '-' in name:
+        firstname = words[0]
+        lastname = name.split('-')[-1]
+        return firstname+' '+lastname
+    elif case == 2:
+    # if len(words) >= 3:  # If there's a middle name or extra names
+        return f"{words[0]} {words[-1]}"  # Convert only the second word to an initial
+
+    
+    elif case == 3 and len(words) > 1:
+        # Extract first name and first part of hyphenated last name
+        firstname = words[0]
+        lastname_first_half = words[1].split('-')[0]
+        return firstname + ' ' + lastname_first_half
+    elif case == 4 and len(words)==3:
+        return f"{words[0]} {words[1]}-{words[2]}" #try hyphenated name
+    else:
+        return name  # Return as is if single word
+
+def plot_pts():
+    global start_time, time_counts
+   
+    if(len(final_words)% batch==0):
+        elapsed_time = time.time() - start_time
+        time_counts.append((elapsed_time,len(final_words)))
+        df = pd.DataFrame(time_counts, columns=['time', 'count'])
+        df.to_csv('timeDataSpacyEnhanced.csv', index=False)
+        
+def convert_to_initials(name):
+    """Convert the second name to an initial if there are more than two words."""
+    words = name.split()
+    if len(words) >= 3:  # If there's a middle name or extra names
+        return f"{words[0]} {words[1][0]}. {words[-1]}"  # Convert only the second word to an initial
+    if len(words) == 2:
+        return name  # Keep first and last name as is
+    return name  # Return as is if single word
+
+def is_name(word,confidence,context):
+    global fuzzyCount
+    plot_pts()
+
+    
+        
+    
+    
+    
+    if word in final_words:
+        return True, word
+
+    elif word in cached_non_name_words:
+        return False, "fail:" + word  # Cached as non-name
+
+    if '-' in word:
+        converted_name = standardize_name(word,1) # was 4
+        if converted_name in final_words:
+            return True, converted_name
+        ratio_match = process.extractOne(converted_name, final_words, scorer=fuzz.ratio)
+        
+        if ratio_match:
+            suggested_word, score, _ = ratio_match
+            matched_check = score >= confidence
+            history.add((converted_name, suggested_word, score, matched_check)) 
+            # Check initials and confidence
+            if (suggested_word[0] == converted_name[0]) and (score >= confidence):
+                fuzzyCount += 1
+                matched.add(f"{converted_name}:{suggested_word}: ratio:{score}")
+                if suggested_word not in matched_alias:
+                    matched_alias[suggested_word] = []
+                if word not in matched_alias[suggested_word]:
+                    matched_alias[suggested_word].append(word)
+                return True, suggested_word
+            
+        converted_name = standardize_name(word,3) #was 1
+        if converted_name in final_words:
+            return True, converted_name
+        ratio_match = process.extractOne(converted_name, final_words, scorer=fuzz.ratio)
+        
+        if ratio_match:
+            suggested_word, score, _ = ratio_match
+            matched_check = score >= confidence
+            history.add((converted_name, suggested_word, score, matched_check)) 
+            # Check initials and confidence
+            if (suggested_word[0] == converted_name[0]) and (score >= confidence):
+                fuzzyCount += 1
+                matched.add(f"{converted_name}:{suggested_word}: ratio:{score}")
+                if suggested_word not in matched_alias:
+                    matched_alias[suggested_word] = []
+                if word not in matched_alias[suggested_word]:
+                    matched_alias[suggested_word].append(word)
+                
+                return True, suggested_word
+        
+    
+    if len(word.split()) >= 3:
+        converted_name = standardize_name(word,4)
+        # print('occurred:', converted_name)
+        if converted_name in final_words:
+            return True, converted_name
+        
+        # Fuzzy match on shortened name
+        ratio_match = process.extractOne(converted_name, final_words, scorer=fuzz.ratio)
+        if ratio_match:
+            suggested_word, score, _ = ratio_match
+            matched_check = score >= confidence
+            history.add((converted_name, suggested_word, score, matched_check)) 
+            
+            if (suggested_word[0] == converted_name[0]) and (score >= confidence):
+                fuzzyCount += 1
+                matched.add(f"{converted_name}:{suggested_word}: ratio:{score}")
+                if suggested_word not in matched_alias:
+                    matched_alias[suggested_word] = []
+                if word not in matched_alias[suggested_word]:
+                    matched_alias[suggested_word].append(word)
+                return True, suggested_word
+            
+        
+        converted_name = standardize_name(word,2)
+        if converted_name in final_words:
+            return True, converted_name
+        
+        # Fuzzy match on shortened name
+        ratio_match = process.extractOne(converted_name, final_words, scorer=fuzz.ratio)
+        if ratio_match:
+            suggested_word, score, _ = ratio_match
+            matched_check = score >= confidence
+            history.add((converted_name, suggested_word, score, matched_check)) 
+            
+            if (suggested_word[0] == converted_name[0]) and (score >= confidence):
+                fuzzyCount += 1
+                matched.add(f"{converted_name}:{suggested_word}: ratio:{score}")
+                if suggested_word not in matched_alias:
+                    matched_alias[suggested_word] = []
+                if word not in matched_alias[suggested_word]:
+                    matched_alias[suggested_word].append(word)
+                return True, suggested_word
+
+
+    if len(word.split()) < 3:
+        converted_name = standardize_name(word,6)
+        if converted_name in final_words:
+            return True, converted_name
+        ratio_match = process.extractOne(converted_name, final_words, scorer=fuzz.ratio)
+        
+        if ratio_match:
+            suggested_word, score, _ = ratio_match
+            matched_check = score >= confidence
+            history.add((converted_name, suggested_word, score, matched_check)) 
+            # Check initials and confidence
+            if (suggested_word[0] == converted_name[0]) and (score >= confidence):
+                fuzzyCount += 1
+                matched.add(f"{converted_name}:{suggested_word}: ratio:{score}")
+                if suggested_word not in matched_alias:
+                    matched_alias[suggested_word] = []
+                if word not in matched_alias[suggested_word]:
+                    matched_alias[suggested_word].append(word)
+                return True, suggested_word
+    
+
+    
+            
+    # if not found in history
+    if is_valid_name(word, context):
+        final_words.add(word)
+        if word not in matched_alias:
+            matched_alias[word] = []
+        if word not in matched_alias[word]:
+            matched_alias[word].append(word)
+        return True, word
+        
+    cached_non_name_words.add(word)  # Cache as non-name
+    
+    return False, "fail:" + word  # Ensure a tuple is always returned
+
+
+def expand_family_names(candidate):
+    """
+    Checks if the candidate matches a family/group entry of the form:
+      e.g. "Brock Family (Christy, Bradley, Jonah, Maribelle)",
+           "Smith Sisters (Sarah, Sara)", or 
+           "Tekadtuera Siblings (Brian, Aman)"
+    
+    If a match is found, it extracts the root name (e.g. "Brock", "Smith", "Tekadtuera")
+    and returns a list of individual names with each first name appended to that root.
+    Otherwise, it returns None.
+    """
+    # This regex matches a word, followed by one of the keywords, then a parenthesized list.
+    match = re.search(r'(\w+)\s+(Family|Sisters|Brothers|Siblings)\s*\(([^)]+)\)', candidate)
+    if match:
+        root_name = match.group(1)
+        # group(3) contains the comma-separated first names inside the parentheses
+        first_names = [n.strip() for n in match.group(3).split(',')]
+        expanded = [f"{first} {root_name}" for first in first_names]
+        print(expanded)
+        return expanded
+    return None
+
+"""
+def parse_minutes(s, debug_print=False):
+    session_count = 0
+    sessions = re.split('RECESS|LUNCH', s)
+    d = []
+    for session in sessions:
+        session_count += 1
+
+        # name_pattern = re.compile('(?<=Chairman\s)[A-Z]\.\s[A-Z]\.\s[A-Z]\w+|[A-Z]\.\s[A-Z]\.\s[A-Z]\w+|(?<=Chairman\s)[A-Z][\w]*?\s[A-Z][\w]*?\s[A-Z]\w+|(?<=Chairman\s)[A-Z][\w]*?\s[A-Z]\w+|[A-Z][\w]*?\s[A-Z][\w]*?\s[A-Z]\w+|[A-Z][\w]*?\s[A-Z]\w+');
+        name_pattern = re.compile(r'''
+            (\A|(?<=\s))
+            ((?!''' + build_bad_words() + r''')
+            (?<!for\s)
+            (
+                # Start with upper case...
+                [A-Z\u00C0-\u024F] |
+                # ...or lower case followed by a string that has upper case
+                [a-z](?=[\u00C0-\u024F\w’]*[A-Z\u00C0-\u024F])
+            )
+            ([\u00C0-\u024F\w’-]+|\.\s|\.)\s?|van\sden\s|Van\sden\s|van\sDen\s){2,5}
+        ''', re.UNICODE | re.VERBOSE)
+        # pagenum_pattern = re.compile('[\[\{/](\d{2,3}[tb]?)[\]\}]')
+        pagenum_pattern = re.compile(r'[\[\{/\s](\d{2,3}[tb]?)([\]\}\s]|$)(?!' + build_non_denson() + r')')
+
+        dd = []
+        leaders = re.split(r'\v|called to order|\:\s|(?<=[^\.][^A-Z\]\}])\.(\s|\Z)|(?<=[\]\}”\)])[;\.\:]|;', session)  # double quotes!
+        for chunk in leaders:
+            if chunk and (len(chunk) > 2):
+                if debug_print:
+                    print(chunk)
+                songs = re.finditer(pagenum_pattern, chunk)
+                first_song = None
+                for song in songs:
+                    if not first_song:
+                        first_song = song
+                    pagenum = song.group(1)
+                    # print pagenum
+                    leaders = re.finditer(name_pattern, chunk)
+                    for leader in leaders:
+                        if leader.end() <= first_song.start() + 1:
+                            raw_name = leader.group(0).strip()  # TODO: should be able to incorporate this into regex......
+                            # Attempt to expand the name if it's a family/group entry (Family, Sisters, Brothers, Siblings)
+                            expanded = expand_family_names(raw_name)
+                            if expanded:
+                                for ename in expanded:
+                                    print(ename)
+                                    cached_name_words.add(ename)
+                                    final_words.add(ename)
+                                    dd.append({'name': ename, 'song': pagenum})
+                                    if debug_print:
+                                        print('***name: ' + ename + '\tsong: ' + pagenum)
+                            else:
+                                name, flag = clean_ner(raw_name, session)
+                                if flag == True:                                
+                                    dd.append({'name': name, 'song': pagenum})
+                                if debug_print:
+                                    print('***name: ' + name + '\tsong: ' + pagenum)
+                        # else:
+                            # print "%d %d"%(leader.end(), first_song.start())
+                if debug_print:
+                    print("---chunk----------")
+
+        d.append({'session': session_count, 'leaders': dd})
+        # print "---session----------"
+    # print d
+    return d
+"""
 
 def parse_minutes(s, debug_print=False):
     session_count = 0
@@ -240,17 +537,28 @@ def parse_minutes(s, debug_print=False):
                         if leader.end() <= first_song.start()+1:
                             name = leader.group(0)
                             name = name.strip() # TODO: should be able to incorporate this into regex......
-                            if is_valid_name(name, chunk):
-                                dd.append({'name': name, 'song': pagenum})
+                            name, flag = clean_ner(name, session)
+                            if flag[0] == True:                                
+                                dd.append({'name': flag[1], 'song': pagenum})
                             if debug_print: print('***name: ' + name + '\tsong: ' + pagenum)
                         # else:
                             # print "%d %d"%(leader.end(), first_song.start())
                 if debug_print: print("---chunk----------")
-
         d.append({'session': session_count, 'leaders': dd})
         # print "---session----------"
     # print d
     return d
+
+def parse_all_minutes_from_file(file_path):
+    with open(file_path, "r", encoding="utf-8") as file:
+        for line in file:
+            # Split line into fields (assuming '|' as delimiter)
+            row = line.strip().split("|")  
+
+            minutes_text = row[0]
+            
+            parse_minutes(minutes_text)
+
 
 LEADERS = {} # leader -> id
 SONGS = {}   # page -> id
@@ -379,11 +687,22 @@ if __name__ == '__main__':
     db = util.open_db()
     clear_minutes(db)
     parse_all_minutes(db)
-    pd.DataFrame({"Name Words": list(cached_name_words)}).to_csv("llm_names.csv", index=False)
-    pd.DataFrame({"Non-Name Words": list(cached_non_name_words)}).to_csv("llm_non_names.csv", index=False)
-    shared_values = cached_name_words & cached_non_name_words  # Intersection of sets
-    pd.DataFrame({"Unclear Words": list(shared_values)}).to_csv("unclear_names.csv", index=False)
+    pd.DataFrame({"Name Words": list(cached_name_words)}).to_csv("llm_modified_names.csv", index=False)
+    pd.DataFrame({"Non-Name Words": list(cached_non_name_words)}).to_csv("llm_modified_non_names.csv", index=False)
     print("name count:",len(cached_name_words))
     print("non name count:",len(cached_non_name_words))
     # parse_minutes_by_id(db, 5165)
     db.close()
+    '''
+    parse_all_minutes_from_file("test_minutes.txt")
+    pd.DataFrame({"Name Words": list(cached_name_words)}).to_csv("llm_modified_names.csv", index=False)
+    pd.DataFrame({"Non-Name Words": list(cached_non_name_words)}).to_csv("llm_modified_non_names1.csv", index=False)
+    pd.DataFrame({"Matched Words": sorted(list(matched))}).to_csv("matched_names.csv", index=False)
+    final_words.update(passed_names)
+    pd.DataFrame({
+    "Passed Words Ordered": list(final_words),  # Original order
+    "Passed Words Sorted": sorted(final_words)  # Sorted order
+}).to_csv("passed_names_" + str(batch) + ".csv", index=False)
+    print("Passed Name Count:",len(final_words))
+    print("Identified Duplicates:",len(matched))
+    '''
