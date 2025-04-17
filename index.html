@@ -19,7 +19,7 @@
         <a href="#methodology" class="text-blue-600 hover:underline">Methodology</a>
         <a href="#benchmarking" class="text-blue-600 hover:underline">Benchmarking</a>
         <a href="#usecases" class="text-blue-600 hover:underline">Use Cases</a>
-        <a href="#future" class="text-blue-600 hover:underline">Future Work</a>
+        <a href="#future" class="text-blue-600 hover:underline">Developer Notes</a>
       </nav>
     </div>
   </header>
@@ -55,9 +55,9 @@
 
         <h3 class="text-xl font-semibold mt-6">Installation</h3>
         <pre class="bg-gray-100 p-4 rounded text-sm mt-2">
-pip install ollama
-pip install rapidfuzz
-pip install pandas
+    pip install ollama
+    pip install rapidfuzz
+    pip install pandas
         </pre>
       </div>
     </section>
@@ -205,54 +205,68 @@ pip install pandas
     </section>
 
 <!-- Developer Notes -->
-<section id="developer-notes" class="scroll-mt-24">
+<!-- Developer Notes -->
+<section id="future" class="scroll-mt-24">
   <div class="bg-white p-6 rounded-xl shadow">
     <h2 class="text-3xl font-bold mb-4">Developer Notes</h2>
 
-    <h3 class="text-xl font-semibold mt-4 mb-2">Packages Used</h3>
+    <h3 class="text-xl font-semibold mt-4 mb-2">📦 Packages Used</h3>
+<ul class="list-disc ml-6 space-y-1">
+  <li><code>re</code>: Regex matching for name and page number extraction.</li>
+  <li><code>ollama</code>: Validates extracted names using a local LLM with contextual prompting.</li>
+  <li><code>rapidfuzz.process.extractOne</code>, <code>rapidfuzz.fuzz.ratio</code>: Used to match candidate names against known valid names using fuzzy logic and a confidence threshold.</li>
+  <li><code>pandas</code>: Handles data export (e.g., matched names, runtime metrics).</li>
+  <li><code>matplotlib.pyplot</code>: (Optional) Used to track runtime performance visually.</li>
+  <li><code>time</code>: Measures script runtime for benchmarking.</li>
+  <li><code>sqlite3</code> (via <code>util.open_db()</code>): Connects to and updates the SQLite database.</li>
+</ul>
+
+
+    <h3 class="text-xl font-semibold mt-4 mb-2">Key Functions</h3>
     <ul class="list-disc ml-6 space-y-1">
-      <li><code>re</code>: Used for regular expressions to extract names and page numbers from raw text.</li>
-      <li><code>ollama</code>: Integrates a local LLM for validating whether extracted names are likely personal names based on context.</li>
-      <li><code>rapidfuzz</code>: Performs fast and efficient fuzzy string matching to deduplicate or standardize similar name variants.</li>
-      <li><code>pandas</code>: Handles tabular data output for analysis and CSV export of matched names and performance logs.</li>
-      <li><code>matplotlib</code>: (Optional) Used for runtime performance plotting during batch processing.</li>
-      <li><code>sqlite3</code> (via <code>util.open_db()</code>): Interfaces with the SQLite database to store song-leader mappings.</li>
+      <li><code>build_bad_words()</code>, <code>build_non_denson()</code>: Compile regex filters to exclude irrelevant terms.</li>
+      <li><code>is_valid_name()</code>: Uses Ollama to determine if a string is a leader’s name.</li>
+      <li><code>clean_ner()</code>: Strips and validates candidate names.</li>
+      <li><code>standardize_name()</code>: Normalizes names using multiple formatting strategies.</li>
+      <li><code>convert_to_initials()</code>: Shortens names to include initials where appropriate.</li>
+      <li><code>plot_pts()</code>: Tracks and logs name count vs. processing time.</li>
+      <li><code>is_name()</code>: Core matching logic using fuzzy matching, caching, and standardization.</li>
+      <li><code>expand_family_names()</code>: Parses group names into individual leader names.</li>
+      <li><code>parse_minutes()</code>: Main parser function for splitting and analyzing session text.</li>
+      <li><code>parse_all_minutes_from_file()</code>: Reads and parses local raw minutes from text files.</li>
+      <li><code>insert_minutes()</code>: Inserts parsed leader-song pairs into the database.</li>
+      <li><code>parse_all_minutes()</code>, <code>parse_minutes_by_id()</code>: Apply parser across full/minimal database.</li>
+      <li><code>clear_minutes()</code>: Clears prior leader/song mappings in the database.</li>
     </ul>
 
-    <h3 class="text-xl font-semibold mt-4 mb-2">Configuration Parameters</h3>
+    <h3 class="text-xl font-semibold mt-4 mb-2">Key Variables</h3>
     <ul class="list-disc ml-6 space-y-1">
-      <li><code>confidence = 87</code>: Fuzzy match threshold; adjust to make name matching stricter or looser.</li>
-      <li><code>batch = 1000</code>: Number of processed names between time profiling logs.</li>
-      <li><code>ollama.chat()</code>: Context length is set to <code>32768</code>; ensure your system has enough memory to handle large prompts.</li>
-    </ul>
-
-    <h3 class="text-xl font-semibold mt-4 mb-2">Caching Mechanism</h3>
-    <ul class="list-disc ml-6 space-y-1">
-      <li><code>cached_name_words</code>, <code>cached_non_name_words</code>: Prevent repeated LLM calls by storing prior validation results.</li>
-    </ul>
-
-    <h3 class="text-xl font-semibold mt-4 mb-2">Adjusting Name Matching</h3>
-    <ul class="list-disc ml-6 space-y-1">
-      <li>Tweak <code>standardize_name()</code> rules to change how names are normalized (e.g. initials, hyphenation).</li>
-      <li>Tune the <code>fuzz.ratio</code> confidence threshold to raise or lower fuzzy match sensitivity.</li>
-      <li>Modify <code>bad_words</code> or <code>non_denson</code> to ignore irrelevant roles, place names, or book identifiers.</li>
+      <li><code>bad_words</code>, <code>non_denson</code>: Lists of filtered role/place terms and non-Denson songbooks.</li>
+      <li><code>cached_name_words</code>, <code>cached_non_name_words</code>: Caches for LLM validation results.</li>
+      <li><code>final_words</code>, <code>matched</code>, <code>history</code>, <code>failed</code>, <code>passed_names</code>: Tracks results, duplicates, and validation flow.</li>
+      <li><code>matched_alias</code>: Dictionary mapping fuzzy variants to their canonical name.</li>
+      <li><code>confidence</code>: Fuzzy matching threshold (default = 87).</li>
+      <li><code>batch</code>: Log output every <code>batch</code> entries (default = 1000).</li>
+      <li><code>start_time</code>, <code>time_counts</code>: Time logging tools for performance profiling.</li>
+      <li><code>LEADERS</code>, <code>SONGS</code>, <code>ALIASES</code>, <code>INVALID</code>: Local memory caches of the database contents.</li>
     </ul>
 
     <h3 class="text-xl font-semibold mt-4 mb-2">Testing Tips</h3>
     <ul class="list-disc ml-6 space-y-1">
-      <li>Use <code>parse_all_minutes_from_file()</code> for isolated offline testing on sample <code>.txt</code> files.</li>
-      <li>Set <code>debug_print=True</code> in <code>parse_minutes()</code> to view parsing chunks and extracted name-song pairs.</li>
-      <li>Inspect post-run output files (<code>llm_modified_names.csv</code>, <code>matched_names.csv</code>) to validate accuracy.</li>
+      <li>Use <code>parse_all_minutes_from_file()</code> for testing with raw `.txt` files.</li>
+      <li>Enable <code>debug_print=True</code> in <code>parse_minutes()</code> to trace chunk processing and name matches.</li>
+      <li>Check output files like <code>llm_modified_names.csv</code> and <code>matched_names.csv</code> for validation review.</li>
     </ul>
 
     <h3 class="text-xl font-semibold mt-4 mb-2">File Outputs</h3>
     <ul class="list-disc ml-6 space-y-1">
-      <li><code>llm_modified_names.csv</code>: Confirmed valid names identified by LLM.</li>
-      <li><code>llm_modified_non_names.csv</code>: Terms rejected as non-names.</li>
-      <li><code>matched_names.csv</code>: Names matched via fuzzy logic.</li>
+      <li><code>llm_modified_names.csv</code>: List of names confirmed by the LLM.</li>
+      <li><code>llm_modified_non_names.csv</code>: Words the model ruled out as names.</li>
+      <li><code>matched_names.csv</code>: Names resolved through fuzzy matching.</li>
     </ul>
   </div>
 </section>
+
 
 
 
