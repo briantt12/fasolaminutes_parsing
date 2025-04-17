@@ -204,6 +204,58 @@ pip install pandas
       </div>
     </section>
 
+<!-- Developer Notes -->
+<section id="developer-notes" class="scroll-mt-24">
+  <div class="bg-white p-6 rounded-xl shadow">
+    <h2 class="text-3xl font-bold mb-4">Developer Notes</h2>
+
+    <h3 class="text-xl font-semibold mt-4 mb-2">Packages Used</h3>
+    <ul class="list-disc ml-6 space-y-1">
+      <li><code>re</code>: Used for regular expressions to extract names and page numbers from raw text.</li>
+      <li><code>ollama</code>: Integrates a local LLM for validating whether extracted names are likely personal names based on context.</li>
+      <li><code>rapidfuzz</code>: Performs fast and efficient fuzzy string matching to deduplicate or standardize similar name variants.</li>
+      <li><code>pandas</code>: Handles tabular data output for analysis and CSV export of matched names and performance logs.</li>
+      <li><code>matplotlib</code>: (Optional) Used for runtime performance plotting during batch processing.</li>
+      <li><code>sqlite3</code> (via <code>util.open_db()</code>): Interfaces with the SQLite database to store song-leader mappings.</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold mt-4 mb-2">Configuration Parameters</h3>
+    <ul class="list-disc ml-6 space-y-1">
+      <li><code>confidence = 87</code>: Fuzzy match threshold; adjust to make name matching stricter or looser.</li>
+      <li><code>batch = 1000</code>: Number of processed names between time profiling logs.</li>
+      <li><code>ollama.chat()</code>: Context length is set to <code>32768</code>; ensure your system has enough memory to handle large prompts.</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold mt-4 mb-2">Caching Mechanism</h3>
+    <ul class="list-disc ml-6 space-y-1">
+      <li><code>cached_name_words</code>, <code>cached_non_name_words</code>: Prevent repeated LLM calls by storing prior validation results.</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold mt-4 mb-2">Adjusting Name Matching</h3>
+    <ul class="list-disc ml-6 space-y-1">
+      <li>Tweak <code>standardize_name()</code> rules to change how names are normalized (e.g. initials, hyphenation).</li>
+      <li>Tune the <code>fuzz.ratio</code> confidence threshold to raise or lower fuzzy match sensitivity.</li>
+      <li>Modify <code>bad_words</code> or <code>non_denson</code> to ignore irrelevant roles, place names, or book identifiers.</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold mt-4 mb-2">Testing Tips</h3>
+    <ul class="list-disc ml-6 space-y-1">
+      <li>Use <code>parse_all_minutes_from_file()</code> for isolated offline testing on sample <code>.txt</code> files.</li>
+      <li>Set <code>debug_print=True</code> in <code>parse_minutes()</code> to view parsing chunks and extracted name-song pairs.</li>
+      <li>Inspect post-run output files (<code>llm_modified_names.csv</code>, <code>matched_names.csv</code>) to validate accuracy.</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold mt-4 mb-2">File Outputs</h3>
+    <ul class="list-disc ml-6 space-y-1">
+      <li><code>llm_modified_names.csv</code>: Confirmed valid names identified by LLM.</li>
+      <li><code>llm_modified_non_names.csv</code>: Terms rejected as non-names.</li>
+      <li><code>matched_names.csv</code>: Names matched via fuzzy logic.</li>
+    </ul>
+  </div>
+</section>
+
+
+
 
     <!-- Future Work -->
     <section id="future" class="scroll-mt-24">
