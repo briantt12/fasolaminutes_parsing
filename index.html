@@ -164,6 +164,16 @@
           <img src="Name Format.png" alt="DA3" class="w-full rounded-lg shadow">
           <img src="Name Statistics.png" alt="DA3" class="w-full rounded-lg shadow">
           <img src="Title Frequencies.png" alt="DA3" class="w-full rounded-lg shadow">
+
+          <!-- Flex container for temp5-7 -->
+          <div class="flex flex-wrap gap-4">
+            <img src="temp6.png" alt="DA3" class="w-1/4 rounded-lg shadow">
+           
+            
+            <img src="temp7.png" alt="DA3" class="w-1/4 rounded-lg shadow">
+            <img src="temp5.png" alt="DA3" class="w-1/4 rounded-lg shadow">
+          </div>
+
         </div>
 
 
@@ -204,68 +214,93 @@
       </div>
     </section>
 
-<!-- Developer Notes -->
-<!-- Developer Notes -->
-<section id="future" class="scroll-mt-24">
-  <div class="bg-white p-6 rounded-xl shadow">
-    <h2 class="text-3xl font-bold mb-4">Developer Notes</h2>
+    <!-- Developer Notes -->
+    <!-- Developer Notes -->
+    <section id="future" class="scroll-mt-24">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h2 class="text-3xl font-bold mb-4">Developer Notes</h2>
 
-    <h3 class="text-xl font-semibold mt-4 mb-2">Packages Used</h3>
-<ul class="list-disc ml-6 space-y-1">
-  <li><code>re</code>: Regex matching for name and page number extraction.</li>
-  <li><code>ollama</code>: Validates extracted names using a local LLM with contextual prompting.</li>
-  <li><code>rapidfuzz.process.extractOne</code>, <code>rapidfuzz.fuzz.ratio</code>: Used to match candidate names against known valid names using fuzzy logic and a confidence threshold.</li>
-  <li><code>pandas</code>: Handles data export (e.g., matched names, runtime metrics).</li>
-  <li><code>matplotlib.pyplot</code>: (Optional) Used to track runtime performance visually.</li>
-  <li><code>time</code>: Measures script runtime for benchmarking.</li>
-  <li><code>sqlite3</code> (via <code>util.open_db()</code>): Connects to and updates the SQLite database.</li>
-</ul>
+        <h3 class="text-xl font-semibold mt-4 mb-2">Packages Used</h3>
+        <ul class="list-disc ml-6 space-y-1">
+          <li><code>re</code>: Regex matching for name and page number extraction.</li>
+          <li><code>ollama</code>: Validates extracted names using a local LLM with contextual prompting.</li>
+          <li><code>rapidfuzz.process.extractOne</code>, <code>rapidfuzz.fuzz.ratio</code>: Used to match candidate
+            names against known valid names using fuzzy logic and a confidence threshold.</li>
+          <li><code>pandas</code>: Handles data export (e.g., matched names, runtime metrics).</li>
+          <li><code>matplotlib.pyplot</code>: (Optional) Used to track runtime performance visually.</li>
+          <li><code>time</code>: Measures script runtime for benchmarking.</li>
+          <li><code>sqlite3</code> (via <code>util.open_db()</code>): Connects to and updates the SQLite database.</li>
+        </ul>
 
 
-    <h3 class="text-xl font-semibold mt-4 mb-2">Key Functions</h3>
-    <ul class="list-disc ml-6 space-y-1">
-      <li><code>build_bad_words()</code>, <code>build_non_denson()</code>: Compile regex filters to exclude irrelevant terms.</li>
-      <li><code>is_valid_name()</code>: Uses Ollama to determine if a string is a leader’s name.</li>
-      <li><code>clean_ner()</code>: Strips and validates candidate names.</li>
-      <li><code>standardize_name()</code>: Normalizes names using multiple formatting strategies.</li>
-      <li><code>convert_to_initials()</code>: Shortens names to include initials where appropriate.</li>
-      <li><code>plot_pts()</code>: Tracks and logs name count vs. processing time.</li>
-      <li><code>is_name()</code>: Core matching logic using fuzzy matching, caching, and standardization.</li>
-      <li><code>expand_family_names()</code>: Parses group names into individual leader names.</li>
-      <li><code>parse_minutes()</code>: Main parser function for splitting and analyzing session text.</li>
-      <li><code>parse_all_minutes_from_file()</code>: Reads and parses local raw minutes from text files.</li>
-      <li><code>insert_minutes()</code>: Inserts parsed leader-song pairs into the database.</li>
-      <li><code>parse_all_minutes()</code>, <code>parse_minutes_by_id()</code>: Apply parser across full/minimal database.</li>
-      <li><code>clear_minutes()</code>: Clears prior leader/song mappings in the database.</li>
-    </ul>
+        <h3 class="text-xl font-semibold mt-4 mb-2">Key Functions</h3>
+        <ul class="list-disc ml-6 space-y-1">
+          <li><code>build_bad_words()</code>, <code>build_non_denson()</code>: Compile regex filters to exclude
+            irrelevant terms.</li>
+          <li><code>is_valid_name()</code>: Uses Ollama to determine if a string is a leader’s name.</li>
+          <li><code>clean_ner()</code>: Strips and validates candidate names.</li>
+          <li><code>standardize_name()</code>: Normalizes names using multiple formatting strategies.</li>
+          <li><code>convert_to_initials()</code>: Shortens names to include initials where appropriate.</li>
+          <li><code>plot_pts()</code>: Tracks and logs name count vs. processing time.</li>
+          <li><code>is_name()</code>: Core matching logic using fuzzy matching, caching, and standardization.</li>
+          <li><code>expand_family_names()</code>: Parses group names into individual leader names.</li>
+          <li><code>parse_minutes()</code>: Main parser function for splitting and analyzing session text.</li>
+          <li><code>parse_all_minutes_from_file()</code>: Reads and parses local raw minutes from text files.</li>
+          <li><code>insert_minutes()</code>: Inserts parsed leader-song pairs into the database.</li>
+          <li><code>parse_all_minutes()</code>, <code>parse_minutes_by_id()</code>: Apply parser across full/minimal
+            database.</li>
+          <li><code>clear_minutes()</code>: Clears prior leader/song mappings in the database.</li>
+        </ul>
 
-    <h3 class="text-xl font-semibold mt-4 mb-2">Key Variables</h3>
-    <ul class="list-disc ml-6 space-y-1">
-      <li><code>bad_words</code>, <code>non_denson</code>: Lists of filtered role/place terms and non-Denson songbooks.</li>
-      <li><code>cached_name_words</code>, <code>cached_non_name_words</code>: Caches for LLM validation results.</li>
-      <li><code>final_words</code>, <code>matched</code>, <code>history</code>, <code>failed</code>, <code>passed_names</code>: Tracks results, duplicates, and validation flow.</li>
-      <li><code>matched_alias</code>: Dictionary mapping fuzzy variants to their canonical name.</li>
-      <li><code>confidence</code>: Fuzzy matching threshold (default = 87).</li>
-      <li><code>batch</code>: Log output every <code>batch</code> entries (default = 1000).</li>
-      <li><code>start_time</code>, <code>time_counts</code>: Time logging tools for performance profiling.</li>
-      <li><code>LEADERS</code>, <code>SONGS</code>, <code>ALIASES</code>, <code>INVALID</code>: Local memory caches of the database contents.</li>
-    </ul>
+        <h3 class="text-xl font-semibold mt-4 mb-2">Key Variables</h3>
+        <ul class="list-disc ml-6 space-y-1">
+          <li><code>bad_words</code>, <code>non_denson</code>: Lists of filtered role/place terms and non-Denson
+            songbooks.</li>
+          <li><code>cached_name_words</code>, <code>cached_non_name_words</code>: Caches for LLM validation results.
+          </li>
+          <li><code>final_words</code>, <code>matched</code>, <code>history</code>, <code>failed</code>,
+            <code>passed_names</code>: Tracks results, duplicates, and validation flow.
+          </li>
+          <li><code>matched_alias</code>: Dictionary mapping fuzzy variants to their canonical name.</li>
+          <li><code>confidence</code>: Fuzzy matching threshold (default = 87).</li>
+          <li><code>batch</code>: Log output every <code>batch</code> entries (default = 1000).</li>
+          <li><code>start_time</code>, <code>time_counts</code>: Time logging tools for performance profiling.</li>
+          <li><code>LEADERS</code>, <code>SONGS</code>, <code>ALIASES</code>, <code>INVALID</code>: Local memory caches
+            of the database contents.</li>
+        </ul>
 
-    <h3 class="text-xl font-semibold mt-4 mb-2">Testing Tips</h3>
-    <ul class="list-disc ml-6 space-y-1">
-      <li>Use <code>parse_all_minutes_from_file()</code> for testing with raw `.txt` files.</li>
-      <li>Enable <code>debug_print=True</code> in <code>parse_minutes()</code> to trace chunk processing and name matches.</li>
-      <li>Check output files like <code>llm_modified_names.csv</code> and <code>matched_names.csv</code> for validation review.</li>
-    </ul>
+        <h3 class="text-xl font-semibold mt-4 mb-2">Testing Tips</h3>
+        <ul class="list-disc ml-6 space-y-1">
+          <li>Use <code>parse_all_minutes_from_file()</code> for testing with raw `.txt` files.</li>
+          <li>Enable <code>debug_print=True</code> in <code>parse_minutes()</code> to trace chunk processing and name
+            matches.</li>
+          <li>Check output files like <code>llm_modified_names.csv</code> and <code>matched_names.csv</code> for
+            validation review.</li>
+        </ul>
 
-    <h3 class="text-xl font-semibold mt-4 mb-2">File Outputs</h3>
-    <ul class="list-disc ml-6 space-y-1">
-      <li><code>llm_modified_names.csv</code>: List of names confirmed by the LLM.</li>
-      <li><code>llm_modified_non_names.csv</code>: Words the model ruled out as names.</li>
-      <li><code>matched_names.csv</code>: Names resolved through fuzzy matching.</li>
-    </ul>
-  </div>
-</section>
+        <h3 class="text-xl font-semibold mt-4 mb-2">File Outputs</h3>
+        <ul class="list-disc ml-6 space-y-1">
+          <li><code>llm_modified_names.csv</code>: List of names confirmed by the LLM.</li>
+          <li><code>llm_modified_non_names.csv</code>: Words the model ruled out as names.</li>
+          <li><code>matched_names.csv</code>: Names resolved through fuzzy matching.</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold mt-4 mb-2">Benchmarking & Evaluation</h3>
+        <ul class="list-disc ml-6 space-y-1">
+          <li><code>load_names_from_csv(filename)</code>: Loads names from a CSV file with a column labeled
+            <code>Name Words</code>.
+          </li>
+          <li><code>compare_names(ground_truth, parser_output)</code>: Computes <strong>precision</strong>,
+            <strong>recall</strong>, and <strong>F1 score</strong> by comparing parser output against the ground truth
+            list.
+          </li>
+          <li>Outputs <code>evaluation_results.txt</code> containing detailed results including true positives, false
+            positives, and false negatives.</li>
+          <li>Useful for tracking parser performance over time and across tuning iterations.</li>
+        </ul>
+
+      </div>
+    </section>
 
 
 
