@@ -429,6 +429,7 @@ def expand_family_names(candidate):
         return expanded
     return None
 
+# Updated parse_minutes fuction for when expand_family_names is able to be fully implemented
 """
 def parse_minutes(s, debug_print=False):
     session_count = 0
